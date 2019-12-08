@@ -1,13 +1,11 @@
 library(regtools)
 data(day1)
-x <- head(day1)
-print(head(x))
 
 Mean_square_error <- function(y_true, y_pred) {
     norm_y_t <- (y_true- min(y_true)) /(max(y_true)-min(y_true))
     norm_y_p <- (y_pred- min(y_pred)) /(max(y_pred)-min(y_pred))
-    diff <- (norm_y_t - norm_y_t)^2
-    return (mean(diff))
+    diff <- mean((norm_y_t - norm_y_p)^2)
+    return ((diff))
 }
 
 train_test_split <- function(dataset, num_train, shuffle=TRUE, random_state=0) {
@@ -48,7 +46,7 @@ test_y <- test[10]
 linearMod <- lm(train_y[,1] ~ train_x[,1] + train_x[,2] + train_x[,3] + train_x[,4] + train_x[,5] + train_x[,6] + train_x[,7] + train_x[,8] + train_x[,9])
 summary(linearMod)
 cfs <- coef(linearMod)
-cat("The linearModel has weight", cfs, "\n", sep="")
+cat("The linearModel has weight ", cfs, "\n", sep="")
 
 pred_y <- c()
 for (i in 1:nrow(test_x)) {
@@ -60,5 +58,5 @@ for (i in 1:nrow(test_x)) {
 }
 pred_y <- round(pred_y)
 y_test <- as.numeric(as.character(unlist(test_y[[1]])))
-error <- Mean_square_error(pred_y, y_test)
-cat("Overall error of this linear model is", error, "\n", sep="")
+error <- Mean_square_error(y_test, pred_y)
+cat("Overall error of this linear model is ", error, "\n", sep="")
