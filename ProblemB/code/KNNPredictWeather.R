@@ -24,20 +24,12 @@ test_X <- test[, c(1, 2, 4, 5, 6, 7)]
 train_y <- train[, 3]
 test_y <- test[, 3]
 
-print(train_X)
-
-# for (i in range(1:ncol(test_X))) {
-#     test_X[,i] <- as.numeric(test_X[,i])
-#     train_X[,i] <- as.numeric(train_X[,i])
-#     print(test_X)
-# }
-
-#as.numeric
-print(test_X)
-print(test_y)
-
 # for (i in range(1:nrow(test_X))) {
 #     basicKNN(train_X,train_y,,5)
 # }
 
-basicKNN(train_X, train_y, test_X, 5)
+for (i in 1:300) {
+    pred_y <- basicKNN(train_X, train_y, test_X, i)
+    #print(sum(ifelse(round(pred_y$regests) == test_y, 1, 0)))
+    print(sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y))
+}
