@@ -17,3 +17,12 @@ Mean_square_error <- function(y_true, y_pred) {
 Accuracy <- function(y_true, y_pred) {
     return (sum(ifelse(y_pred == y_true, 1, 0))/length(y_pred))
 }
+
+normalize <- function(x) {
+    norm_x <- x
+    for (i in 1:ncol(x)) {
+        col <- (x[,i]- min(x[,i])) /(max(x[,i])-min(x[,i]))
+        norm_x[,i] <- col
+    }
+    return(norm_x)
+}
