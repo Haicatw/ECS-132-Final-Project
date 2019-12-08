@@ -26,3 +26,17 @@ normalize <- function(x) {
     }
     return(norm_x)
 }
+
+binarize <- function(Y) {
+    nrow <- length(Y)
+    classes <- unique(Y)
+    ncol <- length(classes)
+    binarizedy <- matrix(data = 0, nrow = nrow, ncol = ncol)
+    i <- 1
+    sort(classes)
+    for (class in classes) {
+        binarizedy[ ,i] <- ifelse(Y==class, 1, 0)
+        i <- i + 1
+    }
+    return(binarizedy)
+}
