@@ -31,7 +31,7 @@ normalize <- function(x) {
 }
 
 data <- data.frame(day1[, c(3,4,5,8:13,16)])
-
+cat("Use normalized season, yr, mnth, workingday, weatherist, temp, atemp, hum and windspeed to predict tot", "\n", sep="")
 data <- train_test_split(data, 631)
 train <- data$train
 test <- data$test
@@ -46,8 +46,9 @@ test_y <- test[10]
 
 
 linearMod <- lm(train_y[,1] ~ train_x[,1] + train_x[,2] + train_x[,3] + train_x[,4] + train_x[,5] + train_x[,6] + train_x[,7] + train_x[,8] + train_x[,9])
+summary(linearMod)
 cfs <- coef(linearMod)
-
+cat("The linearModel has weight", cfs, "\n", sep="")
 
 pred_y <- c()
 for (i in 1:nrow(test_x)) {
@@ -59,4 +60,5 @@ for (i in 1:nrow(test_x)) {
 }
 pred_y <- round(pred_y)
 y_test <- as.numeric(as.character(unlist(test_y[[1]])))
-Mean_square_error(pred_y, y_test)
+error <- Mean_square_error(pred_y, y_test)
+cat("Overall error of this linear model is", error, "\n", sep="")
