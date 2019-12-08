@@ -17,19 +17,25 @@ processed_data <- day1[, c(3, 5, 9, 10, 11, 12, 13)]
 train_test <- train_test_split(processed_data, 631)
 train <- train_test$train
 test <- train_test$test
-#print(test)
 train_X <- train[, c(1, 2, 4, 5, 6, 7)]
 #c("season" ,"mnth" ,"temp" ,"atemp" ,"hum" ,"windspeed")
 test_X <- test[, c(1, 2, 4, 5, 6, 7)]
 train_y <- train[, 3]
 test_y <- test[, 3]
 
-# for (i in range(1:nrow(test_X))) {
-#     basicKNN(train_X,train_y,,5)
-# }
+k_val_list <- c()
+accuracy_list <- c()
 
 for (i in 1:300) {
     pred_y <- basicKNN(train_X, train_y, test_X, i)
     #print(sum(ifelse(round(pred_y$regests) == test_y, 1, 0)))
-    print(sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y))
+    accuracy <- sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
+    accuracy_list <- c(accuracy_list, accuracy)
+    k_val_list <- c(k_val_list, i)
+    cat("Accuracy score for testing set with k=", i, " is ", accuracy, "\n", sep="")
 }
+
+best_k <- which.max(accuracy_list)
+cat("When k=", best_k, " the model has the best performance.\n", sep="")
+plot(k_val_list, accuracy_list, main="K Value vs Accuracy", xlab="k value", ylab="accuracy")
+lines(k_val_list, accuracy_list)
