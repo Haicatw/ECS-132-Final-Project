@@ -40,3 +40,14 @@ binarize <- function(Y) {
     }
     return(binarizedy)
 }
+
+generatePolynomialInput <- function(power, X) {
+    processed_X <- X
+    if (power == 1) {
+        return (X)
+    }
+    for (i in 2:power) {
+        processed_X <- cbind(processed_X, X^i)
+    }
+    return (processed_X)
+}
