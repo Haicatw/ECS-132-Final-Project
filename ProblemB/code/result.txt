@@ -1,0 +1,5 @@
+When k=3 the model has the best performance, where the mean squared error of the model is 0.01259593
+The model has mean squared error equals to 0.004531366 on training set.
+
+When k=80 the model has the best performance, where the model has accuracy score equals to 0.78
+The model has accuracy score equals to  0.7828843  on the training set.
