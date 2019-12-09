@@ -29,17 +29,29 @@ test_y <- test[, 3]
 
 k_val_list <- c()
 accuracy_list <- c()
+train_accuracy_list <- c()
 
 for (i in 1:300) {
     pred_y <- basicKNN(train_X, train_y, test_X, i)
     #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
     accuracy <- Accuracy(round(pred_y$regests), test_y)
     accuracy_list <- c(accuracy_list, accuracy)
-    k_val_list <- c(k_val_list, i)
     cat("Accuracy score for testing set with k=", i, " is ", accuracy, "\n", sep="")
+
+    pred_y <- basicKNN(train_X, train_y, train_X, i)
+    #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
+    accuracy <- Accuracy(round(pred_y$regests), train_y)
+    train_accuracy_list <- c(train_accuracy_list, accuracy)
+    cat("Accuracy score for training set with k=", i, " is ", accuracy, "\n", sep="")
+
+    k_val_list <- c(k_val_list, i)
 }
 
 best_k <- which.max(accuracy_list)
-cat("When k=", best_k, " the model has the best performance.\n", sep="")
-plot(k_val_list, accuracy_list, main="K Value vs Accuracy", xlab="k value", ylab="accuracy")
+cat("When k=", best_k, " the model has the best performance, where the model has accuracy score equals to ", accuracy_list[best_k], "\n", sep="")
+cat("The model has accuracy score equals to ", train_accuracy_list[best_k], " on the training set.")
+plot(k_val_list, accuracy_list, main="K Value vs Accuracy on Testing set", xlab="k value", ylab="accuracy")
 lines(k_val_list, accuracy_list)
+
+plot(k_val_list, train_accuracy_list, main="K Value vs Accuracy on Training set", xlab="k value", ylab="accuracy")
+lines(k_val_list, train_accuracy_list)
