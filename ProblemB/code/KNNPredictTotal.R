@@ -28,39 +28,68 @@ normalize <- function(x) {
     return(norm_x)
 }
 
-data <- data.frame(day1[, c(3,4,5,8:13,16)])
-cat("Use normalized season, yr, mnth, workingday, weatherist, temp, atemp, hum and windspeed to predict tot", "\n", sep="")
-data <- train_test_split(data, 631)
-train <- data$train
-test <- data$test
-train_x <- normalize(train[c(1,2,3,4,5,6,7,8,9)])
-train_y <- train[, 10]
-test_x <- normalize(test[c(1,2,3,4,5,6,7,8,9)])
-test_y <- test[, 10]
+data(day1)
+processed_data <- day1[, c(3, 5, 9, 10, 11, 12, 13)]
+#c("season" ,"mnth" ,"weathersit" ,"temp" ,"atemp" ,"hum" ,"windspeed")
+train_test <- train_test_split(processed_data, 631)
+train <- train_test$train
+test <- train_test$test
 
-k_val_list <- c()
-mse_list <- c()
-train_mse_list <- c()
+eval_grid_search <- function(train_X, test_X, train_y, test_y, para_range, predict_name) {
+    k_val_list <- c()
+    mse_list <- c()
+    train_mse_list <- c()
 
-for (i in 1:300) {
-    pred_y <- basicKNN(train_x, train_y, test_x, i)
-    #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
-    mse <- Mean_square_error((pred_y$regests), test_y)
-    mse_list <- c(mse_list, mse)
-    cat("Mean squared error for testing set with k=", i, " is ", mse, "\n", sep="")
+    for (i in 1:para_range) {
+        pred_y <- basicKNN(train_X, train_y, test_X, i)
+        #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
+        mse <- Mean_square_error((pred_y$regests), test_y)
+        mse_list <- c(mse_list, mse)
+        cat("Mean squared error for testing set with k=", i, " is ", mse, "\n", sep="")
 
-    pred_y <- basicKNN(train_x, train_y, train_x, i)
-    #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
-    mse <- Mean_square_error((pred_y$regests), train_y)
-    train_mse_list <- c(train_mse_list, mse)
-    cat("Mean squared error for training set with k=", i, " is ", mse, "\n", sep="")
-    k_val_list <- c(k_val_list, i)
+        pred_y <- basicKNN(train_X, train_y, train_X, i)
+        #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
+        mse <- Mean_square_error((pred_y$regests), train_y)
+        train_mse_list <- c(train_mse_list, mse)
+        cat("Mean squared error for training set with k=", i, " is ", mse, "\n", sep="")
+        k_val_list <- c(k_val_list, i)
+    }
+
+    train_title = paste("K Value vs Mean Squared Error on Training set of ", predict_name, " predictor.", sep="")
+    test_title = paste("K Value vs Mean Squared Error on Testing set of ", predict_name, " predictor.", sep="")
+    best_k <- which.min(mse_list)
+    cat("When k=", best_k, " the model has the best performance, where the mean squared error of the model is ", mse_list[best_k], "\n", sep="")
+    cat("The model has mean squared error equals to ", train_mse_list[best_k], " on training set.", "\n", sep="")
+    plot(k_val_list, mse_list, main=test_title, xlab="k value", ylab="mean squared error")
+    lines(k_val_list, mse_list)
+    plot(k_val_list, train_mse_list, main=train_title, xlab="k value", ylab="mean squared error")
+    lines(k_val_list, train_mse_list)
 }
 
-best_k <- which.min(mse_list)
-cat("When k=", best_k, " the model has the best performance, where the mean squared error of the model is ", mse_list[best_k], "\n", sep="")
-cat("The model has mean squared error equals to ", train_mse_list[best_k], " on training set.", "\n", sep="")
-plot(k_val_list, mse_list, main="K Value vs Mean Squared Error on Testing set", xlab="k value", ylab="mean squared error")
-lines(k_val_list, mse_list)
-plot(k_val_list, train_mse_list, main="K Value vs Mean Squared Error on Training set", xlab="k value", ylab="mean squared error")
-lines(k_val_list, train_mse_list)
+# Predict temp
+train_X <- train[, c(1, 2, 3, 5, 6, 7)]
+test_X <- test[, c(1, 2, 3, 5, 6, 7)]
+train_y <- train[, 4]
+test_y <- test[, 4]
+eval_grid_search(train_X, test_X, train_y, test_y, 200, "temp")
+
+# Predict atemp
+train_X <- train[, c(1, 2, 3, 4, 6, 7)]
+test_X <- test[, c(1, 2, 3, 4, 6, 7)]
+train_y <- train[, 5]
+test_y <- test[, 5]
+eval_grid_search(train_X, test_X, train_y, test_y, 200, "atemp")
+
+# Predict hum
+train_X <- train[, c(1, 2, 3, 4, 5, 7)]
+test_X <- test[, c(1, 2, 3, 4, 5, 7)]
+train_y <- train[, 6]
+test_y <- test[, 6]
+eval_grid_search(train_X, test_X, train_y, test_y, 200, "hum")
+
+# Predict windspeed
+train_X <- train[, c(1, 2, 3, 4, 5, 6)]
+test_X <- test[, c(1, 2, 3, 4, 5, 6)]
+train_y <- train[, 7]
+test_y <- test[, 7]
+eval_grid_search(train_X, test_X, train_y, test_y, 200, "windspeed")
