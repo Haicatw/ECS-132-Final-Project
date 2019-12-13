@@ -54,13 +54,13 @@ generatePolynomialInput <- function(power, X) {
 
 rearrange <- function(X, y, k) {
     mat <- cbind(X, y)
-    print(head(X))
-    print(head(y))
-    print(head(mat))
+    #print(head(X))
+    #print(head(y))
+    #print(head(mat))
     nrows <- dim(mat)[1]
     ncols <- dim(mat)[2]
     rearrangedMat <- c()#matrix(0, nrow=(nrows-k), ncol=(ncols-1)*k+1)
-    print(dim(rearrangedMat))
+    #print(dim(rearrangedMat))
     for (i in 1:(nrows - k)) {
         rowdata <- X[i,]
         for (j in 1:(k-1)) {
@@ -68,8 +68,8 @@ rearrange <- function(X, y, k) {
         }
         rowdata <- c(rowdata, y[i+k])
         rowdata <- t(as.matrix(rowdata))
-        print(rowdata)
-        print(dim(rowdata))
+        #print(rowdata)
+        #print(dim(rowdata))
         #print(rearrangedMat[i,])
         rearrangedMat <- rbind(rearrangedMat, rowdata[1, ])
     }
