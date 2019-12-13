@@ -46,13 +46,13 @@ eval_grid_search <- function(train_X, test_X, train_y, test_y, para_range, predi
         #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
         mse <- Mean_square_error((pred_y$regests), test_y)
         mse_list <- c(mse_list, mse)
-        cat("Mean squared error for testing set with k=", i, " is ", mse, "\n", sep="")
+        #cat("Mean squared error for testing set with k=", i, " is ", mse, "\n", sep="")
 
         pred_y <- basicKNN(train_X, train_y, train_X, i)
         #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
         mse <- Mean_square_error((pred_y$regests), train_y)
         train_mse_list <- c(train_mse_list, mse)
-        cat("Mean squared error for training set with k=", i, " is ", mse, "\n", sep="")
+        #cat("Mean squared error for training set with k=", i, " is ", mse, "\n", sep="")
         k_val_list <- c(k_val_list, i)
     }
 

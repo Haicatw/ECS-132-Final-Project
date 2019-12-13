@@ -36,13 +36,13 @@ for (i in 2:200) {
     #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
     accuracy <- Accuracy(round(pred_y$regests), test_y)
     accuracy_list <- c(accuracy_list, accuracy)
-    cat("Accuracy score for testing set with k=", i, " is ", accuracy, "\n", sep="")
+    #cat("Accuracy score for testing set with k=", i, " is ", accuracy, "\n", sep="")
 
     pred_y <- basicKNN(train_X, train_y, train_X, i)
     #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
     accuracy <- Accuracy(round(pred_y$regests), train_y)
     train_accuracy_list <- c(train_accuracy_list, accuracy)
-    cat("Accuracy score for training set with k=", i, " is ", accuracy, "\n", sep="")
+    #cat("Accuracy score for training set with k=", i, " is ", accuracy, "\n", sep="")
 
     k_val_list <- c(k_val_list, i)
 }
