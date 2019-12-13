@@ -75,7 +75,7 @@ eval_grid_search <- function(train_X, test_X, train_y, test_y, para_range, predi
     print(p)
 }
 
-max_k_val = 50
+max_k_val = 200
 
 # Predict temp
 train_X <- train[, c(1, 2, 3, 5, 6, 7)]
