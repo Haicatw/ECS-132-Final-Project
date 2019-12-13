@@ -31,7 +31,7 @@ k_val_list <- c()
 accuracy_list <- c()
 train_accuracy_list <- c()
 
-for (i in 1:300) {
+for (i in 2:200) {
     pred_y <- basicKNN(train_X, train_y, test_X, i)
     #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
     accuracy <- Accuracy(round(pred_y$regests), test_y)
@@ -47,11 +47,22 @@ for (i in 1:300) {
     k_val_list <- c(k_val_list, i)
 }
 
+predict_name <- "weathersit"
+plot_title <- paste("K Value vs Accuracy of ", predict_name, " predictor.", sep="")
+best_k <- which.min(mse_list)
 best_k <- which.max(accuracy_list)
 cat("When k=", best_k, " the model has the best performance, where the model has accuracy score equals to ", accuracy_list[best_k], "\n", sep="")
 cat("The model has accuracy score equals to ", train_accuracy_list[best_k], " on the training set.")
-plot(k_val_list, accuracy_list, main="K Value vs Accuracy on Testing set", xlab="k value", ylab="accuracy")
-lines(k_val_list, accuracy_list)
 
-plot(k_val_list, train_accuracy_list, main="K Value vs Accuracy on Training set", xlab="k value", ylab="accuracy")
-lines(k_val_list, train_accuracy_list)
+plot_df <- data.frame(k_val_list, train_accuracy_list, accuracy_list)
+colnames(plot_df) <- list("k", "train_acc", "test_acc")
+p <- ggplot(plot_df, aes(x=k)) + 
+    geom_line(aes(y = train_acc, colour="Train Accuracy")) + 
+    geom_line(aes(y = test_acc, colour="Test Accuracy")) +
+    xlab("k Value") +
+    ylab("Mean Squared Error") +
+    ggtitle(plot_title) +
+    scale_colour_manual("", 
+        breaks = c("Train Accuracy", "Test Accuracy"),
+        values = c("Train Accuracy"="darkred", "Test Accuracy"="steelblue"))
+print(p)
