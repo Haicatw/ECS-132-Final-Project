@@ -1,4 +1,5 @@
 library(regtools)
+library(ggplot2)
 data(day1)
 
 Mean_square_error <- function(y_true, y_pred) {
@@ -40,7 +41,7 @@ eval_grid_search <- function(train_X, test_X, train_y, test_y, para_range, predi
     mse_list <- c()
     train_mse_list <- c()
 
-    for (i in 1:para_range) {
+    for (i in 2:para_range) {
         pred_y <- basicKNN(train_X, train_y, test_X, i)
         #sum(ifelse((pred_y$regests) == test_y, 1, 0))/length(test_y)
         mse <- Mean_square_error((pred_y$regests), test_y)
@@ -55,41 +56,51 @@ eval_grid_search <- function(train_X, test_X, train_y, test_y, para_range, predi
         k_val_list <- c(k_val_list, i)
     }
 
-    train_title = paste("K Value vs Mean Squared Error on Training set of ", predict_name, " predictor.", sep="")
-    test_title = paste("K Value vs Mean Squared Error on Testing set of ", predict_name, " predictor.", sep="")
+    plot_title = paste("K Value vs Mean Squared Error of ", predict_name, " predictor.", sep="")
     best_k <- which.min(mse_list)
     cat("When k=", best_k, " the model has the best performance, where the mean squared error of the model is ", mse_list[best_k], "\n", sep="")
     cat("The model has mean squared error equals to ", train_mse_list[best_k], " on training set.", "\n", sep="")
-    plot(k_val_list, mse_list, main=test_title, xlab="k value", ylab="mean squared error")
-    lines(k_val_list, mse_list)
-    plot(k_val_list, train_mse_list, main=train_title, xlab="k value", ylab="mean squared error")
-    lines(k_val_list, train_mse_list)
+
+    plot_df <- data.frame(k_val_list, train_mse_list, mse_list)
+    colnames(plot_df) <- list("k", "train_mse", "test_mse")
+    p <- ggplot(plot_df, aes(x=k)) + 
+        geom_line(aes(y = train_mse, colour="Train MSE")) + 
+        geom_line(aes(y = test_mse, colour="Test MSE")) +
+        xlab("k Value") +
+        ylab("Mean Squared Error") +
+        ggtitle(plot_title) +
+        scale_colour_manual("", 
+            breaks = c("Train MSE", "Test MSE"),
+            values = c("Train MSE"="darkred", "Test MSE"="steelblue"))
+    print(p)
 }
+
+max_k_val = 50
 
 # Predict temp
 train_X <- train[, c(1, 2, 3, 5, 6, 7)]
 test_X <- test[, c(1, 2, 3, 5, 6, 7)]
 train_y <- train[, 4]
 test_y <- test[, 4]
-eval_grid_search(train_X, test_X, train_y, test_y, 200, "temp")
+eval_grid_search(train_X, test_X, train_y, test_y, max_k_val, "temp")
 
 # Predict atemp
 train_X <- train[, c(1, 2, 3, 4, 6, 7)]
 test_X <- test[, c(1, 2, 3, 4, 6, 7)]
 train_y <- train[, 5]
 test_y <- test[, 5]
-eval_grid_search(train_X, test_X, train_y, test_y, 200, "atemp")
+eval_grid_search(train_X, test_X, train_y, test_y, max_k_val, "atemp")
 
 # Predict hum
 train_X <- train[, c(1, 2, 3, 4, 5, 7)]
 test_X <- test[, c(1, 2, 3, 4, 5, 7)]
 train_y <- train[, 6]
 test_y <- test[, 6]
-eval_grid_search(train_X, test_X, train_y, test_y, 200, "hum")
+eval_grid_search(train_X, test_X, train_y, test_y, max_k_val, "hum")
 
 # Predict windspeed
 train_X <- train[, c(1, 2, 3, 4, 5, 6)]
 test_X <- test[, c(1, 2, 3, 4, 5, 6)]
 train_y <- train[, 7]
 test_y <- test[, 7]
-eval_grid_search(train_X, test_X, train_y, test_y, 200, "windspeed")
+eval_grid_search(train_X, test_X, train_y, test_y, max_k_val, "windspeed")
