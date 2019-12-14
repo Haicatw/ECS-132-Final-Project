@@ -139,7 +139,7 @@ eval_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict
         ggtitle(plot_title) +
         scale_colour_manual("", 
             breaks = c("First Order Train MSE", "Second Order Train MSE", "Third Order Train MSE", "First Test MSE", "Second Test MSE", "Third Test MSE"),
-            values = c("First Order Train MSE"="dodgeblue4", "Second Order Train MSE"="gray3", "Third Order Train MSE"="greenyellow", "First Test MSE"="chocolate4", "Second Test MSE"="maroon4", "Third Test MSE"="peru"))
+            values = c("First Order Train MSE"="blue", "Second Order Train MSE"="yellow", "Third Order Train MSE"="red", "First Test MSE"="green", "Second Test MSE"="navy", "Third Test MSE"="grey"))
     print(p)
 }
 

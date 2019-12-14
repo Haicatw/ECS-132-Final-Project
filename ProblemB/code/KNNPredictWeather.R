@@ -37,23 +37,19 @@ train_accuracy_list <- c()
 for (i in 2:300) {
     pred_y <- basicKNN(train_X, train_y, test_X, i, leave1out=TRUE)
     #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
-    y_hat <- c()
-    #print(pred_y$regests)
-    for (col in 1:ncol(pred_y$regests)) {
-        y_hat <- c(y_hat, which.max(pred_y$regests[, col]))
-    }
-    #print(y_hat)
-    accuracy <- Accuracy(y_hat, test_y)
+    y_hat <- as.matrix(apply(pred_y$regests, 2, which.max))
+    eval_test_y <- as.matrix(apply(test_y, 1, which.max))
+    #print(dim(y_hat))
+    #print(dim(eval_test_y))
+    accuracy <- Accuracy(y_hat, eval_test_y)
     accuracy_list <- c(accuracy_list, accuracy)
     #cat("Accuracy score for testing set with k=", i, " is ", accuracy, "\n", sep="")
 
     pred_y <- basicKNN(train_X, train_y, train_X, i, leave1out=TRUE)
     #sum(ifelse(round(pred_y$regests) == test_y, 1, 0))/length(test_y)
-    y_hat <- c()
-    for (col in 1:ncol(pred_y$regests)) {
-        y_hat <- c(y_hat, which.max(pred_y$regests[, col]))
-    }
-    accuracy <- Accuracy(y_hat, train_y)
+    y_hat <- as.matrix(apply(pred_y$regests, 2, which.max))
+    eval_train_y <- as.matrix(apply(train_y, 1, which.max))
+    accuracy <- Accuracy(y_hat, eval_train_y)
     train_accuracy_list <- c(train_accuracy_list, accuracy)
     #cat("Accuracy score for training set with k=", i, " is ", accuracy, "\n", sep="")
 

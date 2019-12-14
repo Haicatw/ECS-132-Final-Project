@@ -1,0 +1,4132 @@
+[1] "----------------------------------------------"
+Linear model with 1 order and past 2 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4924  -1.2071   0.7016   0.9537   1.6877  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   1.4821     0.6662   2.225   0.0261 *  
+season       -1.1677     1.4435  -0.809   0.4186    
+mnth          5.2044     4.8436   1.075   0.2826    
+windspeed     0.1886     0.6667   0.283   0.7773    
+temp         -5.2105     4.5451  -1.146   0.2516    
+atemp         6.7724     4.5927   1.475   0.1403    
+hum           1.0497     0.7126   1.473   0.1407    
+season.1      0.8875     1.3985   0.635   0.5257    
+mnth.1       -5.0196     4.8639  -1.032   0.3021    
+windspeed.1   0.4705     0.6314   0.745   0.4562    
+temp.1        2.3638     4.2830   0.552   0.5810    
+atemp.1      -2.1908     4.2011  -0.521   0.6020    
+hum.1        -3.9600     0.7767  -5.098 3.43e-07 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 824.90  on 628  degrees of freedom
+Residual deviance: 770.89  on 616  degrees of freedom
+AIC: 796.89
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5872  -0.9252  -0.7356   1.2683   2.3158  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -1.3723     0.6710  -2.045   0.0408 *  
+season        1.2190     1.4167   0.860   0.3895    
+mnth         -4.2697     4.5905  -0.930   0.3523    
+windspeed    -0.3764     0.6825  -0.551   0.5813    
+temp          8.0164     5.3624   1.495   0.1349    
+atemp        -9.2645     5.4499  -1.700   0.0891 .  
+hum          -0.6767     0.7131  -0.949   0.3427    
+season.1     -0.9721     1.3685  -0.710   0.4775    
+mnth.1        3.9837     4.6121   0.864   0.3877    
+windspeed.1  -0.3303     0.6420  -0.514   0.6069    
+temp.1       -4.3710     5.1075  -0.856   0.3921    
+atemp.1       4.0413     5.0683   0.797   0.4252    
+hum.1         3.2295     0.7682   4.204 2.63e-05 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 805.28  on 628  degrees of freedom
+Residual deviance: 764.63  on 616  degrees of freedom
+AIC: 790.63
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7936  -0.2406  -0.1596  -0.1045   3.2552  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept)   -6.865      2.098  -3.273  0.00106 **
+season        -1.051      3.827  -0.275  0.78356   
+mnth          -6.363     12.307  -0.517  0.60516   
+windspeed      1.926      2.014   0.956  0.33895   
+temp         -30.093     18.801  -1.601  0.10947   
+atemp         27.023     19.258   1.403  0.16056   
+hum           -3.493      2.203  -1.586  0.11282   
+season.1       1.218      3.699   0.329  0.74196   
+mnth.1         7.165     12.451   0.575  0.56498   
+windspeed.1   -1.428      1.936  -0.738  0.46070   
+temp.1         9.152      6.755   1.355  0.17547   
+atemp.1       -6.299      5.630  -1.119  0.26318   
+hum.1          7.413      2.464   3.008  0.00263 **
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 149.08  on 628  degrees of freedom
+Residual deviance: 130.10  on 616  degrees of freedom
+AIC: 156.1
+
+Number of Fisher Scoring iterations: 7
+
+[1] "----------------------------------------------"
+Linear model with 2 order and past 2 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.9252  -1.2064   0.6755   0.9298   1.7584  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   0.03929    1.86346   0.021   0.9832  
+season       -7.65029    6.12801  -1.248   0.2119  
+mnth         10.75928   10.41529   1.033   0.3016  
+windspeed     3.91283    2.12120   1.845   0.0651 .
+temp        -27.42011   15.00081  -1.828   0.0676 .
+atemp        27.56744   14.60253   1.888   0.0590 .
+hum          -1.07752    4.04645  -0.266   0.7900  
+season.1      7.55075    6.11503   1.235   0.2169  
+mnth.1       -8.29939   10.49219  -0.791   0.4289  
+windspeed.1  -1.22020    2.24345  -0.544   0.5865  
+temp.1        2.96336   14.89691   0.199   0.8423  
+atemp.1      -6.30656   13.92970  -0.453   0.6507  
+hum.1         4.27245    4.07388   1.049   0.2943  
+season.2      6.53178    5.88184   1.110   0.2668  
+mnth.2       -4.03543    9.24643  -0.436   0.6625  
+windspeed.2  -3.93768    2.48481  -1.585   0.1130  
+temp.2       17.70676   12.20468   1.451   0.1468  
+atemp.2     -17.36523   12.62150  -1.376   0.1689  
+hum.2         1.90163    3.13828   0.606   0.5445  
+season.3     -6.67554    5.85617  -1.140   0.2543  
+mnth.3        1.95453    9.33748   0.209   0.8342  
+windspeed.3   2.19943    2.72919   0.806   0.4203  
+temp.3       -1.93671   13.01091  -0.149   0.8817  
+atemp.3       4.98966   12.88891   0.387   0.6987  
+hum.3        -6.20335    3.12634  -1.984   0.0472 *
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 824.90  on 628  degrees of freedom
+Residual deviance: 757.28  on 604  degrees of freedom
+AIC: 807.28
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6121  -0.9063  -0.6963   1.2123   1.9227  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -0.2879     1.8884  -0.152   0.8788  
+season        7.8395     6.2818   1.248   0.2120  
+mnth        -13.1562    10.3654  -1.269   0.2044  
+windspeed    -4.1138     2.1317  -1.930   0.0536 .
+temp         36.4260    15.4729   2.354   0.0186 *
+atemp       -33.4228    15.0085  -2.227   0.0260 *
+hum           1.8341     4.1935   0.437   0.6619  
+season.1     -7.5670     6.2668  -1.207   0.2272  
+mnth.1       10.5729    10.4378   1.013   0.3111  
+windspeed.1   0.9439     2.2257   0.424   0.6715  
+temp.1      -10.9793    15.9045  -0.690   0.4900  
+atemp.1      11.6341    14.7668   0.788   0.4308  
+hum.1        -4.1446     4.0294  -1.029   0.3037  
+season.2     -6.6777     5.9925  -1.114   0.2651  
+mnth.2        7.6558     9.3286   0.821   0.4118  
+windspeed.2   3.7749     2.4950   1.513   0.1303  
+temp.2      -22.5266    12.4127  -1.815   0.0696 .
+atemp.2      19.2459    12.8335   1.500   0.1337  
+hum.2        -2.2762     3.2409  -0.702   0.4825  
+season.3      6.6385     5.9659   1.113   0.2658  
+mnth.3       -5.5691     9.4208  -0.591   0.5544  
+windspeed.3  -1.5097     2.6772  -0.564   0.5728  
+temp.3        7.2184    13.2216   0.546   0.5851  
+atemp.3      -7.7840    13.0127  -0.598   0.5497  
+hum.3         5.5881     3.0819   1.813   0.0698 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 805.28  on 628  degrees of freedom
+Residual deviance: 750.28  on 604  degrees of freedom
+AIC: 800.28
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9248  -0.2299  -0.1243  -0.0510   3.3801  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -20.73483   11.04289  -1.878   0.0604 .
+season        1.12012   15.08142   0.074   0.9408  
+mnth         17.09001   40.83844   0.418   0.6756  
+windspeed    -0.07893    6.94887  -0.011   0.9909  
+temp        -59.95273   50.65473  -1.184   0.2366  
+atemp        30.14637   49.94335   0.604   0.5461  
+hum          -5.43309    8.20013  -0.663   0.5076  
+season.1     -2.12999   14.79049  -0.144   0.8855  
+mnth.1      -14.37977   41.14674  -0.349   0.7267  
+windspeed.1  12.70572   10.06142   1.263   0.2067  
+temp.1       65.43975   59.75799   1.095   0.2735  
+atemp.1     -30.01767   57.34444  -0.523   0.6007  
+hum.1        36.20691   28.57005   1.267   0.2050  
+season.2     -2.66193   14.49640  -0.184   0.8543  
+mnth.2      -22.49308   26.67334  -0.843   0.3991  
+windspeed.2   4.39513    8.54111   0.515   0.6068  
+temp.2       35.13177   43.99421   0.799   0.4245  
+atemp.2      -7.39481   45.03188  -0.164   0.8696  
+hum.2         1.91369    6.60288   0.290   0.7719  
+season.3      3.68915   14.18244   0.260   0.7948  
+mnth.3       20.94908   27.21424   0.770   0.4414  
+windspeed.3 -22.15186   15.16940  -1.460   0.1442  
+temp.3      -55.03256   57.00935  -0.965   0.3344  
+atemp.3      21.78097   56.95084   0.382   0.7021  
+hum.3       -19.02775   19.14578  -0.994   0.3203  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 149.08  on 628  degrees of freedom
+Residual deviance: 118.49  on 604  degrees of freedom
+AIC: 168.49
+
+Number of Fisher Scoring iterations: 9
+
+[1] "----------------------------------------------"
+Linear model with 3 order and past 2 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0709  -1.1489   0.6512   0.9412   1.6050  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -2.5658     3.6394  -0.705   0.4808  
+season       -7.4493    13.0278  -0.572   0.5675  
+mnth         27.8333    18.8711   1.475   0.1402  
+windspeed    -2.5200     5.4134  -0.466   0.6416  
+temp          1.6299    27.4937   0.059   0.9527  
+atemp         8.8454    26.0512   0.340   0.7342  
+hum          -9.8238    13.2422  -0.742   0.4582  
+season.1      5.8237    13.0657   0.446   0.6558  
+mnth.1      -26.3869    18.8677  -1.399   0.1620  
+windspeed.1  -1.4264     5.6912  -0.251   0.8021  
+temp.1       -2.8216    29.3444  -0.096   0.9234  
+atemp.1       7.4094    26.8707   0.276   0.7827  
+hum.1        19.2346    11.3503   1.695   0.0901 .
+season.2      4.5748    34.6456   0.132   0.8949  
+mnth.2      -51.7110    43.7776  -1.181   0.2375  
+windspeed.2  12.7453    13.6451   0.934   0.3503  
+temp.2      -35.9167    56.3479  -0.637   0.5239  
+atemp.2      14.8803    56.0250   0.266   0.7905  
+hum.2        19.1398    22.2291   0.861   0.3892  
+season.3      0.2476    34.6949   0.007   0.9943  
+mnth.3       52.4104    43.5860   1.202   0.2292  
+windspeed.3   1.6377    14.6141   0.112   0.9108  
+temp.3       16.4060    58.0817   0.282   0.7776  
+atemp.3     -30.4423    56.7905  -0.536   0.5919  
+hum.3       -34.3289    19.5973  -1.752   0.0798 .
+season.4      1.5386    22.5333   0.068   0.9456  
+mnth.4       31.1758    27.8240   1.120   0.2625  
+windspeed.4 -12.7549    10.2967  -1.239   0.2154  
+temp.4       31.5881    35.9149   0.880   0.3791  
+atemp.4     -18.8406    37.1415  -0.507   0.6120  
+hum.4       -10.0949    12.1462  -0.831   0.4059  
+season.5     -5.1168    22.5459  -0.227   0.8205  
+mnth.5      -33.2658    27.6862  -1.202   0.2295  
+windspeed.5   0.8690    11.3224   0.077   0.9388  
+temp.5      -13.9140    36.2923  -0.383   0.7014  
+atemp.5      25.1082    37.4145   0.671   0.5022  
+hum.5        16.1673    10.9463   1.477   0.1397  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 824.90  on 628  degrees of freedom
+Residual deviance: 746.11  on 592  degrees of freedom
+AIC: 820.11
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4701  -0.9226  -0.6649   1.1790   2.1343  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   1.180244   4.189763   0.282   0.7782  
+season        7.223315  13.691789   0.528   0.5978  
+mnth        -32.981087  19.444794  -1.696   0.0899 .
+windspeed     3.985593   5.455093   0.731   0.4650  
+temp         11.633701  27.843682   0.418   0.6761  
+atemp       -17.075689  26.350770  -0.648   0.5170  
+hum          13.499158  16.924815   0.798   0.4251  
+season.1     -4.854699  13.722219  -0.354   0.7235  
+mnth.1       31.025624  19.395182   1.600   0.1097  
+windspeed.1   0.009965   5.688169   0.002   0.9986  
+temp.1       -4.975093  29.284257  -0.170   0.8651  
+atemp.1      -1.518708  26.804411  -0.057   0.9548  
+hum.1       -18.251529  11.405246  -1.600   0.1095  
+season.2     -3.169164  36.121747  -0.088   0.9301  
+mnth.2       63.374578  44.863200   1.413   0.1578  
+windspeed.2 -17.541345  13.782113  -1.273   0.2031  
+temp.2       23.264033  58.478547   0.398   0.6908  
+atemp.2      -9.129322  58.489285  -0.156   0.8760  
+hum.2       -23.690149  27.585663  -0.859   0.3905  
+season.3     -3.478021  36.155500  -0.096   0.9234  
+mnth.3      -63.034981  44.591382  -1.414   0.1575  
+windspeed.3   2.141672  14.547069   0.147   0.8830  
+temp.3      -13.062589  59.851500  -0.218   0.8272  
+atemp.3      27.822860  59.312980   0.469   0.6390  
+hum.3        31.856669  19.643646   1.622   0.1049  
+season.4     -2.674929  23.328261  -0.115   0.9087  
+mnth.4      -36.107505  28.004939  -1.289   0.1973  
+windspeed.4  16.362130  10.420210   1.570   0.1164  
+temp.4      -26.944257  37.483483  -0.719   0.4722  
+atemp.4      16.622954  39.009798   0.426   0.6700  
+hum.4        12.044421  14.625926   0.823   0.4102  
+season.5      7.311315  23.330839   0.313   0.7540  
+mnth.5       37.507011  27.818438   1.348   0.1776  
+windspeed.5  -3.242332  11.231522  -0.289   0.7728  
+temp.5       15.427297  37.820409   0.408   0.6833  
+atemp.5     -25.399772  39.460004  -0.644   0.5198  
+hum.5       -14.992203  10.949098  -1.369   0.1709  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 805.28  on 628  degrees of freedom
+Residual deviance: 739.45  on 592  degrees of freedom
+AIC: 813.45
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7398  -0.2265  -0.0948  -0.0192   3.5584  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -52.6934    62.5625  -0.842   0.3996  
+season         7.3258    35.2177   0.208   0.8352  
+mnth         117.0554    66.0221   1.773   0.0762 .
+windspeed    -13.4942    18.9108  -0.714   0.4755  
+temp         -72.4563    93.7876  -0.773   0.4398  
+atemp         37.3453    97.6873   0.382   0.7022  
+hum            0.4311    19.0734   0.023   0.9820  
+season.1     -15.2599    35.2371  -0.433   0.6650  
+mnth.1      -111.1858    65.1460  -1.707   0.0879 .
+windspeed.1  -11.7963    29.3049  -0.403   0.6873  
+temp.1       -29.5196   161.3475  -0.183   0.8548  
+atemp.1       23.3149   163.1110   0.143   0.8863  
+hum.1        204.8060   256.3354   0.799   0.4243  
+season.2     -28.3822    93.7874  -0.303   0.7622  
+mnth.2      -240.2212   143.6594  -1.672   0.0945 .
+windspeed.2   43.9124    54.8558   0.801   0.4234  
+temp.2        45.3188   220.0639   0.206   0.8368  
+atemp.2       -9.4375   232.8654  -0.041   0.9677  
+hum.2        -10.1342    39.4046  -0.257   0.7970  
+season.3      51.4454    93.4963   0.550   0.5822  
+mnth.3       229.8591   141.2090   1.628   0.1036  
+windspeed.3   61.6560   104.6340   0.589   0.5557  
+temp.3       159.6078   338.0532   0.472   0.6368  
+atemp.3     -100.7638   351.0335  -0.287   0.7741  
+hum.3       -247.4928   345.3631  -0.717   0.4736  
+season.4      19.0802    61.9920   0.308   0.7582  
+mnth.4       123.4677    83.5697   1.477   0.1396  
+windspeed.4  -32.3852    47.6026  -0.680   0.4963  
+temp.4        -3.8402   148.0153  -0.026   0.9793  
+atemp.4        1.4855   158.3846   0.009   0.9925  
+hum.4          7.3092    25.0599   0.292   0.7705  
+season.5     -34.0632    61.6043  -0.553   0.5803  
+mnth.5      -117.5308    82.0944  -1.432   0.1522  
+windspeed.5  -85.2341   113.8547  -0.749   0.4541  
+temp.5      -144.3338   220.5290  -0.654   0.5128  
+atemp.5       81.1074   234.0702   0.347   0.7290  
+hum.5        101.5050   153.1904   0.663   0.5076  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 149.08  on 628  degrees of freedom
+Residual deviance: 111.89  on 592  degrees of freedom
+AIC: 185.89
+
+Number of Fisher Scoring iterations: 10
+
+[1] "----------------------------------------------"
+Linear model with 1 order and past 3 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4082  -1.1572   0.6746   0.9281   1.6632  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   0.5293     0.7940   0.667   0.5050    
+season        5.7141     3.4054   1.678   0.0934 .  
+mnth          3.5285     5.0488   0.699   0.4846    
+windspeed     1.7272     0.6888   2.508   0.0122 *  
+temp         -2.8366     3.8433  -0.738   0.4605    
+atemp         3.6106     3.8012   0.950   0.3422    
+hum           0.6933     0.7312   0.948   0.3430    
+season.1     -6.7389     3.6757  -1.833   0.0667 .  
+mnth.1        0.7697     6.6085   0.116   0.9073    
+windspeed.1  -0.2776     0.7363  -0.377   0.7061    
+temp.1       -5.2792     5.1592  -1.023   0.3062    
+atemp.1       5.9200     4.8122   1.230   0.2186    
+hum.1         1.1111     0.8655   1.284   0.1992    
+season.2      0.8498     1.4374   0.591   0.5544    
+mnth.2       -4.2085     4.4467  -0.946   0.3439    
+windspeed.2   0.7360     0.6628   1.110   0.2668    
+temp.2        5.3381     5.3897   0.990   0.3220    
+atemp.2      -4.9013     5.3644  -0.914   0.3609    
+hum.2        -4.1373     0.7954  -5.202 1.97e-07 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 825.10  on 627  degrees of freedom
+Residual deviance: 752.45  on 609  degrees of freedom
+AIC: 790.45
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6058  -0.9134  -0.6923   1.2265   2.2203  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -0.4222     0.7975  -0.529  0.59651    
+season       -5.7965     3.4250  -1.692  0.09057 .  
+mnth         -4.8707     5.1090  -0.953  0.34041    
+windspeed    -1.8332     0.6969  -2.630  0.00853 ** 
+temp          4.2157     3.9986   1.054  0.29176    
+atemp        -4.1236     3.9635  -1.040  0.29815    
+hum          -0.1618     0.7306  -0.222  0.82468    
+season.1      7.0216     3.6805   1.908  0.05642 .  
+mnth.1        1.2398     6.4528   0.192  0.84763    
+windspeed.1   0.1298     0.7458   0.174  0.86181    
+temp.1        5.5312     5.5222   1.002  0.31652    
+atemp.1      -6.8404     5.2002  -1.315  0.18837    
+hum.1        -0.7983     0.8628  -0.925  0.35484    
+season.2     -1.0834     1.4002  -0.774  0.43906    
+mnth.2        3.3229     4.1229   0.806  0.42025    
+windspeed.2  -0.8276     0.6692  -1.237  0.21620    
+temp.2       -6.1055     5.6268  -1.085  0.27789    
+atemp.2       5.6184     5.6090   1.002  0.31650    
+hum.2         3.1977     0.7834   4.082 4.46e-05 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 807.09  on 627  degrees of freedom
+Residual deviance: 749.26  on 609  degrees of freedom
+AIC: 787.26
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.12521  -0.19070  -0.10828  -0.05615   3.06643  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -8.1707     3.1635  -2.583 0.009801 ** 
+season       -1.5461     8.5278  -0.181 0.856134    
+mnth          5.7522     5.7678   0.997 0.318620    
+windspeed     0.8042     2.2794   0.353 0.724221    
+temp        -11.9582    20.3986  -0.586 0.557725    
+atemp         5.4315    20.6441   0.263 0.792471    
+hum          -5.4582     2.7983  -1.951 0.051109 .  
+season.1     -1.4791     9.2868  -0.159 0.873458    
+mnth.1      -16.1314    14.3270  -1.126 0.260187    
+windspeed.1   0.3885     2.4993   0.155 0.876469    
+temp.1      -13.3824    26.1949  -0.511 0.609438    
+atemp.1      18.2182    25.7544   0.707 0.479328    
+hum.1        -4.1503     3.2205  -1.289 0.197497    
+season.2      2.8771     3.8797   0.742 0.458339    
+mnth.2       12.9043    13.2306   0.975 0.329391    
+windspeed.2   1.2689     2.1591   0.588 0.556723    
+temp.2        4.6987    13.9479   0.337 0.736213    
+atemp.2      -1.3664    13.3410  -0.102 0.918424    
+hum.2        10.5719     3.0434   3.474 0.000513 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 141.67  on 627  degrees of freedom
+Residual deviance: 104.80  on 609  degrees of freedom
+AIC: 142.8
+
+Number of Fisher Scoring iterations: 8
+
+[1] "----------------------------------------------"
+Linear model with 2 order and past 3 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0981  -1.1429   0.6426   0.9184   1.8494  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   -0.58504    2.23934  -0.261   0.7939  
+season       107.07558 3784.53006   0.028   0.9774  
+mnth           1.89728   10.57503   0.179   0.8576  
+windspeed      3.05764    2.20938   1.384   0.1664  
+temp           3.29200   15.35503   0.214   0.8302  
+atemp         -8.98760   15.19783  -0.591   0.5543  
+hum           -2.41232    4.21835  -0.572   0.5674  
+season.1    -180.82884 7037.34867  -0.026   0.9795  
+mnth.1         9.35930   14.89313   0.628   0.5297  
+windspeed.1    1.50169    2.25074   0.667   0.5046  
+temp.1       -24.45961   16.98653  -1.440   0.1499  
+atemp.1       31.98112   15.74998   2.031   0.0423 *
+hum.1          1.42521    4.10828   0.347   0.7287  
+season.2      73.38502 5933.09444   0.012   0.9901  
+mnth.2        -8.95077   11.02925  -0.812   0.4171  
+windspeed.2   -0.69198    2.37127  -0.292   0.7704  
+temp.2        -5.44442   15.88371  -0.343   0.7318  
+atemp.2       -2.03489   14.80791  -0.137   0.8907  
+hum.2          5.31994    4.17923   1.273   0.2030  
+season.3     -63.77189 2270.72591  -0.028   0.9776  
+mnth.3         1.44081    9.58135   0.150   0.8805  
+windspeed.3   -2.00330    2.57245  -0.779   0.4361  
+temp.3        -8.72661   13.05616  -0.668   0.5039  
+atemp.3       16.14593   13.89313   1.162   0.2452  
+hum.3          2.51566    3.25209   0.774   0.4392  
+season.4     136.87592 6352.77955   0.022   0.9828  
+mnth.4        -7.00238   13.08867  -0.535   0.5927  
+windspeed.4   -1.15000    2.63077  -0.437   0.6620  
+temp.4        16.19040   14.54472   1.113   0.2656  
+atemp.4      -25.10328   14.48273  -1.733   0.0830 .
+hum.4         -0.04018    3.21089  -0.013   0.9900  
+season.5     -72.88222 5933.09470  -0.012   0.9902  
+mnth.5         3.57123    9.46401   0.377   0.7059  
+windspeed.5    2.09195    2.94669   0.710   0.4777  
+temp.5         8.27727   13.48987   0.614   0.5395  
+atemp.5       -0.52090   13.39077  -0.039   0.9690  
+hum.5         -7.08466    3.22269  -2.198   0.0279 *
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 825.10  on 627  degrees of freedom
+Residual deviance: 727.65  on 591  degrees of freedom
+AIC: 801.65
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7245  -0.8868  -0.6717   1.1742   2.1080  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   -0.1061     2.2946  -0.046   0.9631  
+season      -106.6803  3781.3390  -0.028   0.9775  
+mnth          -2.1297    10.6018  -0.201   0.8408  
+windspeed     -3.3699     2.2232  -1.516   0.1296  
+temp          -1.4962    15.9893  -0.094   0.9254  
+atemp          8.7404    15.8623   0.551   0.5816  
+hum            3.5181     4.4027   0.799   0.4242  
+season.1     180.2057  7173.1655   0.025   0.9800  
+mnth.1       -11.0326    14.8109  -0.745   0.4563  
+windspeed.1   -1.6081     2.2609  -0.711   0.4769  
+temp.1        29.3182    17.5147   1.674   0.0941 .
+atemp.1      -34.0383    16.1660  -2.106   0.0352 *
+hum.1         -0.6651     4.1756  -0.159   0.8735  
+season.2     -73.4567  6095.5542  -0.012   0.9904  
+mnth.2        11.4424    10.9002   1.050   0.2938  
+windspeed.2    0.1489     2.3649   0.063   0.9498  
+temp.2        -2.9449    16.6453  -0.177   0.8596  
+atemp.2        6.7445    15.4294   0.437   0.6620  
+hum.2         -4.6820     4.1348  -1.132   0.2575  
+season.3      63.6805  2268.8114   0.028   0.9776  
+mnth.3        -2.5535     9.4647  -0.270   0.7873  
+windspeed.3    2.2942     2.5957   0.884   0.3768  
+temp.3        10.0888    13.2823   0.760   0.4475  
+atemp.3      -18.4098    14.2193  -1.295   0.1954  
+hum.3         -3.0085     3.3778  -0.891   0.3731  
+season.4    -136.1929  6504.0976  -0.021   0.9833  
+mnth.4        10.8723    13.0722   0.832   0.4056  
+windspeed.4    0.9710     2.6433   0.367   0.7134  
+temp.4       -20.6112    14.8190  -1.391   0.1643  
+atemp.4       25.8722    14.7046   1.759   0.0785 .
+hum.4         -0.3431     3.2527  -0.105   0.9160  
+season.5      72.5401  6095.5543   0.012   0.9905  
+mnth.5        -7.1388     9.5899  -0.744   0.4566  
+windspeed.5   -1.2895     2.9329  -0.440   0.6602  
+temp.5        -1.7617    13.6924  -0.129   0.8976  
+atemp.5       -2.4485    13.5369  -0.181   0.8565  
+hum.5          5.9226     3.1736   1.866   0.0620 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 807.09  on 627  degrees of freedom
+Residual deviance: 724.10  on 591  degrees of freedom
+AIC: 798.1
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.21315  -0.07835  -0.01737  -0.00170   2.99019  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -40.7779    19.4788  -2.093   0.0363 *
+season        11.1499   115.2010   0.097   0.9229  
+mnth          34.0952    37.7520   0.903   0.3665  
+windspeed     -6.0437     7.7199  -0.783   0.4337  
+temp         106.6558    78.5858   1.357   0.1747  
+atemp       -112.9118    74.8131  -1.509   0.1312  
+hum          -20.7545    16.8614  -1.231   0.2184  
+season.1       3.1182   118.2152   0.026   0.9790  
+mnth.1       -29.0053    58.4563  -0.496   0.6198  
+windspeed.1   24.2938    17.4834   1.390   0.1647  
+temp.1      -282.6764   127.1008  -2.224   0.0261 *
+atemp.1      240.0689   122.2826   1.963   0.0496 *
+hum.1        -26.3918    12.1278  -2.176   0.0295 *
+season.2      -3.7737    27.0643  -0.139   0.8891  
+mnth.2        -9.3335    46.9621  -0.199   0.8425  
+windspeed.2   13.8067    10.1585   1.359   0.1741  
+temp.2       159.9943   101.0785   1.583   0.1135  
+atemp.2      -72.8488    97.0234  -0.751   0.4528  
+hum.2         86.7257    49.7147   1.744   0.0811 .
+season.3     -16.7943   109.9123  -0.153   0.8786  
+mnth.3       -18.1187    36.7205  -0.493   0.6217  
+windspeed.3    7.8434     9.0406   0.868   0.3856  
+temp.3      -144.1250    71.1043  -2.027   0.0427 *
+atemp.3      142.7028    70.7373   2.017   0.0437 *
+hum.3          7.5537    14.0065   0.539   0.5897  
+season.4      -0.3682   112.7425  -0.003   0.9974  
+mnth.4         0.6812    45.7505   0.015   0.9881  
+windspeed.4  -32.5022    23.9545  -1.357   0.1748  
+temp.4       240.3365   102.9282   2.335   0.0195 *
+atemp.4     -182.9032   100.7510  -1.815   0.0695 .
+hum.4         19.2320    11.0438   1.741   0.0816 .
+season.5       7.6884    25.8623   0.297   0.7663  
+mnth.5        25.6144    31.9309   0.802   0.4224  
+windspeed.5  -15.1941    13.1829  -1.153   0.2491  
+temp.5      -148.2725    95.6363  -1.550   0.1211  
+atemp.5       61.3947    97.1337   0.632   0.5273  
+hum.5        -49.9083    32.3486  -1.543   0.1229  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 141.674  on 627  degrees of freedom
+Residual deviance:  74.388  on 591  degrees of freedom
+AIC: 148.39
+
+Number of Fisher Scoring iterations: 10
+
+[1] "----------------------------------------------"
+Linear model with 3 order and past 3 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2097  -1.0734   0.5926   0.9012   1.9462  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)     0.6183     4.5626   0.136   0.8922  
+season         32.3578  6418.2055   0.005   0.9960  
+mnth          -27.3168    21.1931  -1.289   0.1974  
+windspeed       3.9985     5.6022   0.714   0.4754  
+temp           41.3257    29.4719   1.402   0.1609  
+atemp         -45.5077    28.8440  -1.578   0.1146  
+hum            -7.2572    14.1801  -0.512   0.6088  
+season.1      -36.1394 10384.4969  -0.003   0.9972  
+mnth.1         53.7730    28.0478   1.917   0.0552 .
+windspeed.1    -9.2506     5.7416  -1.611   0.1071  
+temp.1        -28.2198    31.0268  -0.910   0.3631  
+atemp.1        46.6956    29.1241   1.603   0.1089  
+hum.1          -9.4258    13.3587  -0.706   0.4804  
+season.2        2.5883  8163.6034   0.000   0.9997  
+mnth.2        -25.8533    19.3916  -1.333   0.1825  
+windspeed.2    -4.9375     6.3325  -0.780   0.4356  
+temp.2         -1.5776    31.1016  -0.051   0.9595  
+atemp.2        -7.2848    28.5095  -0.256   0.7983  
+hum.2          13.8864    11.2370   1.236   0.2165  
+season.3       68.7414 16509.8384   0.004   0.9967  
+mnth.3         87.8777    45.5902   1.928   0.0539 .
+windspeed.3    -3.4910    13.8958  -0.251   0.8016  
+temp.3        -85.4521    59.0615  -1.447   0.1479  
+atemp.3        95.0032    60.3733   1.574   0.1156  
+hum.3          10.9069    23.6175   0.462   0.6442  
+season.4     -271.4272 29992.3720  -0.009   0.9928  
+mnth.4       -135.3184    62.2049  -2.175   0.0296 *
+windspeed.4    27.1407    14.2893   1.899   0.0575 .
+temp.4         29.0643    60.7378   0.479   0.6323  
+atemp.4       -65.3460    60.4004  -1.082   0.2793  
+hum.4          20.4276    22.8623   0.894   0.3716  
+season.5      205.4801 25039.3225   0.008   0.9935  
+mnth.5         49.8880    44.7263   1.115   0.2647  
+windspeed.5    14.0368    17.0675   0.822   0.4108  
+temp.5          0.8963    60.4286   0.015   0.9882  
+atemp.5        11.8964    58.7702   0.202   0.8396  
+hum.5         -24.1577    19.6047  -1.232   0.2179  
+season.6      -69.6353 10325.7911  -0.007   0.9946  
+mnth.6        -56.7766    28.1812  -2.015   0.0439 *
+windspeed.6     0.4232    10.3615   0.041   0.9674  
+temp.6         45.6598    37.0166   1.233   0.2174  
+atemp.6       -50.0232    39.1899  -1.276   0.2018  
+hum.6          -4.6230    12.7993  -0.361   0.7180  
+season.7      275.6649 21043.1915   0.013   0.9895  
+mnth.7         83.5165    38.8015   2.152   0.0314 *
+windspeed.7   -21.0921    10.6560  -1.979   0.0478 *
+temp.7         -9.0206    38.2073  -0.236   0.8134  
+atemp.7        28.4155    39.7473   0.715   0.4747  
+hum.7         -11.6142    12.6385  -0.919   0.3581  
+season.8     -207.9979 18335.5930  -0.011   0.9909  
+mnth.8        -29.7388    28.1323  -1.057   0.2905  
+windspeed.8    -9.9760    13.8370  -0.721   0.4709  
+temp.8          4.9327    36.8042   0.134   0.8934  
+atemp.8        -9.0981    37.3311  -0.244   0.8075  
+hum.8          10.0686    11.0760   0.909   0.3633  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 825.10  on 627  degrees of freedom
+Residual deviance: 711.38  on 573  degrees of freedom
+AIC: 821.38
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8979  -0.8953  -0.6349   1.1079   2.3151  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)    -2.4405     5.1412  -0.475   0.6350  
+season        -33.4435  6412.5614  -0.005   0.9958  
+mnth           24.8948    21.4384   1.161   0.2456  
+windspeed      -2.7260     5.5726  -0.489   0.6247  
+temp          -39.9955    30.2277  -1.323   0.1858  
+atemp          44.9171    29.7435   1.510   0.1310  
+hum             8.4106    16.0710   0.523   0.6007  
+season.1       36.4896 10653.3947   0.003   0.9973  
+mnth.1        -57.2183    28.3602  -2.018   0.0436 *
+windspeed.1     9.3333     5.7738   1.616   0.1060  
+temp.1         38.7432    32.0348   1.209   0.2265  
+atemp.1       -51.8425    29.5475  -1.755   0.0793 .
+hum.1          13.3409    16.5222   0.807   0.4194  
+season.2       -1.2352  8507.2841   0.000   0.9999  
+mnth.2         31.0647    19.5677   1.588   0.1124  
+windspeed.2     3.9830     6.3565   0.627   0.5309  
+temp.2         -8.0466    31.1678  -0.258   0.7963  
+atemp.2        15.9970    28.6231   0.559   0.5762  
+hum.2         -14.4244    11.4375  -1.261   0.2073  
+season.3      -66.8058 16516.2402  -0.004   0.9968  
+mnth.3        -81.4117    45.9881  -1.770   0.0767 .
+windspeed.3    -0.6773    13.8424  -0.049   0.9610  
+temp.3         91.6451    61.8029   1.483   0.1381  
+atemp.3       -99.9756    63.7539  -1.568   0.1168  
+hum.3         -10.6911    26.3129  -0.406   0.6845  
+season.4      270.2557 31090.4308   0.009   0.9931  
+mnth.4        143.2979    63.1743   2.268   0.0233 *
+windspeed.4   -28.0205    14.3822  -1.948   0.0514 .
+temp.4        -44.4264    62.8240  -0.707   0.4795  
+atemp.4        71.5348    61.5902   1.161   0.2455  
+hum.4         -25.8560    27.3713  -0.945   0.3448  
+season.5     -208.3711 26340.6293  -0.008   0.9937  
+mnth.5        -61.9056    45.6305  -1.357   0.1749  
+windspeed.5   -12.2624    17.1076  -0.717   0.4735  
+temp.5          9.7515    60.7066   0.161   0.8724  
+atemp.5       -25.6312    59.3365  -0.432   0.6658  
+hum.5          24.8094    19.7673   1.255   0.2095  
+season.6       68.7451 10333.0023   0.007   0.9947  
+mnth.6         51.5136    28.3336   1.818   0.0690 .
+windspeed.6     3.0020    10.3320   0.291   0.7714  
+temp.6        -49.2326    38.9730  -1.263   0.2065  
+atemp.6        52.0641    41.7056   1.248   0.2119  
+hum.6           3.9284    14.0291   0.280   0.7795  
+season.7     -274.4336 21900.7722  -0.013   0.9900  
+mnth.7        -85.6912    39.1880  -2.187   0.0288 *
+windspeed.7    21.7533    10.7381   2.026   0.0428 *
+temp.7         15.1292    39.3936   0.384   0.7009  
+atemp.7       -31.1131    40.5009  -0.768   0.4424  
+hum.7          14.1505    14.6895   0.963   0.3354  
+season.8      209.0649 19309.9175   0.011   0.9914  
+mnth.8         35.0762    28.4861   1.231   0.2182  
+windspeed.8     9.3252    13.8539   0.673   0.5009  
+temp.8         -7.1659    36.9211  -0.194   0.8461  
+atemp.8        15.8922    37.6296   0.422   0.6728  
+hum.8         -10.9598    11.0701  -0.990   0.3222  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 807.09  on 627  degrees of freedom
+Residual deviance: 708.24  on 573  degrees of freedom
+AIC: 818.24
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-1.264e-03  -2.000e-08  -2.000e-08  -2.000e-08   1.026e-03  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept) -2.602e+04  1.131e+06  -0.023    0.982
+season      -1.477e+04  4.167e+06  -0.004    0.997
+mnth         2.121e+04  2.413e+08   0.000    1.000
+windspeed   -1.647e+04  3.444e+05  -0.048    0.962
+temp         8.292e+04  1.896e+06   0.044    0.965
+atemp       -8.737e+04  1.905e+06  -0.046    0.963
+hum         -6.553e+03  1.910e+05  -0.034    0.973
+season.1     6.546e+03  2.136e+08   0.000    1.000
+mnth.1       1.203e+04  2.413e+08   0.000    1.000
+windspeed.1 -1.224e+04  2.500e+05  -0.049    0.961
+temp.1      -5.183e+04  1.512e+06  -0.034    0.973
+atemp.1      4.680e+04  1.547e+06   0.030    0.976
+hum.1        8.887e+02  2.071e+05   0.004    0.997
+season.2     4.070e+03  2.136e+08   0.000    1.000
+mnth.2      -2.423e+04  7.264e+05  -0.033    0.973
+windspeed.2 -4.863e+03  1.000e+05  -0.049    0.961
+temp.2       5.888e+04  1.184e+06   0.050    0.960
+atemp.2     -6.153e+04  1.074e+06  -0.057    0.954
+hum.2        1.077e+05  4.197e+06   0.026    0.980
+season.3     4.672e+04  1.092e+07   0.004    0.997
+mnth.3      -4.202e+04  5.578e+08   0.000    1.000
+windspeed.3  4.649e+04  9.890e+05   0.047    0.963
+temp.3      -1.815e+05  4.610e+06  -0.039    0.969
+atemp.3      1.965e+05  4.707e+06   0.042    0.967
+hum.3        1.336e+04  4.497e+05   0.030    0.976
+season.4    -2.438e+04  8.543e+08   0.000    1.000
+mnth.4      -1.372e+04  5.578e+08   0.000    1.000
+windspeed.4  5.438e+04  1.127e+06   0.048    0.962
+temp.4       7.252e+04  3.421e+06   0.021    0.983
+atemp.4     -6.946e+04  3.851e+06  -0.018    0.986
+hum.4       -1.517e+04  4.719e+05  -0.032    0.974
+season.5    -6.764e+03  8.542e+08   0.000    1.000
+mnth.5       3.600e+04  1.394e+06   0.026    0.979
+windspeed.5  1.759e+04  3.193e+05   0.055    0.956
+temp.5      -9.287e+04  2.553e+06  -0.036    0.971
+atemp.5      1.154e+05  2.522e+06   0.046    0.964
+hum.5       -1.270e+05  5.080e+06  -0.025    0.980
+season.6    -3.392e+04  6.678e+06  -0.005    0.996
+mnth.6       2.380e+04  3.712e+08   0.000    1.000
+windspeed.6 -3.795e+04  7.933e+05  -0.048    0.962
+temp.6       1.054e+05  2.960e+06   0.036    0.972
+atemp.6     -1.234e+05  3.187e+06  -0.039    0.969
+hum.6       -1.134e+04  3.472e+05  -0.033    0.974
+season.7     2.026e+04  6.407e+08   0.000    1.000
+mnth.7       7.608e+02  3.712e+08   0.000    1.000
+windspeed.7 -6.348e+04  1.310e+06  -0.048    0.961
+temp.7      -3.166e+04  2.077e+06  -0.015    0.988
+atemp.7      4.233e+04  2.641e+06   0.016    0.987
+hum.7        1.507e+04  3.289e+05   0.046    0.963
+season.8     2.502e+03  6.406e+08   0.000    1.000
+mnth.8      -1.199e+04  7.035e+05  -0.017    0.986
+windspeed.8 -1.557e+04  2.844e+05  -0.055    0.956
+temp.8       4.265e+04  1.761e+06   0.024    0.981
+atemp.8     -6.855e+04  1.968e+06  -0.035    0.972
+hum.8        4.890e+04  2.020e+06   0.024    0.981
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1.4167e+02  on 627  degrees of freedom
+Residual deviance: 2.0533e-05  on 573  degrees of freedom
+AIC: 110
+
+Number of Fisher Scoring iterations: 25
+
+[1] "----------------------------------------------"
+Linear model with 1 order and past 4 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.5273  -1.1369   0.6635   0.9059   1.7582  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    0.3554     0.8912   0.399    0.690    
+season         0.1672     1.4294   0.117    0.907    
+mnth          -2.9575     2.9315  -1.009    0.313    
+windspeed      0.3158     0.6820   0.463    0.643    
+temp           2.0579     3.5763   0.575    0.565    
+atemp         -1.4028     3.4896  -0.402    0.688    
+hum           -0.3489     0.7294  -0.478    0.632    
+season.1      46.0165  1633.2388   0.028    0.978    
+mnth.1         4.6295     4.8542   0.954    0.340    
+windspeed.1    1.8616     0.7493   2.485    0.013 *  
+temp.1        -3.9310     4.3219  -0.910    0.363    
+atemp.1        3.3900     3.8613   0.878    0.380    
+hum.1          1.3440     0.8709   1.543    0.123    
+season.2     -47.3637  1633.2388  -0.029    0.977    
+mnth.2         3.0012     5.9720   0.503    0.615    
+windspeed.2   -0.5353     0.7296  -0.734    0.463    
+temp.2        -4.7476     4.7232  -1.005    0.315    
+atemp.2        4.7795     4.3556   1.097    0.273    
+hum.2          1.4188     0.8859   1.602    0.109    
+season.3       1.3337     1.4254   0.936    0.349    
+mnth.3        -4.6439     4.6211  -1.005    0.315    
+windspeed.3    0.6068     0.6651   0.912    0.362    
+temp.3         5.5333     5.2177   1.060    0.289    
+atemp.3       -4.0839     5.1530  -0.793    0.428    
+hum.3         -4.6101     0.8134  -5.668 1.44e-08 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 824.19  on 626  degrees of freedom
+Residual deviance: 743.32  on 602  degrees of freedom
+AIC: 793.32
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5376  -0.8927  -0.6882   1.2194   2.2733  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   -0.1830     0.8974  -0.204   0.8384    
+season        -0.1295     1.4666  -0.088   0.9296    
+mnth           2.7055     2.7118   0.998   0.3184    
+windspeed     -0.2027     0.6876  -0.295   0.7682    
+temp          -2.2244     3.5583  -0.625   0.5319    
+atemp          0.9622     3.4639   0.278   0.7812    
+hum            0.3986     0.7348   0.542   0.5875    
+season.1     -46.4411  1612.2044  -0.029   0.9770    
+mnth.1        -5.6855     5.3538  -1.062   0.2883    
+windspeed.1   -1.9435     0.7610  -2.554   0.0107 *  
+temp.1         6.1755     4.7152   1.310   0.1903    
+atemp.1       -4.5229     4.2898  -1.054   0.2917    
+hum.1         -1.1199     0.8718  -1.285   0.1989    
+season.2      47.8995  1612.2044   0.030   0.9763    
+mnth.2        -1.1109     6.2873  -0.177   0.8598    
+windspeed.2    0.5802     0.7378   0.786   0.4316    
+temp.2         4.3973     4.9091   0.896   0.3704    
+atemp.2       -5.2768     4.5601  -1.157   0.2472    
+hum.2         -1.1281     0.8838  -1.276   0.2018    
+season.3      -1.5142     1.3910  -1.089   0.2764    
+mnth.3         3.8997     4.3628   0.894   0.3714    
+windspeed.3   -0.7090     0.6722  -1.055   0.2916    
+temp.3        -5.6726     5.4792  -1.035   0.3005    
+atemp.3        4.6570     5.4310   0.857   0.3912    
+hum.3          3.6123     0.7993   4.519 6.21e-06 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 802.28  on 626  degrees of freedom
+Residual deviance: 737.38  on 602  degrees of freedom
+AIC: 787.38
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1273  -0.2411  -0.1494  -0.0894   3.1489  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -7.4515     2.8668  -2.599 0.009342 ** 
+season       -0.2357     4.5949  -0.051 0.959082    
+mnth          2.3075     5.7460   0.402 0.687992    
+windspeed    -1.3738     2.0273  -0.678 0.497986    
+temp          3.1029    15.4676   0.201 0.841008    
+atemp         3.0470    15.4905   0.197 0.844062    
+hum           0.5900     2.2020   0.268 0.788739    
+season.1     -0.1576     7.2691  -0.022 0.982704    
+mnth.1        1.9650     7.3288   0.268 0.788608    
+windspeed.1   0.5878     2.2192   0.265 0.791094    
+temp.1      -25.8807    21.3716  -1.211 0.225900    
+atemp.1      16.4494    20.7213   0.794 0.427290    
+hum.1        -2.2122     2.7664  -0.800 0.423913    
+season.2     -1.0860     6.5143  -0.167 0.867592    
+mnth.2       -9.6562    13.5884  -0.711 0.477322    
+windspeed.2  -0.7144     2.1731  -0.329 0.742342    
+temp.2        3.5251    20.0698   0.176 0.860576    
+atemp.2       2.9517    19.6337   0.150 0.880499    
+hum.2        -2.9110     2.7365  -1.064 0.287431    
+season.3      1.5672     3.1687   0.495 0.620898    
+mnth.3        6.7878    12.8908   0.527 0.598498    
+windspeed.3   0.5781     1.8356   0.315 0.752832    
+temp.3       -1.5296    11.0090  -0.139 0.889495    
+atemp.3      -0.8976    10.5322  -0.085 0.932085    
+hum.3         8.7829     2.5140   3.494 0.000477 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 163.30  on 626  degrees of freedom
+Residual deviance: 134.78  on 602  degrees of freedom
+AIC: 184.78
+
+Number of Fisher Scoring iterations: 7
+
+[1] "----------------------------------------------"
+Linear model with 2 order and past 4 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0627  -1.1142   0.6272   0.9040   1.7839  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)    0.4046     2.5829   0.157   0.8755  
+season         3.9814     5.6491   0.705   0.4809  
+mnth          17.2326    10.8757   1.585   0.1131  
+windspeed      2.1151     2.2364   0.946   0.3443  
+temp         -21.2944    13.8342  -1.539   0.1237  
+atemp         19.3823    13.4782   1.438   0.1504  
+hum           -0.8444     4.3119  -0.196   0.8447  
+season.1      44.0607  3941.7629   0.011   0.9911  
+mnth.1       -15.7161    14.5263  -1.082   0.2793  
+windspeed.1    0.5599     2.3282   0.240   0.8099  
+temp.1        12.9703    16.5514   0.784   0.4333  
+atemp.1      -13.1811    15.5293  -0.849   0.3960  
+hum.1         -1.6236     4.1633  -0.390   0.6965  
+season.2     -55.9404  3941.7636  -0.014   0.9887  
+mnth.2         6.2087    14.6026   0.425   0.6707  
+windspeed.2    0.3798     2.3799   0.160   0.8732  
+temp.2       -24.6277    17.0032  -1.448   0.1475  
+atemp.2       24.9271    15.6007   1.598   0.1101  
+hum.2         -0.7002     4.3302  -0.162   0.8715  
+season.3       6.5183     6.0327   1.080   0.2799  
+mnth.3        -7.0127    11.2275  -0.625   0.5322  
+windspeed.3    0.1104     2.4071   0.046   0.9634  
+temp.3        16.7584    16.9665   0.988   0.3233  
+atemp.3      -18.6966    15.9325  -1.173   0.2406  
+hum.3          3.0971     4.2458   0.729   0.4657  
+season.4      -3.6172     5.5289  -0.654   0.5130  
+mnth.4       -20.9681    11.0474  -1.898   0.0577 .
+windspeed.4   -1.1901     2.6229  -0.454   0.6500  
+temp.4        20.9959    12.4083   1.692   0.0906 .
+atemp.4      -19.7235    12.8512  -1.535   0.1248  
+hum.4          0.4003     3.3156   0.121   0.9039  
+season.5       1.6689  3684.4393   0.000   0.9996  
+mnth.5        20.8838    14.0916   1.482   0.1383  
+windspeed.5    1.0570     2.7380   0.386   0.6995  
+temp.5       -17.6933    14.4409  -1.225   0.2205  
+atemp.5       18.8794    14.4927   1.303   0.1927  
+hum.5          2.4678     3.2438   0.761   0.4468  
+season.6       8.6072  3684.4398   0.002   0.9981  
+mnth.6        -2.6096    12.9652  -0.201   0.8405  
+windspeed.6   -0.3614     2.8674  -0.126   0.8997  
+temp.6        17.5246    14.4317   1.214   0.2246  
+atemp.6      -18.4079    14.1317  -1.303   0.1927  
+hum.6          1.8668     3.3989   0.549   0.5828  
+season.7      -5.1076     5.7622  -0.886   0.3754  
+mnth.7         1.9951     9.8926   0.202   0.8402  
+windspeed.7    0.4844     2.9219   0.166   0.8683  
+temp.7       -11.5023    14.2362  -0.808   0.4191  
+atemp.7       15.4199    14.2078   1.085   0.2778  
+hum.7         -5.9485     3.2724  -1.818   0.0691 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 824.19  on 626  degrees of freedom
+Residual deviance: 721.49  on 578  degrees of freedom
+AIC: 819.49
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6646  -0.8896  -0.6443   1.1542   2.1038  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   -0.87947    2.61212  -0.337   0.7364  
+season        -3.92906    5.63029  -0.698   0.4853  
+mnth         -15.53992   10.97198  -1.416   0.1567  
+windspeed     -1.83169    2.23915  -0.818   0.4133  
+temp          23.34542   13.96935   1.671   0.0947 .
+atemp        -22.11034   13.61545  -1.624   0.1044  
+hum           -0.03215    4.23729  -0.008   0.9939  
+season.1     -44.51910 3760.38453  -0.012   0.9906  
+mnth.1        14.13545   14.92008   0.947   0.3434  
+windspeed.1   -0.66908    2.35965  -0.284   0.7768  
+temp.1        -9.27606   17.21760  -0.539   0.5901  
+atemp.1       12.44686   16.20812   0.768   0.4425  
+hum.1          2.20978    4.21118   0.525   0.5998  
+season.2      56.83557 3760.38559   0.015   0.9879  
+mnth.2        -8.55948   14.75527  -0.580   0.5618  
+windspeed.2    0.11533    2.38816   0.048   0.9615  
+temp.2        23.36236   17.12988   1.364   0.1726  
+atemp.2      -23.89641   15.70951  -1.521   0.1282  
+hum.2          1.51622    4.49750   0.337   0.7360  
+season.3      -7.15324    6.23350  -1.148   0.2512  
+mnth.3         8.87758   10.99314   0.808   0.4193  
+windspeed.3   -0.68698    2.38317  -0.288   0.7731  
+temp.3       -22.28205   17.56605  -1.268   0.2046  
+atemp.3       22.24571   16.39685   1.357   0.1749  
+hum.3         -1.96914    4.22233  -0.466   0.6410  
+season.4       3.70705    5.55499   0.667   0.5046  
+mnth.4        18.82015   11.15294   1.687   0.0915 .
+windspeed.4    0.92885    2.63105   0.353   0.7241  
+temp.4       -22.87532   12.54734  -1.823   0.0683 .
+atemp.4       21.88916   12.99567   1.684   0.0921 .
+hum.4          0.31237    3.27079   0.096   0.9239  
+season.5      -1.57113 3487.56969   0.000   0.9996  
+mnth.5       -20.08435   14.18324  -1.416   0.1568  
+windspeed.5   -1.02170    2.78787  -0.366   0.7140  
+temp.5        17.14841   14.58879   1.175   0.2398  
+atemp.5      -20.28736   14.70034  -1.380   0.1676  
+hum.5         -2.77676    3.27953  -0.847   0.3972  
+season.6      -9.11175 3487.57041  -0.003   0.9979  
+mnth.6         7.04585   12.98590   0.543   0.5874  
+windspeed.6   -0.19508    2.87164  -0.068   0.9458  
+temp.6       -17.08423   14.60793  -1.170   0.2422  
+atemp.6       17.26060   14.29081   1.208   0.2271  
+hum.6         -2.26741    3.50990  -0.646   0.5183  
+season.7       5.56243    5.90002   0.943   0.3458  
+mnth.7        -4.93998    9.94215  -0.497   0.6193  
+windspeed.7    0.32618    2.87390   0.113   0.9096  
+temp.7        15.86293   14.32429   1.107   0.2681  
+atemp.7      -17.43333   14.21465  -1.226   0.2200  
+hum.7          4.37610    3.23234   1.354   0.1758  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 802.28  on 626  degrees of freedom
+Residual deviance: 717.95  on 578  degrees of freedom
+AIC: 815.95
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1083  -0.2281  -0.1012  -0.0434   3.5115  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept) -17.0879    12.3077  -1.388    0.165
+season       -2.1580    18.9843  -0.114    0.909
+mnth        -19.2198    70.1563  -0.274    0.784
+windspeed    -2.6449     6.9888  -0.378    0.705
+temp         -7.6905    49.7622  -0.155    0.877
+atemp        14.3024    47.3303   0.302    0.763
+hum           6.7400    17.9338   0.376    0.707
+season.1      6.8462    29.2333   0.234    0.815
+mnth.1       20.2582    75.9819   0.267    0.790
+windspeed.1  -1.1604     7.0319  -0.165    0.869
+temp.1      -10.4476    62.1690  -0.168    0.867
+atemp.1     -17.1671    58.1693  -0.295    0.768
+hum.1        -7.6941    13.3871  -0.575    0.565
+season.2     -4.5206    24.7192  -0.183    0.855
+mnth.2       18.1419    44.4174   0.408    0.683
+windspeed.2  -0.9874     7.4118  -0.133    0.894
+temp.2      -17.8159    58.2637  -0.306    0.760
+atemp.2      18.1691    58.7109   0.309    0.757
+hum.2        -7.5599     8.5070  -0.889    0.374
+season.3      2.5096    11.4101   0.220    0.826
+mnth.3      -11.5617    35.1970  -0.328    0.743
+windspeed.3   6.5376     7.9461   0.823    0.411
+temp.3       47.5626    73.9823   0.643    0.520
+atemp.3     -13.6405    71.2720  -0.191    0.848
+hum.3        27.6637    26.5038   1.044    0.297
+season.4      1.1851    18.0877   0.066    0.948
+mnth.4       27.2150    69.3484   0.392    0.695
+windspeed.4   2.1695     8.1506   0.266    0.790
+temp.4        5.4370    38.6691   0.141    0.888
+atemp.4      -8.5890    39.1425  -0.219    0.826
+hum.4        -4.9884    13.6633  -0.365    0.715
+season.5     -7.1004    27.9298  -0.254    0.799
+mnth.5      -20.3791    74.8430  -0.272    0.785
+windspeed.5   1.2811     8.3476   0.153    0.878
+temp.5      -22.6275    54.2445  -0.417    0.677
+atemp.5      45.1604    55.6948   0.811    0.417
+hum.5         4.3509    10.5497   0.412    0.680
+season.6      3.6251    23.4666   0.154    0.877
+mnth.6      -27.3393    37.1853  -0.735    0.462
+windspeed.6   1.1222     9.9560   0.113    0.910
+temp.6       25.0681    54.2326   0.462    0.644
+atemp.6     -20.3953    57.2733  -0.356    0.722
+hum.6         4.1831     7.1865   0.582    0.561
+season.7     -0.6954    10.9257  -0.064    0.949
+mnth.7       15.7300    26.2404   0.599    0.549
+windspeed.7  -9.3720    10.5460  -0.889    0.374
+temp.7      -44.9599    69.7656  -0.644    0.519
+atemp.7       7.4069    70.8430   0.105    0.917
+hum.7       -13.7147    17.8709  -0.767    0.443
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 163.30  on 626  degrees of freedom
+Residual deviance: 122.76  on 578  degrees of freedom
+AIC: 220.76
+
+Number of Fisher Scoring iterations: 9
+
+[1] "----------------------------------------------"
+Linear model with 3 order and past 4 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.3832  -1.0010   0.5648   0.8855   1.9420  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)      8.6839     6.9732   1.245   0.2130  
+season         148.2918 11436.3197   0.013   0.9897  
+mnth            29.7071    16.5654   1.793   0.0729 .
+windspeed       -6.3945     5.7805  -1.106   0.2686  
+temp           -25.3419    29.7140  -0.853   0.3937  
+atemp           28.5309    28.3154   1.008   0.3136  
+hum            -39.0779    22.4046  -1.744   0.0811 .
+season.1      -105.5876 13016.6968  -0.008   0.9935  
+mnth.1         -59.0756    26.4248  -2.236   0.0254 *
+windspeed.1      0.4029     5.9830   0.067   0.9463  
+temp.1          48.4184    31.9664   1.515   0.1299  
+atemp.1        -58.9916    31.4516  -1.876   0.0607 .
+hum.1            1.0912    11.3872   0.096   0.9237  
+season.2       -49.7102  6216.5210  -0.008   0.9936  
+mnth.2          57.8563    28.1845   2.053   0.0401 *
+windspeed.2     -3.2846     6.4159  -0.512   0.6087  
+temp.2          -3.5673    31.6801  -0.113   0.9103  
+atemp.2         19.4951    28.6422   0.681   0.4961  
+hum.2          -26.5661    21.7703  -1.220   0.2224  
+season.3         2.8910    12.1588   0.238   0.8121  
+mnth.3         -26.9839    20.0577  -1.345   0.1785  
+windspeed.3      1.1290     6.1558   0.183   0.8545  
+temp.3          23.2151    32.1505   0.722   0.4702  
+atemp.3        -26.9731    30.1299  -0.895   0.3707  
+hum.3           21.3999    11.1247   1.924   0.0544 .
+season.4      -376.3183 28590.8124  -0.013   0.9895  
+mnth.4         -54.9234    43.7635  -1.255   0.2095  
+windspeed.4     22.5100    14.4648   1.556   0.1197  
+temp.4          36.8336    56.2863   0.654   0.5129  
+atemp.4        -49.9583    55.2536  -0.904   0.3659  
+hum.4           63.6775    35.6252   1.787   0.0739 .
+season.5       394.0154 32904.1409   0.012   0.9904  
+mnth.5         146.4315    62.9041   2.328   0.0199 *
+windspeed.5      0.4620    14.9879   0.031   0.9754  
+temp.5         -90.7290    63.7830  -1.422   0.1549  
+atemp.5        123.0625    66.2313   1.858   0.0632 .
+hum.5           -4.1933    20.1844  -0.208   0.8354  
+season.6       -14.5143 16286.4644  -0.001   0.9993  
+mnth.6        -147.6298    64.5536  -2.287   0.0222 *
+windspeed.6      9.3853    17.0121   0.552   0.5812  
+temp.6         -18.0948    61.3222  -0.295   0.7679  
+atemp.6        -19.0131    58.6585  -0.324   0.7458  
+hum.6           50.8664    35.1737   1.446   0.1481  
+season.7         6.3475    32.1934   0.197   0.8437  
+mnth.7          53.2724    47.3676   1.125   0.2607  
+windspeed.7     -3.2719    15.4795  -0.211   0.8326  
+temp.7         -23.2274    62.9897  -0.369   0.7123  
+atemp.7         33.0633    62.5844   0.528   0.5973  
+hum.7          -41.9974    19.5307  -2.150   0.0315 *
+season.8       227.6146 17154.4936   0.013   0.9894  
+mnth.8          21.2049    30.0276   0.706   0.4801  
+windspeed.8    -18.5140    10.8893  -1.700   0.0891 .
+temp.8         -12.0689    33.9783  -0.355   0.7224  
+atemp.8         23.5469    34.1758   0.689   0.4908  
+hum.8          -33.2735    18.3806  -1.810   0.0703 .
+season.9      -242.9042 20239.1145  -0.012   0.9904  
+mnth.9         -81.3703    41.0227  -1.984   0.0473 *
+windspeed.9      0.6752    11.3553   0.059   0.9526  
+temp.9          43.8476    39.7235   1.104   0.2697  
+atemp.9        -68.5705    42.6035  -1.610   0.1075  
+hum.9            4.4890    11.4956   0.390   0.6962  
+season.10       17.8108 10739.9038   0.002   0.9987  
+mnth.10         93.3933    40.6406   2.298   0.0216 *
+windspeed.10    -7.6177    13.5401  -0.563   0.5737  
+temp.10         19.0708    38.0621   0.501   0.6163  
+atemp.10         4.6974    38.1260   0.123   0.9019  
+hum.10         -27.9142    18.4169  -1.516   0.1296  
+season.11       -7.8701    21.0581  -0.374   0.7086  
+mnth.11        -32.0048    29.8785  -1.071   0.2841  
+windspeed.11     3.0440    11.8810   0.256   0.7978  
+temp.11          6.8439    38.7570   0.177   0.8598  
+atemp.11       -11.3178    40.1458  -0.282   0.7780  
+hum.11          20.9646    11.0505   1.897   0.0578 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 824.19  on 626  degrees of freedom
+Residual deviance: 694.21  on 554  degrees of freedom
+AIC: 840.21
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8407  -0.8746  -0.5887   1.0645   2.4092  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -9.847e+00  7.658e+00  -1.286   0.1985  
+season       -1.499e+02  1.132e+04  -0.013   0.9894  
+mnth         -2.739e+01  1.662e+01  -1.648   0.0994 .
+windspeed     5.298e+00  5.800e+00   0.913   0.3610  
+temp          1.771e+01  2.982e+01   0.594   0.5525  
+atemp        -2.218e+01  2.834e+01  -0.782   0.4340  
+hum           2.969e+01  2.227e+01   1.334   0.1823  
+season.1      1.060e+02  1.290e+04   0.008   0.9934  
+mnth.1        5.384e+01  2.667e+01   2.019   0.0435 *
+windspeed.1   1.290e+00  6.002e+00   0.215   0.8298  
+temp.1       -4.727e+01  3.206e+01  -1.474   0.1404  
+atemp.1       5.769e+01  3.163e+01   1.824   0.0682 .
+hum.1         2.631e+00  1.300e+01   0.202   0.8396  
+season.2      5.014e+01  6.187e+03   0.008   0.9935  
+mnth.2       -6.034e+01  2.866e+01  -2.106   0.0352 *
+windspeed.2   4.482e+00  6.477e+00   0.692   0.4890  
+temp.2        6.627e-01  3.176e+01   0.021   0.9834  
+atemp.2      -1.706e+01  2.867e+01  -0.595   0.5518  
+hum.2         3.951e+01  2.653e+01   1.489   0.1364  
+season.3     -1.605e+00  1.287e+01  -0.125   0.9007  
+mnth.3        3.199e+01  2.035e+01   1.572   0.1160  
+windspeed.3  -1.907e+00  6.092e+00  -0.313   0.7542  
+temp.3       -2.521e+01  3.182e+01  -0.792   0.4283  
+atemp.3       2.924e+01  2.975e+01   0.983   0.3258  
+hum.3        -2.246e+01  1.185e+01  -1.895   0.0581 .
+season.4      3.816e+02  2.831e+04   0.013   0.9892  
+mnth.4        5.011e+01  4.477e+01   1.119   0.2631  
+windspeed.4  -1.888e+01  1.450e+01  -1.302   0.1930  
+temp.4       -2.084e+01  5.674e+01  -0.367   0.7134  
+atemp.4       3.444e+01  5.556e+01   0.620   0.5354  
+hum.4        -4.938e+01  3.544e+01  -1.393   0.1635  
+season.5     -3.976e+02  3.263e+04  -0.012   0.9903  
+mnth.5       -1.347e+02  6.341e+01  -2.125   0.0336 *
+windspeed.5  -5.558e+00  1.495e+01  -0.372   0.7100  
+temp.5        9.574e+01  6.504e+01   1.472   0.1410  
+atemp.5      -1.226e+02  6.775e+01  -1.809   0.0704 .
+hum.5        -1.821e+00  2.241e+01  -0.081   0.9352  
+season.6      1.588e+01  1.622e+04   0.001   0.9992  
+mnth.6        1.533e+02  6.505e+01   2.357   0.0184 *
+windspeed.6  -1.214e+01  1.711e+01  -0.710   0.4778  
+temp.6        2.356e+01  6.170e+01   0.382   0.7026  
+atemp.6       1.219e+01  5.892e+01   0.207   0.8361  
+hum.6        -6.945e+01  4.215e+01  -1.648   0.0994 .
+season.7     -1.127e+01  3.370e+01  -0.334   0.7381  
+mnth.7       -6.557e+01  4.823e+01  -1.359   0.1740  
+windspeed.7   4.841e+00  1.516e+01   0.319   0.7495  
+temp.7        2.161e+01  6.298e+01   0.343   0.7315  
+atemp.7      -3.380e+01  6.281e+01  -0.538   0.5904  
+hum.7         4.345e+01  2.045e+01   2.125   0.0336 *
+season.8     -2.310e+02  1.699e+04  -0.014   0.9891  
+mnth.8       -1.903e+01  3.110e+01  -0.612   0.5405  
+windspeed.8   1.546e+01  1.091e+01   1.418   0.1562  
+temp.8        2.241e+00  3.441e+01   0.065   0.9481  
+atemp.8      -1.327e+01  3.458e+01  -0.384   0.7011  
+hum.8         2.633e+01  1.830e+01   1.439   0.1503  
+season.9      2.457e+02  2.007e+04   0.012   0.9902  
+mnth.9        7.368e+01  4.168e+01   1.768   0.0771 .
+windspeed.9   3.400e+00  1.126e+01   0.302   0.7628  
+temp.9       -4.692e+01  4.077e+01  -1.151   0.2498  
+atemp.9       6.664e+01  4.379e+01   1.522   0.1281  
+hum.9        -1.318e+00  1.248e+01  -0.106   0.9159  
+season.10    -1.931e+01  1.070e+04  -0.002   0.9986  
+mnth.10      -9.372e+01  4.069e+01  -2.303   0.0213 *
+windspeed.10  9.516e+00  1.356e+01   0.702   0.4829  
+temp.10      -2.297e+01  3.842e+01  -0.598   0.5499  
+atemp.10      3.654e-02  3.835e+01   0.001   0.9992  
+hum.10        3.671e+01  2.169e+01   1.693   0.0905 .
+season.11     1.136e+01  2.181e+01   0.521   0.6024  
+mnth.11       3.777e+01  3.013e+01   1.254   0.2100  
+windspeed.11 -3.759e+00  1.152e+01  -0.326   0.7442  
+temp.11      -3.341e+00  3.895e+01  -0.086   0.9316  
+atemp.11      1.085e+01  4.050e+01   0.268   0.7888  
+hum.11       -2.237e+01  1.142e+01  -1.960   0.0501 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 802.28  on 626  degrees of freedom
+Residual deviance: 690.49  on 554  degrees of freedom
+AIC: 836.49
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.2279  -0.2001  -0.0633  -0.0104   3.2654  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)
+(Intercept)   -98.337     76.576  -1.284    0.199
+season         24.388    100.757   0.242    0.809
+mnth          -31.046    260.566  -0.119    0.905
+windspeed       5.896     19.778   0.298    0.766
+temp           77.499    122.130   0.635    0.526
+atemp         -84.195    103.760  -0.811    0.417
+hum           108.172    121.214   0.892    0.372
+season.1       12.795    143.693   0.089    0.929
+mnth.1         61.188    294.912   0.207    0.836
+windspeed.1   -23.584     18.919  -1.247    0.213
+temp.1        -44.245    131.387  -0.337    0.736
+atemp.1        65.250    131.148   0.498    0.619
+hum.1         -26.903     23.870  -1.127    0.260
+season.2      -16.835    108.711  -0.155    0.877
+mnth.2        103.529    161.622   0.641    0.522
+windspeed.2    -5.268     21.261  -0.248    0.804
+temp.2        -21.332    141.351  -0.151    0.880
+atemp.2         9.203    138.370   0.067    0.947
+hum.2           8.298     21.203   0.391    0.696
+season.3      -21.826     35.746  -0.611    0.541
+mnth.3       -130.818     84.227  -1.553    0.120
+windspeed.3    -7.292     25.771  -0.283    0.777
+temp.3       -134.792    224.549  -0.600    0.548
+atemp.3       101.542    215.226   0.472    0.637
+hum.3         320.983    284.943   1.126    0.260
+season.4      -74.136    265.370  -0.279    0.780
+mnth.4         48.859    595.165   0.082    0.935
+windspeed.4   -26.322     50.515  -0.521    0.602
+temp.4       -143.778    247.835  -0.580    0.562
+atemp.4       195.478    221.709   0.882    0.378
+hum.4        -170.800    182.138  -0.938    0.348
+season.5      -30.160    377.011  -0.080    0.936
+mnth.5       -112.245    680.051  -0.165    0.869
+windspeed.5    72.666     56.250   1.292    0.196
+temp.5         43.339    300.400   0.144    0.885
+atemp.5      -161.068    315.756  -0.510    0.610
+hum.5          44.243     50.388   0.878    0.380
+season.6       29.072    284.392   0.102    0.919
+mnth.6       -236.344    384.109  -0.615    0.538
+windspeed.6    16.287     63.873   0.255    0.799
+temp.6        -28.858    289.284  -0.100    0.921
+atemp.6        70.040    299.274   0.234    0.815
+hum.6         -27.676     44.104  -0.628    0.530
+season.7       87.502     96.083   0.911    0.362
+mnth.7        304.460    197.754   1.540    0.124
+windspeed.7    28.399     76.627   0.371    0.711
+temp.7        347.655    519.942   0.669    0.504
+atemp.7      -243.481    533.755  -0.456    0.648
+hum.7        -403.595    383.477  -1.052    0.293
+season.8       47.350    173.822   0.272    0.785
+mnth.8         -8.074    345.653  -0.023    0.981
+windspeed.8    23.266     38.838   0.599    0.549
+temp.8         69.053    161.385   0.428    0.669
+atemp.8      -117.527    152.563  -0.770    0.441
+hum.8          86.474     88.994   0.972    0.331
+season.9       16.879    247.017   0.068    0.946
+mnth.9         55.215    400.262   0.138    0.890
+windspeed.9   -61.542     49.961  -1.232    0.218
+temp.9        -53.787    201.226  -0.267    0.789
+atemp.9       164.995    224.311   0.736    0.462
+hum.9         -24.173     32.356  -0.747    0.455
+season.10     -11.854    185.977  -0.064    0.949
+mnth.10       118.753    234.764   0.506    0.613
+windspeed.10  -11.928     56.545  -0.211    0.833
+temp.10        67.324    185.419   0.363    0.717
+atemp.10      -98.848    199.663  -0.495    0.621
+hum.10         18.599     27.779   0.670    0.503
+season.11     -63.652     63.614  -1.001    0.317
+mnth.11      -171.631    119.390  -1.438    0.151
+windspeed.11  -31.448     68.343  -0.460    0.645
+temp.11      -251.704    366.061  -0.688    0.492
+atemp.11      157.840    399.547   0.395    0.693
+hum.11        170.076    169.835   1.001    0.317
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 163.3  on 626  degrees of freedom
+Residual deviance: 108.6  on 554  degrees of freedom
+AIC: 254.6
+
+Number of Fisher Scoring iterations: 10
+
+[1] "----------------------------------------------"
+Linear model with 1 order and past 5 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6103  -0.9321  -0.7185   1.2255   2.0244  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -0.34009    0.97176  -0.350 0.726360    
+season       -0.42292    1.44371  -0.293 0.769567    
+mnth         -4.62597    4.58792  -1.008 0.313313    
+windspeed    -0.11363    0.67538  -0.168 0.866392    
+temp         -2.02823    3.73946  -0.542 0.587552    
+atemp         1.69812    3.66251   0.464 0.642899    
+hum           0.07551    0.72406   0.104 0.916941    
+season.1      0.02687    1.97605   0.014 0.989150    
+mnth.1        7.06123    5.14179   1.373 0.169658    
+windspeed.1  -0.16929    0.73867  -0.229 0.818722    
+temp.1       -2.27250    4.47150  -0.508 0.611300    
+atemp.1       2.39529    4.05659   0.590 0.554875    
+hum.1         0.39307    0.85773   0.458 0.646761    
+season.2     -3.41206    2.86193  -1.192 0.233174    
+mnth.2       -6.29655    5.58921  -1.127 0.259931    
+windspeed.2  -1.22509    0.73512  -1.667 0.095612 .  
+temp.2        3.56912    4.27788   0.834 0.404100    
+atemp.2      -3.29263    3.85262  -0.855 0.392746    
+hum.2        -1.22301    0.88074  -1.389 0.164952    
+season.3      4.95460    2.81390   1.761 0.078279 .  
+mnth.3        1.81394    5.79278   0.313 0.754176    
+windspeed.3  -0.03731    0.74782  -0.050 0.960206    
+temp.3       10.09270    6.66322   1.515 0.129852    
+atemp.3     -10.87479    6.47470  -1.680 0.093038 .  
+hum.3         0.11695    0.88505   0.132 0.894874    
+season.4     -1.38859    1.37033  -1.013 0.310906    
+mnth.4        1.77223    2.87238   0.617 0.537242    
+windspeed.4  -0.97710    0.67861  -1.440 0.149912    
+temp.4       -6.99884    6.40756  -1.092 0.274711    
+atemp.4       6.40086    6.41589   0.998 0.318446    
+hum.4         2.82203    0.77802   3.627 0.000286 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 811.71  on 625  degrees of freedom
+Residual deviance: 757.80  on 595  degrees of freedom
+AIC: 819.8
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2388  -1.1819   0.6973   0.9604   1.7904  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.71999    0.96374   0.747   0.4550    
+season       0.46550    1.43371   0.325   0.7454    
+mnth         3.65535    4.01741   0.910   0.3629    
+windspeed   -0.09982    0.66838  -0.149   0.8813    
+temp         1.10526    3.49394   0.316   0.7517    
+atemp       -1.20466    3.39860  -0.354   0.7230    
+hum         -0.05508    0.71999  -0.076   0.9390    
+season.1    -0.07981    1.94803  -0.041   0.9673    
+mnth.1      -6.31385    4.68833  -1.347   0.1781    
+windspeed.1  0.28966    0.73051   0.397   0.6917    
+temp.1       2.35195    4.29258   0.548   0.5838    
+atemp.1     -2.25994    3.86022  -0.585   0.5582    
+hum.1       -0.48503    0.85113  -0.570   0.5688    
+season.2     3.46744    2.81646   1.231   0.2183    
+mnth.2       4.91997    4.97348   0.989   0.3225    
+windspeed.2  1.05404    0.72502   1.454   0.1460    
+temp.2      -2.54790    4.22073  -0.604   0.5461    
+atemp.2      3.09448    3.79393   0.816   0.4147    
+hum.2        1.56107    0.87842   1.777   0.0755 .  
+season.3    -4.79624    2.79995  -1.713   0.0867 .  
+mnth.3       0.20020    5.22695   0.038   0.9694    
+windspeed.3 -0.16153    0.73241  -0.221   0.8254    
+temp.3      -7.73991    6.05164  -1.279   0.2009    
+atemp.3      7.85251    5.82262   1.349   0.1775    
+hum.3        0.15595    0.87848   0.178   0.8591    
+season.4     1.13365    1.40336   0.808   0.4192    
+mnth.4      -2.36650    2.99107  -0.791   0.4288    
+windspeed.4  0.86750    0.67118   1.293   0.1962    
+temp.4       4.50188    6.29377   0.715   0.4744    
+atemp.4     -3.64096    6.29974  -0.578   0.5633    
+hum.4       -3.81382    0.78545  -4.856  1.2e-06 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 830.54  on 625  degrees of freedom
+Residual deviance: 765.37  on 595  degrees of freedom
+AIC: 827.37
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9592  -0.2119  -0.1228  -0.0674   3.3944  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -9.1051     3.2359  -2.814  0.00490 ** 
+season       -0.1869     3.6177  -0.052  0.95879    
+mnth          2.8354     6.3578   0.446  0.65561    
+windspeed     1.8216     2.0014   0.910  0.36273    
+temp          7.8657     8.1946   0.960  0.33712    
+atemp        -2.9798     7.3496  -0.405  0.68516    
+hum          -0.3075     2.4254  -0.127  0.89913    
+season.1      1.2799     5.6544   0.226  0.82092    
+mnth.1        1.2275     9.5742   0.128  0.89798    
+windspeed.1  -2.7568     2.4162  -1.141  0.25387    
+temp.1        0.2404    10.6347   0.023  0.98197    
+atemp.1      -1.6483     8.8462  -0.186  0.85219    
+hum.1         1.9989     2.5058   0.798  0.42503    
+season.2     -1.9183     9.3875  -0.204  0.83808    
+mnth.2        0.7258     8.6298   0.084  0.93297    
+windspeed.2   1.3465     2.1851   0.616  0.53775    
+temp.2       -7.3508    15.0551  -0.488  0.62537    
+atemp.2      -0.3101    14.2471  -0.022  0.98263    
+hum.2        -4.3213     2.8782  -1.501  0.13325    
+season.3     -1.3966     9.1135  -0.153  0.87820    
+mnth.3      -13.0599    13.8681  -0.942  0.34633    
+windspeed.3   1.3039     2.1901   0.595  0.55159    
+temp.3      -31.3302    24.0359  -1.303  0.19241    
+atemp.3      35.3997    23.7874   1.488  0.13671    
+hum.3        -2.4715     2.7158  -0.910  0.36280    
+season.4      2.3774     3.9324   0.605  0.54547    
+mnth.4        9.7862    13.2818   0.737  0.46124    
+windspeed.4   0.5547     2.1341   0.260  0.79494    
+temp.4       20.0299    19.9606   1.003  0.31563    
+atemp.4     -19.8429    19.7006  -1.007  0.31383    
+hum.4         9.6287     2.6986   3.568  0.00036 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 156.14  on 625  degrees of freedom
+Residual deviance: 121.39  on 595  degrees of freedom
+AIC: 183.39
+
+Number of Fisher Scoring iterations: 8
+
+[1] "----------------------------------------------"
+Linear model with 2 order and past 5 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6014  -0.8995  -0.6525   1.1551   2.0179  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   0.29110    2.87643   0.101   0.9194  
+season        8.37624    5.90592   1.418   0.1561  
+mnth        -25.57935   11.55477  -2.214   0.0268 *
+windspeed    -0.47124    2.23714  -0.211   0.8332  
+temp          5.20381   14.11082   0.369   0.7123  
+atemp        -6.94714   13.65396  -0.509   0.6109  
+hum          -2.01458    4.03049  -0.500   0.6172  
+season.1    -12.68675    8.20433  -1.546   0.1220  
+mnth.1       10.20949   15.29721   0.667   0.5045  
+windspeed.1  -1.35065    2.26007  -0.598   0.5501  
+temp.1       11.03540   15.53860   0.710   0.4776  
+atemp.1     -10.04292   14.70272  -0.683   0.4946  
+hum.1         0.60236    4.40326   0.137   0.8912  
+season.2     -6.29480   10.99525  -0.573   0.5670  
+mnth.2        8.64924   15.09543   0.573   0.5667  
+windspeed.2  -1.66606    2.35439  -0.708   0.4792  
+temp.2       -5.77145   16.62134  -0.347   0.7284  
+atemp.2      10.70087   15.60166   0.686   0.4928  
+hum.2         1.67274    4.28737   0.390   0.6964  
+season.3     16.34630   11.57279   1.412   0.1578  
+mnth.3       -4.13661   15.20663  -0.272   0.7856  
+windspeed.3  -4.20618    2.38490  -1.764   0.0778 .
+temp.3       35.12425   18.87383   1.861   0.0627 .
+atemp.3     -38.22696   17.35102  -2.203   0.0276 *
+hum.3         2.54679    4.95799   0.514   0.6075  
+season.4     -4.30377    6.92085  -0.622   0.5340  
+mnth.4        6.65394   10.70840   0.621   0.5344  
+windspeed.4  -0.30099    2.39386  -0.126   0.8999  
+temp.4       -2.64785   18.32393  -0.145   0.8851  
+atemp.4       6.26712   17.12353   0.366   0.7144  
+hum.4        -2.92161    4.22335  -0.692   0.4891  
+season.5     -8.49033    5.72604  -1.483   0.1381  
+mnth.5       20.97782   10.84706   1.934   0.0531 .
+windspeed.5  -0.02859    2.60581  -0.011   0.9912  
+temp.5       -4.96663   12.52983  -0.396   0.6918  
+atemp.5       7.32400   12.88717   0.568   0.5698  
+hum.5         1.42765    3.11754   0.458   0.6470  
+season.6     12.12807    8.06315   1.504   0.1325  
+mnth.6       -3.27082   14.69174  -0.223   0.8238  
+windspeed.6   1.15662    2.60326   0.444   0.6568  
+temp.6      -12.02305   14.03087  -0.857   0.3915  
+atemp.6      11.69326   14.22399   0.822   0.4110  
+hum.6        -0.22674    3.41286  -0.066   0.9470  
+season.7      2.80819    9.63812   0.291   0.7708  
+mnth.7      -14.15486   13.96211  -1.014   0.3107  
+windspeed.7   1.12283    2.81728   0.399   0.6902  
+temp.7       11.26539   14.10233   0.799   0.4244  
+atemp.7     -17.48447   14.25874  -1.226   0.2201  
+hum.7        -2.46994    3.34820  -0.738   0.4607  
+season.8    -11.01190   10.06313  -1.094   0.2738  
+mnth.8        4.78165   13.78275   0.347   0.7286  
+windspeed.8   4.25425    2.80151   1.519   0.1289  
+temp.8      -18.88052   14.84412  -1.272   0.2034  
+atemp.8      22.69125   14.62363   1.552   0.1207  
+hum.8        -1.90917    3.80171  -0.502   0.6155  
+season.9      3.10441    6.50083   0.478   0.6330  
+mnth.9       -4.66779   10.26460  -0.455   0.6493  
+windspeed.9  -1.09259    2.88516  -0.379   0.7049  
+temp.9       -3.25144   14.46686  -0.225   0.8222  
+atemp.9      -0.65295   14.47944  -0.045   0.9640  
+hum.9         4.30827    3.22089   1.338   0.1810  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 811.71  on 625  degrees of freedom
+Residual deviance: 730.61  on 565  degrees of freedom
+AIC: 852.61
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.9279  -1.1147   0.6415   0.9295   1.9098  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -0.74657    2.84485  -0.262   0.7930  
+season       -8.80523    5.90162  -1.492   0.1357  
+mnth         26.74760   11.55058   2.316   0.0206 *
+windspeed     0.47925    2.23277   0.215   0.8300  
+temp        -14.08413   13.98142  -1.007   0.3138  
+atemp        14.96994   13.52056   1.107   0.2682  
+hum           2.91304    4.01782   0.725   0.4684  
+season.1     12.63022    8.22375   1.536   0.1246  
+mnth.1       -8.08518   15.25929  -0.530   0.5962  
+windspeed.1   1.22467    2.25675   0.543   0.5874  
+temp.1       -0.88112   15.43215  -0.057   0.9545  
+atemp.1       0.98821   14.53717   0.068   0.9458  
+hum.1        -2.10002    4.58712  -0.458   0.6471  
+season.2      6.56367   11.13261   0.590   0.5555  
+mnth.2      -10.85381   14.85064  -0.731   0.4649  
+windspeed.2   1.14170    2.35257   0.485   0.6275  
+temp.2        4.94703   16.18117   0.306   0.7598  
+atemp.2      -7.50007   15.11804  -0.496   0.6198  
+hum.2        -0.66225    4.24120  -0.156   0.8759  
+season.3    -15.04413   11.63166  -1.293   0.1959  
+mnth.3        0.61458   14.87913   0.041   0.9671  
+windspeed.3   4.41415    2.36802   1.864   0.0623 .
+temp.3      -25.97820   18.50112  -1.404   0.1603  
+atemp.3      30.64961   17.02024   1.801   0.0717 .
+hum.3        -1.36652    4.62028  -0.296   0.7674  
+season.4      2.64488    6.80657   0.389   0.6976  
+mnth.4       -3.92356   10.54822  -0.372   0.7099  
+windspeed.4  -0.66306    2.42754  -0.273   0.7847  
+temp.4       -8.49618   18.18680  -0.467   0.6404  
+atemp.4       1.74631   16.98538   0.103   0.9181  
+hum.4         3.59072    4.27124   0.841   0.4005  
+season.5      8.89134    5.75582   1.545   0.1224  
+mnth.5      -22.76519   10.82688  -2.103   0.0355 *
+windspeed.5  -0.03226    2.60027  -0.012   0.9901  
+temp.5       12.70947   12.44713   1.021   0.3072  
+atemp.5     -15.00815   12.79036  -1.173   0.2406  
+hum.5        -2.15931    3.10581  -0.695   0.4869  
+season.6    -12.08134    8.10089  -1.491   0.1359  
+mnth.6        1.30530   14.64055   0.089   0.9290  
+windspeed.6  -1.14654    2.60267  -0.441   0.6596  
+temp.6        2.94341   13.90417   0.212   0.8323  
+atemp.6      -2.95793   14.03357  -0.211   0.8331  
+hum.6         1.34210    3.52315   0.381   0.7032  
+season.7     -2.96860    9.72489  -0.305   0.7602  
+mnth.7       15.34968   14.06075   1.092   0.2750  
+windspeed.7  -0.54407    2.81086  -0.194   0.8465  
+temp.7       -8.64452   13.89238  -0.622   0.5338  
+atemp.7      13.15183   13.96286   0.942   0.3462  
+hum.7         1.84669    3.31641   0.557   0.5776  
+season.8      9.93653   10.08874   0.985   0.3247  
+mnth.8        0.92719   13.69081   0.068   0.9460  
+windspeed.8  -4.93296    2.77787  -1.776   0.0758 .
+temp.8       13.00660   14.55676   0.894   0.3716  
+atemp.8     -19.06719   14.36435  -1.327   0.1844  
+hum.8         1.21889    3.57977   0.340   0.7335  
+season.9     -1.84179    6.41387  -0.287   0.7740  
+mnth.9        0.98258    9.93651   0.099   0.9212  
+windspeed.9   2.45563    2.93680   0.836   0.4031  
+temp.9       10.22539   14.34897   0.713   0.4761  
+atemp.9      -3.05368   14.35204  -0.213   0.8315  
+hum.9        -5.56783    3.27342  -1.701   0.0890 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 830.54  on 625  degrees of freedom
+Residual deviance: 735.09  on 565  degrees of freedom
+AIC: 857.09
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0532  -0.1244  -0.0227  -0.0033   3.4226  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -45.73351   20.16056  -2.268   0.0233 *
+season        11.93290   30.64558   0.389   0.6970  
+mnth          -4.76263   92.99506  -0.051   0.9592  
+windspeed      2.67012   10.22048   0.261   0.7939  
+temp         156.30097   72.47870   2.157   0.0310 *
+atemp       -147.44463   72.02991  -2.047   0.0407 *
+hum           -0.07133   22.44031  -0.003   0.9975  
+season.1       5.90150   62.47281   0.094   0.9247  
+mnth.1       -22.14367  230.78674  -0.096   0.9236  
+windspeed.1   -4.54853   11.02465  -0.413   0.6799  
+temp.1      -124.84996   81.03174  -1.541   0.1234  
+atemp.1      125.74305   75.84427   1.658   0.0973 .
+hum.1         19.16627   24.50807   0.782   0.4342  
+season.2      -7.81638   81.28466  -0.096   0.9234  
+mnth.2        13.86428  218.98509   0.063   0.9495  
+windspeed.2    3.46617    9.67862   0.358   0.7202  
+temp.2       121.52074   95.54758   1.272   0.2034  
+atemp.2     -156.07403   93.93663  -1.661   0.0966 .
+hum.2        -30.75018   16.11338  -1.908   0.0563 .
+season.3      -8.00706   62.01835  -0.129   0.8973  
+mnth.3        25.71220   75.69988   0.340   0.7341  
+windspeed.3    5.19038   10.98003   0.473   0.6364  
+temp.3      -250.02544  112.99697  -2.213   0.0269 *
+atemp.3      237.15476  111.22922   2.132   0.0330 *
+hum.3         -4.46731   10.30471  -0.434   0.6646  
+season.4      10.21393   14.13385   0.723   0.4699  
+mnth.4       -20.51272   50.66984  -0.405   0.6856  
+windspeed.4   15.19174   12.56897   1.209   0.2268  
+temp.4       258.43278  112.90153   2.289   0.0221 *
+atemp.4     -162.26359   97.70466  -1.661   0.0968 .
+hum.4         63.53960   41.67829   1.525   0.1274  
+season.5      -9.32031   28.99518  -0.321   0.7479  
+mnth.5        29.75027   92.54843   0.321   0.7479  
+windspeed.5   -4.10726   11.42985  -0.359   0.7193  
+temp.5      -136.11162   65.85201  -2.067   0.0387 *
+atemp.5      142.89157   70.73936   2.020   0.0434 *
+hum.5          1.47197   16.41763   0.090   0.9286  
+season.6     -10.12312   59.61487  -0.170   0.8652  
+mnth.6        14.70343  226.63746   0.065   0.9483  
+windspeed.6    4.28759   11.59362   0.370   0.7115  
+temp.6       106.79326   65.44082   1.632   0.1027  
+atemp.6     -121.02394   68.02206  -1.779   0.0752 .
+hum.6        -15.44729   18.44739  -0.837   0.4024  
+season.7       8.74010   77.38446   0.113   0.9101  
+mnth.7       -20.94186  214.78431  -0.098   0.9223  
+windspeed.7   -3.64904   12.25002  -0.298   0.7658  
+temp.7      -133.92347   91.69329  -1.461   0.1441  
+atemp.7      172.97821  100.07716   1.728   0.0839 .
+hum.7         20.81289   12.81925   1.624   0.1045  
+season.8       4.71498   58.93438   0.080   0.9362  
+mnth.8       -51.86048   65.23113  -0.795   0.4266  
+windspeed.8   -3.05373   13.74906  -0.222   0.8242  
+temp.8       169.91525   84.83211   2.003   0.0452 *
+atemp.8     -154.82358   88.90767  -1.741   0.0816 .
+hum.8          2.63189    9.08869   0.290   0.7721  
+season.9      -5.90852   13.68400  -0.432   0.6659  
+mnth.9        39.43137   34.83181   1.132   0.2576  
+windspeed.9  -19.31104   15.62639  -1.236   0.2165  
+temp.9      -162.94441   88.93745  -1.832   0.0669 .
+atemp.9       64.90982   84.56240   0.768   0.4427  
+hum.9        -36.56709   28.03808  -1.304   0.1922  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 156.143  on 625  degrees of freedom
+Residual deviance:  85.769  on 565  degrees of freedom
+AIC: 207.77
+
+Number of Fisher Scoring iterations: 10
+
+[1] "----------------------------------------------"
+Linear model with 3 order and past 5 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7884  -0.9038  -0.5939   1.0543   2.1863  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  -2.924e+00  8.023e+00  -0.364   0.7156  
+season       -7.572e+01  5.405e+03  -0.014   0.9888  
+mnth         -4.306e+01  2.248e+01  -1.916   0.0554 .
+windspeed     5.395e+00  5.870e+00   0.919   0.3580  
+temp          1.246e+01  3.060e+01   0.407   0.6838  
+atemp        -1.047e+01  2.847e+01  -0.368   0.7131  
+hum          -2.507e+01  1.362e+01  -1.841   0.0657 .
+season.1     -1.377e+02  1.359e+04  -0.010   0.9919  
+mnth.1        1.719e+01  2.721e+01   0.632   0.5275  
+windspeed.1   1.068e-01  5.951e+00   0.018   0.9857  
+temp.1        2.443e+01  3.142e+01   0.778   0.4368  
+atemp.1      -2.737e+01  2.946e+01  -0.929   0.3528  
+hum.1         1.978e+01  2.316e+01   0.854   0.3931  
+season.2      1.302e+02  1.380e+04   0.009   0.9925  
+mnth.2        3.915e+01  2.717e+01   1.441   0.1496  
+windspeed.2   3.226e+00  6.500e+00   0.496   0.6197  
+temp.2       -6.329e+01  3.319e+01  -1.907   0.0565 .
+atemp.2       6.924e+01  3.278e+01   2.113   0.0346 *
+hum.2         4.192e+00  1.330e+01   0.315   0.7526  
+season.3      8.642e+01  5.917e+03   0.015   0.9883  
+mnth.3       -5.068e+01  3.037e+01  -1.668   0.0952 .
+windspeed.3   8.827e+00  6.305e+00   1.400   0.1615  
+temp.3        4.591e+01  3.398e+01   1.351   0.1767  
+atemp.3      -5.506e+01  3.174e+01  -1.735   0.0828 .
+hum.3         2.724e+01  2.451e+01   1.112   0.2663  
+season.4      2.963e+00  1.485e+01   0.199   0.8419  
+mnth.4        3.081e+01  2.166e+01   1.422   0.1550  
+windspeed.4  -9.271e-02  5.949e+00  -0.016   0.9876  
+temp.4       -1.889e+01  3.392e+01  -0.557   0.5776  
+atemp.4       1.894e+01  3.209e+01   0.590   0.5550  
+hum.4        -2.032e+01  1.108e+01  -1.834   0.0666 .
+season.5      3.060e+02  2.162e+04   0.014   0.9887  
+mnth.5        6.025e+01  4.955e+01   1.216   0.2240  
+windspeed.5  -1.516e+01  1.452e+01  -1.044   0.2963  
+temp.5       -2.685e+01  5.799e+01  -0.463   0.6434  
+atemp.5       1.909e+01  5.595e+01   0.341   0.7329  
+hum.5         4.512e+01  2.306e+01   1.957   0.0504 .
+season.6      3.293e+02  4.278e+04   0.008   0.9939  
+mnth.6       -1.431e+01  6.376e+01  -0.224   0.8224  
+windspeed.6  -4.859e+00  1.494e+01  -0.325   0.7450  
+temp.6       -5.205e+01  6.117e+01  -0.851   0.3948  
+atemp.6       6.532e+01  6.096e+01   1.072   0.2839  
+hum.6        -3.253e+01  3.712e+01  -0.876   0.3808  
+season.7     -5.073e+02  3.817e+04  -0.013   0.9894  
+mnth.7       -1.026e+02  6.395e+01  -1.604   0.1088  
+windspeed.7  -1.273e+01  1.709e+01  -0.745   0.4563  
+temp.7        1.368e+02  6.666e+01   2.052   0.0402 *
+atemp.7      -1.532e+02  6.943e+01  -2.206   0.0274 *
+hum.7        -8.836e+00  2.285e+01  -0.387   0.6990  
+season.8     -1.209e+02  9.682e+03  -0.012   0.9900  
+mnth.8        1.329e+02  6.805e+01   1.953   0.0508 .
+windspeed.8  -2.999e+01  1.564e+01  -1.918   0.0552 .
+temp.8       -5.622e+01  6.912e+01  -0.813   0.4161  
+atemp.8       7.405e+01  6.940e+01   1.067   0.2860  
+hum.8        -4.280e+01  3.895e+01  -1.099   0.2718  
+season.9     -2.080e+01  3.784e+01  -0.550   0.5826  
+mnth.9       -6.746e+01  4.956e+01  -1.361   0.1735  
+windspeed.9  -1.188e+00  1.512e+01  -0.079   0.9374  
+temp.9        3.586e+01  7.129e+01   0.503   0.6149  
+atemp.9      -3.219e+01  7.354e+01  -0.438   0.6616  
+hum.9         3.686e+01  1.955e+01   1.885   0.0594 .
+season.10    -2.294e+02  1.621e+04  -0.014   0.9887  
+mnth.10      -2.307e+01  3.022e+01  -0.763   0.4454  
+windspeed.10  1.110e+01  1.080e+01   1.027   0.3042  
+temp.10       1.657e+01  3.511e+01   0.472   0.6369  
+atemp.10     -9.720e+00  3.509e+01  -0.277   0.7817  
+hum.10       -2.552e+01  1.270e+01  -2.010   0.0445 *
+season.11    -1.926e+02  2.973e+04  -0.006   0.9948  
+mnth.11       5.753e+00  4.065e+01   0.142   0.8874  
+windspeed.11  5.601e+00  1.131e+01   0.495   0.6205  
+temp.11       2.824e+01  3.787e+01   0.746   0.4558  
+atemp.11     -4.004e+01  3.964e+01  -1.010   0.3125  
+hum.11        1.730e+01  1.929e+01   0.896   0.3700  
+season.12     3.603e+02  2.538e+04   0.014   0.9887  
+mnth.12       5.579e+01  4.101e+01   1.360   0.1738  
+windspeed.12  1.136e+01  1.350e+01   0.842   0.4000  
+temp.12      -7.745e+01  4.108e+01  -1.886   0.0593 .
+atemp.12      8.866e+01  4.418e+01   2.007   0.0448 *
+hum.12        4.087e+00  1.272e+01   0.321   0.7480  
+season.13     5.315e+01  4.841e+03   0.011   0.9912  
+mnth.13      -8.005e+01  4.171e+01  -1.919   0.0550 .
+windspeed.13  2.636e+01  1.174e+01   2.245   0.0248 *
+temp.13       2.585e+01  4.313e+01   0.599   0.5489  
+atemp.13     -3.579e+01  4.511e+01  -0.794   0.4275  
+hum.13        2.140e+01  2.010e+01   1.065   0.2871  
+season.14     1.636e+01  2.406e+01   0.680   0.4965  
+mnth.14       3.879e+01  3.020e+01   1.284   0.1990  
+windspeed.14  3.664e-01  1.168e+01   0.031   0.9750  
+temp.14      -2.636e+01  4.532e+01  -0.582   0.5608  
+atemp.14      2.261e+01  4.914e+01   0.460   0.6454  
+hum.14       -1.846e+01  1.110e+01  -1.663   0.0962 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 811.71  on 625  degrees of freedom
+Residual deviance: 694.61  on 535  degrees of freedom
+AIC: 876.61
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2231  -1.0214   0.5817   0.8978   1.8289  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)      0.2749     7.6656   0.036   0.9714  
+season          73.0766  5584.3719   0.013   0.9896  
+mnth            39.5226    21.7310   1.819   0.0690 .
+windspeed       -5.2872     5.8137  -0.909   0.3631  
+temp           -18.8073    30.3850  -0.619   0.5359  
+atemp           17.9547    28.3863   0.633   0.5271  
+hum             27.2140    15.5308   1.752   0.0797 .
+season.1       137.4668 14019.5263   0.010   0.9922  
+mnth.1          -9.3491    26.6052  -0.351   0.7253  
+windspeed.1     -3.6038     5.9337  -0.607   0.5436  
+temp.1         -12.5361    31.3064  -0.400   0.6888  
+atemp.1         18.6843    29.3686   0.636   0.5246  
+hum.1          -26.5946    23.5630  -1.129   0.2590  
+season.2      -127.4907 14183.4558  -0.009   0.9928  
+mnth.2         -45.8220    27.0060  -1.697   0.0897 .
+windspeed.2     -3.4278     6.4980  -0.528   0.5978  
+temp.2          56.7001    32.5678   1.741   0.0817 .
+atemp.2        -61.4942    31.8149  -1.933   0.0533 .
+hum.2           -1.3053    12.0664  -0.108   0.9139  
+season.3       -85.7074  5984.0352  -0.014   0.9886  
+mnth.3          46.7877    29.4143   1.591   0.1117  
+windspeed.3     -7.0238     6.2831  -1.118   0.2636  
+temp.3         -39.1698    33.3646  -1.174   0.2404  
+atemp.3         54.1055    31.7608   1.704   0.0885 .
+hum.3          -15.6793    21.3791  -0.733   0.4633  
+season.4        -3.0395    13.8977  -0.219   0.8269  
+mnth.4         -25.9976    20.5771  -1.263   0.2064  
+windspeed.4     -0.2670     6.1356  -0.044   0.9653  
+temp.4          14.1328    33.6713   0.420   0.6747  
+atemp.4        -18.4919    32.0357  -0.577   0.5638  
+hum.4           20.1746    10.8535   1.859   0.0631 .
+season.5      -298.0111 22337.4357  -0.013   0.9894  
+mnth.5         -51.9907    48.6378  -1.069   0.2851  
+windspeed.5     14.8173    14.3765   1.031   0.3027  
+temp.5          28.7063    57.2986   0.501   0.6164  
+atemp.5        -24.8172    55.3690  -0.448   0.6540  
+hum.5          -47.1973    25.7171  -1.835   0.0665 .
+season.6      -330.1189 44050.3734  -0.007   0.9940  
+mnth.6          -1.2539    62.9377  -0.020   0.9841  
+windspeed.6     13.4059    14.8835   0.901   0.3677  
+temp.6          38.6233    61.0328   0.633   0.5268  
+atemp.6        -56.9445    60.8063  -0.936   0.3490  
+hum.6           41.9335    37.6692   1.113   0.2656  
+season.7       500.0652 39209.1680   0.013   0.9898  
+mnth.7         114.9918    63.9031   1.799   0.0719 .
+windspeed.7     12.0088    17.0794   0.703   0.4820  
+temp.7        -118.0027    64.6030  -1.827   0.0678 .
+atemp.7        136.1268    66.6766   2.042   0.0412 *
+hum.7            4.7032    21.1759   0.222   0.8242  
+season.8       122.0694  9792.1145   0.012   0.9901  
+mnth.8        -123.9545    66.3483  -1.868   0.0617 .
+windspeed.8     25.0920    15.6106   1.607   0.1080  
+temp.8          55.8919    65.6613   0.851   0.3947  
+atemp.8        -87.3407    66.4015  -1.315   0.1884  
+hum.8           26.5795    34.4280   0.772   0.4401  
+season.9        17.3586    35.3866   0.491   0.6238  
+mnth.9          57.2619    47.0400   1.217   0.2235  
+windspeed.9      0.7871    15.8678   0.050   0.9604  
+temp.9         -46.6245    71.0351  -0.656   0.5116  
+atemp.9         50.0788    73.6475   0.680   0.4965  
+hum.9          -36.6779    19.2744  -1.903   0.0570 .
+season.10      224.1615 16753.0659   0.013   0.9893  
+mnth.10         17.2640    29.7596   0.580   0.5618  
+windspeed.10   -10.8427    10.7017  -1.013   0.3110  
+temp.10        -12.2315    34.4924  -0.355   0.7229  
+atemp.10         7.6664    34.4220   0.223   0.8238  
+hum.10          25.9311    13.8614   1.871   0.0614 .
+season.11      193.5176 30580.4676   0.006   0.9950  
+mnth.11          2.3388    40.1164   0.058   0.9535  
+windspeed.11   -11.9107    11.2555  -1.058   0.2900  
+temp.11        -25.2974    37.8031  -0.669   0.5034  
+atemp.11        40.1383    39.4722   1.017   0.3092  
+hum.11         -21.4642    19.5207  -1.100   0.2715  
+season.12     -355.7167 26047.4770  -0.014   0.9891  
+mnth.12        -63.0982    40.9053  -1.543   0.1229  
+windspeed.12   -10.2337    13.5115  -0.757   0.4488  
+temp.12         67.0739    39.8013   1.685   0.0919 .
+atemp.12       -80.7317    42.5405  -1.898   0.0577 .
+hum.12          -2.0818    11.9903  -0.174   0.8622  
+season.13      -54.6970  4896.0893  -0.011   0.9911  
+mnth.13         78.0232    41.0280   1.902   0.0572 .
+windspeed.13   -22.8878    11.7346  -1.950   0.0511 .
+temp.13        -29.3946    40.5641  -0.725   0.4687  
+atemp.13        47.4743    42.7120   1.111   0.2664  
+hum.13         -13.8359    18.0044  -0.768   0.4422  
+season.14      -13.3676    22.6788  -0.589   0.5556  
+mnth.14        -34.6109    29.0712  -1.191   0.2338  
+windspeed.14     1.0865    12.4774   0.087   0.9306  
+temp.14         38.1982    45.3800   0.842   0.3999  
+atemp.14       -37.5504    49.4050  -0.760   0.4472  
+hum.14          17.6822    11.0025   1.607   0.1080  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 830.54  on 625  degrees of freedom
+Residual deviance: 700.29  on 535  degrees of freedom
+AIC: 882.29
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+ -8.49    0.00    0.00    0.00    8.49  
+
+Coefficients:
+               Estimate Std. Error    z value Pr(>|z|)    
+(Intercept)  -2.870e+16  1.511e+08 -189935903   <2e-16 ***
+season       -2.419e+16  3.661e+08  -66076486   <2e-16 ***
+mnth         -5.474e+15  4.937e+08  -11087805   <2e-16 ***
+windspeed     5.219e+14  1.745e+08    2990099   <2e-16 ***
+temp          6.027e+15  9.009e+08    6690034   <2e-16 ***
+atemp        -1.121e+16  8.493e+08  -13197499   <2e-16 ***
+hum           1.314e+16  3.177e+08   41379042   <2e-16 ***
+season.1      2.306e+16  5.136e+08   44900231   <2e-16 ***
+mnth.1        5.134e+16  6.843e+08   75019831   <2e-16 ***
+windspeed.1   8.681e+15  1.765e+08   49173833   <2e-16 ***
+temp.1       -2.865e+15  9.360e+08   -3060435   <2e-16 ***
+atemp.1       1.718e+15  8.707e+08    1972865   <2e-16 ***
+hum.1         2.102e+16  3.224e+08   65206135   <2e-16 ***
+season.2      2.125e+15  4.783e+08    4442371   <2e-16 ***
+mnth.2       -5.585e+16  7.517e+08  -74300240   <2e-16 ***
+windspeed.2  -2.264e+15  1.939e+08  -11672290   <2e-16 ***
+temp.2       -2.311e+16  9.379e+08  -24642225   <2e-16 ***
+atemp.2       1.414e+16  8.720e+08   16216278   <2e-16 ***
+hum.2        -4.585e+15  3.315e+08  -13829081   <2e-16 ***
+season.3      1.228e+15  4.893e+08    2509679   <2e-16 ***
+mnth.3        2.362e+16  7.666e+08   30808628   <2e-16 ***
+windspeed.3   6.684e+15  1.803e+08   37074854   <2e-16 ***
+temp.3        5.351e+16  9.583e+08   55835736   <2e-16 ***
+atemp.3      -7.956e+16  8.881e+08  -89575365   <2e-16 ***
+hum.3         1.255e+16  3.256e+08   38554515   <2e-16 ***
+season.4     -7.245e+14  3.845e+08   -1884443   <2e-16 ***
+mnth.4       -1.177e+16  5.147e+08  -22865172   <2e-16 ***
+windspeed.4  -6.680e+15  1.716e+08  -38936350   <2e-16 ***
+temp.4       -5.286e+16  9.731e+08  -54320789   <2e-16 ***
+atemp.4       1.164e+17  9.077e+08  128244673   <2e-16 ***
+hum.4         4.741e+16  3.286e+08  144258870   <2e-16 ***
+season.5      6.841e+16  1.018e+09   67186117   <2e-16 ***
+mnth.5        2.754e+16  1.202e+09   22913893   <2e-16 ***
+windspeed.5   1.872e+15  4.312e+08    4342626   <2e-16 ***
+temp.5       -5.595e+15  1.678e+09   -3334252   <2e-16 ***
+atemp.5       2.643e+16  1.633e+09   16185342   <2e-16 ***
+hum.5        -2.374e+16  5.618e+08  -42268069   <2e-16 ***
+season.6     -6.878e+16  1.461e+09  -47068576   <2e-16 ***
+mnth.6       -1.265e+17  1.663e+09  -76082484   <2e-16 ***
+windspeed.6  -2.333e+16  4.359e+08  -53533351   <2e-16 ***
+temp.6        2.001e+15  1.750e+09    1143448   <2e-16 ***
+atemp.6      -1.528e+15  1.706e+09    -895499   <2e-16 ***
+hum.6        -2.502e+16  5.760e+08  -43436855   <2e-16 ***
+season.7      1.511e+16  1.332e+09   11337782   <2e-16 ***
+mnth.7        1.168e+17  1.815e+09   64362293   <2e-16 ***
+windspeed.7   1.139e+16  5.096e+08   22357895   <2e-16 ***
+temp.7        1.479e+16  1.738e+09    8512812   <2e-16 ***
+atemp.7      -1.717e+16  1.689e+09  -10167882   <2e-16 ***
+hum.7         1.253e+16  5.902e+08   21230162   <2e-16 ***
+season.8     -2.599e+16  1.219e+09  -21319183   <2e-16 ***
+mnth.8       -4.707e+16  1.822e+09  -25839661   <2e-16 ***
+windspeed.8  -2.006e+16  4.418e+08  -45412226   <2e-16 ***
+temp.8       -1.421e+17  1.778e+09  -79928149   <2e-16 ***
+atemp.8       2.101e+17  1.729e+09  121519720   <2e-16 ***
+hum.8        -2.161e+16  5.795e+08  -37297497   <2e-16 ***
+season.9      8.317e+15  9.296e+08    8946417   <2e-16 ***
+mnth.9        2.872e+16  1.221e+09   23525403   <2e-16 ***
+windspeed.9   2.185e+16  4.233e+08   51611520   <2e-16 ***
+temp.9        1.761e+17  1.960e+09   89846127   <2e-16 ***
+atemp.9      -3.032e+17  1.999e+09 -151689754   <2e-16 ***
+hum.9        -6.552e+16  5.802e+08 -112924437   <2e-16 ***
+season.10    -4.250e+16  6.725e+08  -63191962   <2e-16 ***
+mnth.10      -1.999e+16  7.798e+08  -25631761   <2e-16 ***
+windspeed.10 -1.927e+15  3.209e+08   -6007325   <2e-16 ***
+temp.10      -1.433e+15  9.935e+08   -1442747   <2e-16 ***
+atemp.10     -1.468e+16  9.935e+08  -14775408   <2e-16 ***
+hum.10        1.424e+16  3.210e+08   44361895   <2e-16 ***
+season.11     4.509e+16  9.829e+08   45879797   <2e-16 ***
+mnth.11       7.679e+16  1.073e+09   71531746   <2e-16 ***
+windspeed.11  1.741e+16  3.248e+08   53619738   <2e-16 ***
+temp.11       2.682e+15  1.051e+09    2552466   <2e-16 ***
+atemp.11     -8.575e+14  1.067e+09    -803950   <2e-16 ***
+hum.11        8.979e+15  3.292e+08   27275173   <2e-16 ***
+season.12    -1.705e+16  8.972e+08  -19007371   <2e-16 ***
+mnth.12      -6.354e+16  1.149e+09  -55291450   <2e-16 ***
+windspeed.12 -1.211e+16  4.027e+08  -30064572   <2e-16 ***
+temp.12      -1.909e+15  1.030e+09   -1854254   <2e-16 ***
+atemp.12      7.398e+15  1.037e+09    7132831   <2e-16 ***
+hum.12       -8.436e+15  3.368e+08  -25047725   <2e-16 ***
+season.13     2.246e+16  7.794e+08   28823729   <2e-16 ***
+mnth.13       2.209e+16  1.144e+09   19307658   <2e-16 ***
+windspeed.13  1.733e+16  3.270e+08   52986524   <2e-16 ***
+temp.13       8.661e+16  1.056e+09   82050777   <2e-16 ***
+atemp.13     -1.321e+17  1.066e+09 -123999828   <2e-16 ***
+hum.13        1.180e+16  3.310e+08   35637275   <2e-16 ***
+season.14    -7.061e+15  5.848e+08  -12073215   <2e-16 ***
+mnth.14      -1.549e+16  7.759e+08  -19960053   <2e-16 ***
+windspeed.14 -2.137e+16  3.166e+08  -67480456   <2e-16 ***
+temp.14      -1.103e+17  1.208e+09  -91278432   <2e-16 ***
+atemp.14      1.861e+17  1.294e+09  143804598   <2e-16 ***
+hum.14        2.981e+16  3.298e+08   90374444   <2e-16 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance:  156.14  on 625  degrees of freedom
+Residual deviance: 1585.92  on 535  degrees of freedom
+AIC: 1767.9
+
+Number of Fisher Scoring iterations: 14
+
+[1] "----------------------------------------------"
+Linear model with 1 order and past 6 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6746  -0.9107  -0.6904   1.2225   2.1128  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -1.520495   1.073285  -1.417   0.1566    
+season      -2.007944   2.131494  -0.942   0.3462    
+mnth        -0.928512   2.244928  -0.414   0.6792    
+windspeed    1.516351   0.691746   2.192   0.0284 *  
+temp        -5.870133   5.172225  -1.135   0.2564    
+atemp        5.278614   5.200105   1.015   0.3101    
+hum          0.884469   0.733226   1.206   0.2277    
+season.1     1.782058   2.468470   0.722   0.4703    
+mnth.1      -3.213781   5.103574  -0.630   0.5289    
+windspeed.1 -0.517698   0.743177  -0.697   0.4861    
+temp.1       0.138044   4.049001   0.034   0.9728    
+atemp.1      0.141313   3.582907   0.039   0.9685    
+hum.1       -0.299140   0.867688  -0.345   0.7303    
+season.2     0.318373   1.915415   0.166   0.8680    
+mnth.2       6.945706   5.231210   1.328   0.1843    
+windspeed.2  0.346018   0.740908   0.467   0.6405    
+temp.2       0.545068   3.762946   0.145   0.8848    
+atemp.2     -0.029408   3.232123  -0.009   0.9927    
+hum.2        0.723305   0.895708   0.808   0.4194    
+season.3    -3.602265   2.875914  -1.253   0.2104    
+mnth.3      -4.445603   4.614391  -0.963   0.3353    
+windspeed.3 -1.558386   0.772538  -2.017   0.0437 *  
+temp.3       6.985662   6.006477   1.163   0.2448    
+atemp.3     -7.331937   5.724247  -1.281   0.2002    
+hum.3       -1.138164   0.895104  -1.272   0.2035    
+season.4     4.845013   2.868075   1.689   0.0912 .  
+mnth.4      -1.744575   5.541543  -0.315   0.7529    
+windspeed.4  0.006664   0.773751   0.009   0.9931    
+temp.4       6.665668   7.130280   0.935   0.3499    
+atemp.4     -7.089966   6.959783  -1.019   0.3083    
+hum.4       -0.666280   0.883291  -0.754   0.4507    
+season.5    -1.531859   1.370847  -1.117   0.2638    
+mnth.5       3.262156   4.073000   0.801   0.4232    
+windspeed.5 -0.498013   0.675895  -0.737   0.4612    
+temp.5      -6.821961   6.072294  -1.123   0.2612    
+atemp.5      6.258009   6.045758   1.035   0.3006    
+hum.5        3.121031   0.773674   4.034 5.48e-05 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 796.56  on 624  degrees of freedom
+Residual deviance: 740.76  on 588  degrees of freedom
+AIC: 814.76
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2975  -1.1688   0.6572   0.9396   1.8636  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  1.82298    1.05687   1.725   0.0845 .  
+season      -0.42733    1.41940  -0.301   0.7634    
+mnth         1.63597    2.62402   0.623   0.5330    
+windspeed   -1.29278    0.67653  -1.911   0.0560 .  
+temp         3.71876    4.18813   0.888   0.3746    
+atemp       -2.89377    4.15627  -0.696   0.4863    
+hum         -1.14919    0.72845  -1.578   0.1147    
+season.1     0.54698    1.90054   0.288   0.7735    
+mnth.1       1.40270    4.65618   0.301   0.7632    
+windspeed.1  0.40647    0.73502   0.553   0.5803    
+temp.1      -0.52040    3.99916  -0.130   0.8965    
+atemp.1     -0.43746    3.52743  -0.124   0.9013    
+hum.1        0.24359    0.85974   0.283   0.7769    
+season.2    -0.41117    1.90500  -0.216   0.8291    
+mnth.2      -6.15313    4.69653  -1.310   0.1901    
+windspeed.2 -0.19085    0.72320  -0.264   0.7919    
+temp.2       0.48701    3.81185   0.128   0.8983    
+atemp.2     -0.73475    3.30491  -0.222   0.8241    
+hum.2       -0.47561    0.88663  -0.536   0.5917    
+season.3     3.62760    2.82464   1.284   0.1990    
+mnth.3       3.87356    4.15287   0.933   0.3510    
+windspeed.3  1.28792    0.75175   1.713   0.0867 .  
+temp.3      -5.01452    5.58112  -0.898   0.3689    
+atemp.3      6.19746    5.28429   1.173   0.2409    
+hum.3        1.25859    0.89192   1.411   0.1582    
+season.4    -4.70160    2.84728  -1.651   0.0987 .  
+mnth.4       3.14100    5.21093   0.603   0.5467    
+windspeed.4 -0.06304    0.76100  -0.083   0.9340    
+temp.4      -5.10963    6.98875  -0.731   0.4647    
+atemp.4      4.80979    6.81581   0.706   0.4804    
+hum.4        0.79857    0.87744   0.910   0.3628    
+season.5     1.30664    1.39998   0.933   0.3507    
+mnth.5      -3.69704    4.21924  -0.876   0.3809    
+windspeed.5  0.44874    0.66407   0.676   0.4992    
+temp.5       5.46507    5.65502   0.966   0.3338    
+atemp.5     -4.65904    5.60833  -0.831   0.4061    
+hum.5       -3.95563    0.77932  -5.076 3.86e-07 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 820.16  on 624  degrees of freedom
+Residual deviance: 753.07  on 588  degrees of freedom
+AIC: 827.07
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.2128  -0.2266  -0.1394  -0.0742   3.3410  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept)  -9.2851     3.5100  -2.645  0.00816 **
+season        6.3956     3.4255   1.867  0.06190 . 
+mnth        -17.6849    10.4335  -1.695  0.09007 . 
+windspeed    -0.8422     2.0386  -0.413  0.67950   
+temp          2.4892     6.0809   0.409  0.68229   
+atemp        -4.7544     5.3493  -0.889  0.37412   
+hum           3.0491     2.2611   1.348  0.17750   
+season.1     -4.0882     5.7388  -0.712  0.47623   
+mnth.1       20.9208    12.0937   1.730  0.08365 . 
+windspeed.1   0.3747     2.2442   0.167  0.86738   
+temp.1        6.8994    13.8987   0.496  0.61961   
+atemp.1      -0.2614    13.1362  -0.020  0.98412   
+hum.1        -0.2697     2.8088  -0.096  0.92350   
+season.2      1.0204     7.3359   0.139  0.88937   
+mnth.2        0.4500     7.9098   0.057  0.95464   
+windspeed.2  -1.3712     2.2091  -0.621  0.53479   
+temp.2      -13.1148    20.1305  -0.651  0.51473   
+atemp.2      11.4151    19.2421   0.593  0.55302   
+hum.2        -1.3123     2.7774  -0.473  0.63656   
+season.3     -0.6372     9.1897  -0.069  0.94472   
+mnth.3        1.2147     6.9943   0.174  0.86213   
+windspeed.3   1.3135     2.1257   0.618  0.53662   
+temp.3       -8.7055    19.7142  -0.442  0.65879   
+atemp.3       2.7998    19.0031   0.147  0.88287   
+hum.3        -0.5221     2.8841  -0.181  0.85636   
+season.4     -0.9611     8.8231  -0.109  0.91326   
+mnth.4      -14.6801    13.5946  -1.080  0.28021   
+windspeed.4  -0.5395     2.2185  -0.243  0.80786   
+temp.4      -16.5075    22.6745  -0.728  0.46660   
+atemp.4      20.5161    22.4977   0.912  0.36181   
+hum.4        -2.3489     2.6654  -0.881  0.37819   
+season.5      1.5319     4.1752   0.367  0.71370   
+mnth.5        7.2654    13.0613   0.556  0.57804   
+windspeed.5   0.6347     1.9120   0.332  0.73991   
+temp.5        3.5602    10.0963   0.353  0.72437   
+atemp.5      -3.3597     9.5506  -0.352  0.72500   
+hum.5         8.3595     2.6768   3.123  0.00179 **
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 170.16  on 624  degrees of freedom
+Residual deviance: 130.46  on 588  degrees of freedom
+AIC: 204.46
+
+Number of Fisher Scoring iterations: 8
+
+[1] "----------------------------------------------"
+Linear model with 2 order and past 6 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.9594  -0.8807  -0.6068   1.1060   2.2617  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)     0.51639    3.17036   0.163   0.8706  
+season         71.18407 2738.29235   0.026   0.9793  
+mnth            3.26060   10.12892   0.322   0.7475  
+windspeed      -1.93975    2.31186  -0.839   0.4014  
+temp           20.79311   15.85604   1.311   0.1897  
+atemp         -15.68545   15.34667  -1.022   0.3067  
+hum             0.08340    4.32841   0.019   0.9846  
+season.1      -64.82222 2738.29820  -0.024   0.9811  
+mnth.1        -30.43571   15.14220  -2.010   0.0444 *
+windspeed.1     0.24921    2.32135   0.107   0.9145  
+temp.1        -15.76545   16.28138  -0.968   0.3329  
+atemp.1        11.45309   14.97849   0.765   0.4445  
+hum.1          -0.08308    4.32130  -0.019   0.9847  
+season.2      -11.22341    8.11018  -1.384   0.1664  
+mnth.2         18.72054   15.80561   1.184   0.2362  
+windspeed.2    -2.68982    2.39530  -1.123   0.2615  
+temp.2         21.72625   15.79628   1.375   0.1690  
+atemp.2       -20.68545   14.67941  -1.409   0.1588  
+hum.2          -1.09591    4.81596  -0.228   0.8200  
+season.3       -2.65355   10.65611  -0.249   0.8033  
+mnth.3          6.76931   15.33007   0.442   0.6588  
+windspeed.3    -2.09780    2.48437  -0.844   0.3984  
+temp.3         -9.55830   19.06179  -0.501   0.6161  
+atemp.3        17.42924   17.87823   0.975   0.3296  
+hum.3           3.07805    4.38008   0.703   0.4822  
+season.4       16.93085   10.92024   1.550   0.1210  
+mnth.4         -8.54080   15.13342  -0.564   0.5725  
+windspeed.4    -3.12815    2.42496  -1.290   0.1971  
+temp.4         23.92742   19.30241   1.240   0.2151  
+atemp.4       -27.85396   17.96946  -1.550   0.1211  
+hum.4          -1.15868    4.46283  -0.260   0.7951  
+season.5       -6.94898    6.18394  -1.124   0.2611  
+mnth.5          4.56393   10.92365   0.418   0.6761  
+windspeed.5     0.52294    2.55996   0.204   0.8381  
+temp.5        -14.47855   19.06117  -0.760   0.4475  
+atemp.5        13.81327   17.41088   0.793   0.4276  
+hum.5          -3.49219    4.26515  -0.819   0.4129  
+season.6      -74.62084 2738.29416  -0.027   0.9783  
+mnth.6         -4.33163    9.90266  -0.437   0.6618  
+windspeed.6     3.61839    2.68373   1.348   0.1776  
+temp.6        -24.28556   13.45782  -1.805   0.0711 .
+atemp.6        19.95721   13.71111   1.456   0.1455  
+hum.6           0.80186    3.32715   0.241   0.8096  
+season.7       68.21767 2738.30017   0.025   0.9801  
+mnth.7         26.97867   14.39207   1.875   0.0609 .
+windspeed.7    -0.89391    2.66379  -0.336   0.7372  
+temp.7         16.66115   14.65942   1.137   0.2557  
+atemp.7       -12.51294   14.32333  -0.874   0.3823  
+hum.7          -0.53505    3.35626  -0.159   0.8733  
+season.8       11.03235    8.11289   1.360   0.1739  
+mnth.8        -11.71786   15.03984  -0.779   0.4359  
+windspeed.8     3.68573    2.83939   1.298   0.1943  
+temp.8        -19.76155   14.36476  -1.376   0.1689  
+atemp.8        20.79263   14.27187   1.457   0.1451  
+hum.8           1.44736    3.71083   0.390   0.6965  
+season.9       -0.80403    9.29720  -0.086   0.9311  
+mnth.9        -11.39384   14.52169  -0.785   0.4327  
+windspeed.9     1.07025    2.89104   0.370   0.7112  
+temp.9         21.28292   15.21838   1.399   0.1620  
+atemp.9       -31.11585   15.38944  -2.022   0.0432 *
+hum.9          -3.48327    3.42933  -1.016   0.3098  
+season.10     -11.90311    9.49043  -1.254   0.2098  
+mnth.10         6.95816   13.89714   0.501   0.6166  
+windspeed.10    2.99124    2.78704   1.073   0.2832  
+temp.10       -16.77437   15.62432  -1.074   0.2830  
+atemp.10       21.21464   15.62550   1.358   0.1746  
+hum.10          0.45905    3.48631   0.132   0.8952  
+season.11       5.46475    5.82610   0.938   0.3483  
+mnth.11        -1.31021   10.19598  -0.129   0.8978  
+windspeed.11   -1.06279    3.14805  -0.338   0.7357  
+temp.11         2.33802   14.69344   0.159   0.8736  
+atemp.11       -1.93978   14.13134  -0.137   0.8908  
+hum.11          5.05069    3.25888   1.550   0.1212  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 796.56  on 624  degrees of freedom
+Residual deviance: 700.73  on 552  degrees of freedom
+AIC: 846.73
+
+Number of Fisher Scoring iterations: 14
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.1779  -1.0779   0.5966   0.9079   2.0270  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)   
+(Intercept)     0.10901    3.13844   0.035  0.97229   
+season        -72.70024 2744.48204  -0.026  0.97887   
+mnth          -14.36317   10.67051  -1.346  0.17828   
+windspeed       0.54167    2.28211   0.237  0.81238   
+temp          -24.66045   14.99738  -1.644  0.10011   
+atemp          20.73086   14.48100   1.432  0.15226   
+hum             0.09714    4.27773   0.023  0.98188   
+season.1       66.34959 2744.48871   0.024  0.98071   
+mnth.1         43.16550   15.52350   2.781  0.00542 **
+windspeed.1     0.34377    2.29588   0.150  0.88098   
+temp.1          5.38108   16.04429   0.335  0.73733   
+atemp.1        -3.24902   14.74752  -0.220  0.82563   
+hum.1           0.06447    4.25039   0.015  0.98790   
+season.2       10.85215    8.29375   1.308  0.19071   
+mnth.2        -17.01490   15.69718  -1.084  0.27839   
+windspeed.2     1.67791    2.38499   0.704  0.48173   
+temp.2        -11.59914   15.47735  -0.749  0.45360   
+atemp.2        10.71900   14.40759   0.744  0.45689   
+hum.2           0.01567    4.87316   0.003  0.99743   
+season.3        2.79388   10.81889   0.258  0.79622   
+mnth.3         -9.66814   15.03374  -0.643  0.52016   
+windspeed.3     1.84710    2.44470   0.756  0.44992   
+temp.3         12.45921   18.39442   0.677  0.49819   
+atemp.3       -16.64525   17.17446  -0.969  0.33245   
+hum.3          -2.71734    4.36203  -0.623  0.53332   
+season.4      -15.90487   10.97016  -1.450  0.14711   
+mnth.4          5.94266   14.86031   0.400  0.68923   
+windspeed.4     3.69654    2.40945   1.534  0.12498   
+temp.4        -18.97372   18.85291  -1.006  0.31422   
+atemp.4        24.57037   17.59555   1.396  0.16259   
+hum.4           0.11081    4.43982   0.025  0.98009   
+season.5        6.43565    5.92507   1.086  0.27740   
+mnth.5         -2.46703   10.88024  -0.227  0.82062   
+windspeed.5    -1.41122    2.55726  -0.552  0.58105   
+temp.5          1.38500   18.66017   0.074  0.94083   
+atemp.5        -4.73767   17.11589  -0.277  0.78193   
+hum.5           4.59086    4.27037   1.075  0.28235   
+season.6       72.56219 2744.48135   0.026  0.97891   
+mnth.6         16.81428   10.24506   1.641  0.10075   
+windspeed.6    -1.71738    2.65739  -0.646  0.51811   
+temp.6         25.98262   13.21633   1.966  0.04930 * 
+atemp.6       -22.59285   13.47636  -1.676  0.09364 . 
+hum.6          -1.15255    3.28743  -0.351  0.72589   
+season.7      -66.38707 2744.48827  -0.024  0.98070   
+mnth.7        -41.42709   14.60043  -2.837  0.00455 **
+windspeed.7     0.30677    2.63644   0.116  0.90737   
+temp.7         -7.64005   14.45045  -0.529  0.59701   
+atemp.7         4.30703   14.12370   0.305  0.76040   
+hum.7           0.45301    3.30237   0.137  0.89089   
+season.8      -10.72198    8.28561  -1.294  0.19565   
+mnth.8          9.84882   14.86777   0.662  0.50770   
+windspeed.8    -2.40062    2.82948  -0.848  0.39620   
+temp.8         11.04087   14.06629   0.785  0.43250   
+atemp.8       -11.51450   14.00286  -0.822  0.41091   
+hum.8          -0.37154    3.74504  -0.099  0.92097   
+season.9        0.81491    9.34916   0.087  0.93054   
+mnth.9         13.81170   14.47086   0.954  0.33986   
+windspeed.9    -1.10792    2.83572  -0.391  0.69602   
+temp.9        -19.56681   14.88458  -1.315  0.18865   
+atemp.9        26.74587   14.96991   1.787  0.07400 . 
+hum.9           3.24361    3.41384   0.950  0.34204   
+season.10      10.97967    9.47791   1.158  0.24668   
+mnth.10        -2.03694   13.71123  -0.149  0.88190   
+windspeed.10   -3.99454    2.76287  -1.446  0.14823   
+temp.10        12.00865   15.21389   0.789  0.42992   
+atemp.10      -18.92338   15.25303  -1.241  0.21474   
+hum.10          0.55021    3.47741   0.158  0.87428   
+season.11      -5.21017    5.64521  -0.923  0.35604   
+mnth.11        -2.00417    9.93525  -0.202  0.84013   
+windspeed.11    2.46917    3.14988   0.784  0.43310   
+temp.11         6.48053   14.49261   0.447  0.65476   
+atemp.11       -2.86306   13.98327  -0.205  0.83777   
+hum.11         -6.60365    3.27742  -2.015  0.04392 * 
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 820.16  on 624  degrees of freedom
+Residual deviance: 711.24  on 552  degrees of freedom
+AIC: 857.24
+
+Number of Fisher Scoring iterations: 14
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1703  -0.1299  -0.0276  -0.0037   3.4134  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   -58.8472    27.0816  -2.173   0.0298 *
+season         10.5329   133.4663   0.079   0.9371  
+mnth           29.5444    50.6386   0.583   0.5596  
+windspeed      25.1212    17.3351   1.449   0.1473  
+temp          -46.1176    90.0829  -0.512   0.6087  
+atemp          11.7036    93.1178   0.126   0.9000  
+hum            47.0959    37.3110   1.262   0.2069  
+season.1        9.0409   137.1212   0.066   0.9474  
+mnth.1        -72.2765    75.6451  -0.955   0.3393  
+windspeed.1   -10.3782     9.2380  -1.123   0.2613  
+temp.1        225.8833    99.4774   2.271   0.0232 *
+atemp.1      -188.8372    85.8668  -2.199   0.0279 *
+hum.1          -1.2947    18.5173  -0.070   0.9443  
+season.2      -15.9760    53.7204  -0.297   0.7662  
+mnth.2         51.0129   105.2172   0.485   0.6278  
+windspeed.2    15.9363    13.0443   1.222   0.2218  
+temp.2       -176.8416    93.2900  -1.896   0.0580 .
+atemp.2       191.8391    90.5124   2.119   0.0340 *
+hum.2          19.8082    24.8505   0.797   0.4254  
+season.3        6.7959    62.3173   0.109   0.9132  
+mnth.3         -3.2051    90.4464  -0.035   0.9717  
+windspeed.3     2.5519    10.8233   0.236   0.8136  
+temp.3        -45.3769   103.6860  -0.438   0.6616  
+atemp.3       -28.9967    95.0153  -0.305   0.7602  
+hum.3          -2.4595    32.4823  -0.076   0.9396  
+season.4       -6.6556    45.9749  -0.145   0.8849  
+mnth.4         22.5249    94.4657   0.238   0.8115  
+windspeed.4    -9.7841    10.8948  -0.898   0.3692  
+temp.4         46.1614    95.6537   0.483   0.6294  
+atemp.4       -33.0936    92.6252  -0.357   0.7209  
+hum.4          13.6445    28.9032   0.472   0.6369  
+season.5       -3.3240    12.4008  -0.268   0.7887  
+mnth.5        -18.8357    88.7003  -0.212   0.8318  
+windspeed.5    25.1343    12.5307   2.006   0.0449 *
+temp.5        161.7522   103.9668   1.556   0.1198  
+atemp.5      -103.1255    98.0833  -1.051   0.2931  
+hum.5          30.4909    36.6789   0.831   0.4058  
+season.6       -0.2710   133.3517  -0.002   0.9984  
+mnth.6        -51.0640    34.9667  -1.460   0.1442  
+windspeed.6   -37.5822    25.4672  -1.476   0.1400  
+temp.6         49.5009    85.7656   0.577   0.5638  
+atemp.6       -28.8711    93.4699  -0.309   0.7574  
+hum.6         -28.8704    25.6986  -1.123   0.2613  
+season.7      -18.4257   136.7874  -0.135   0.8928  
+mnth.7        103.1676    67.2733   1.534   0.1251  
+windspeed.7     7.9833    10.3635   0.770   0.4411  
+temp.7       -196.1895    91.6156  -2.141   0.0322 *
+atemp.7       182.2461    84.9550   2.145   0.0319 *
+hum.7           0.9204    13.8945   0.066   0.9472  
+season.8       15.5966    51.8670   0.301   0.7636  
+mnth.8        -49.9700   103.9798  -0.481   0.6308  
+windspeed.8   -18.2309    15.6973  -1.161   0.2455  
+temp.8        145.8755    79.2507   1.841   0.0657 .
+atemp.8      -177.7351    82.6106  -2.151   0.0314 *
+hum.8         -17.8039    19.5544  -0.910   0.3626  
+season.9       -3.4954    59.8522  -0.058   0.9534  
+mnth.9          9.9301    89.2907   0.111   0.9114  
+windspeed.9    -1.0308    12.9603  -0.080   0.9366  
+temp.9        -19.8842    89.5266  -0.222   0.8242  
+atemp.9        97.1939    94.2217   1.032   0.3023  
+hum.9           4.6943    24.3775   0.193   0.8473  
+season.10       2.5537    43.6664   0.058   0.9534  
+mnth.10       -61.7241    67.8888  -0.909   0.3632  
+windspeed.10   14.4072    13.7347   1.049   0.2942  
+temp.10         1.6960    70.9000   0.024   0.9809  
+atemp.10       -9.6800    74.6624  -0.130   0.8968  
+hum.10        -14.3454    21.6159  -0.664   0.5069  
+season.11       4.7673    11.9343   0.399   0.6896  
+mnth.11        41.4194    59.1863   0.700   0.4840  
+windspeed.11  -37.8104    16.9273  -2.234   0.0255 *
+temp.11      -144.9308    96.9489  -1.495   0.1349  
+atemp.11       86.5391    96.5501   0.896   0.3701  
+hum.11        -11.0296    24.5789  -0.449   0.6536  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 170.162  on 624  degrees of freedom
+Residual deviance:  90.089  on 552  degrees of freedom
+AIC: 236.09
+
+Number of Fisher Scoring iterations: 10
+
+[1] "----------------------------------------------"
+Linear model with 3 order and past 6 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8644  -0.8499  -0.5035   0.9990   2.3216  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)      9.8881     9.3318   1.060   0.2893  
+season           3.8087  6425.4796   0.001   0.9995  
+mnth            22.0163    20.6509   1.066   0.2864  
+windspeed        7.4175     7.1162   1.042   0.2973  
+temp            29.1679    33.9104   0.860   0.3897  
+atemp          -30.6712    32.5351  -0.943   0.3458  
+hum            -38.2812    24.5960  -1.556   0.1196  
+season.1       -71.3327  9245.2867  -0.008   0.9938  
+mnth.1         -72.9078    29.4259  -2.478   0.0132 *
+windspeed.1      3.2622     6.1694   0.529   0.5970  
+temp.1          13.6073    33.8966   0.401   0.6881  
+atemp.1        -11.2397    31.1098  -0.361   0.7179  
+hum.1          -31.3594    18.9457  -1.655   0.0979 .
+season.2       -80.1923 11641.9039  -0.007   0.9945  
+mnth.2          27.1038    29.5205   0.918   0.3585  
+windspeed.2      5.5385     7.0291   0.788   0.4307  
+temp.2          30.1388    34.0259   0.886   0.3757  
+atemp.2        -31.6864    31.5209  -1.005   0.3148  
+hum.2           -1.4388    18.5533  -0.078   0.9382  
+season.3        61.9901 11967.7973   0.005   0.9959  
+mnth.3          62.3035    34.8963   1.785   0.0742 .
+windspeed.3      0.6067     6.5758   0.092   0.9265  
+temp.3         -53.1780    37.0169  -1.437   0.1508  
+atemp.3         65.9437    37.8015   1.744   0.0811 .
+hum.3           13.3126    19.9123   0.669   0.5038  
+season.4        92.8476  7202.9825   0.013   0.9897  
+mnth.4         -78.6540    36.7408  -2.141   0.0323 *
+windspeed.4      7.6122     6.2080   1.226   0.2201  
+temp.4           7.1858    36.5883   0.196   0.8443  
+atemp.4        -22.3971    35.7542  -0.626   0.5310  
+hum.4           13.9482    23.1730   0.602   0.5472  
+season.5         1.5472    13.0563   0.119   0.9057  
+mnth.5          31.7923    24.3794   1.304   0.1922  
+windspeed.5      1.9626     6.9205   0.284   0.7767  
+temp.5          -7.2754    34.2456  -0.212   0.8318  
+atemp.5          6.6984    31.0882   0.215   0.8294  
+hum.5          -27.8560    12.7620  -2.183   0.0291 *
+season.6       218.8467 20268.0753   0.011   0.9914  
+mnth.6         -73.4420    48.9948  -1.499   0.1339  
+windspeed.6    -21.5981    18.4614  -1.170   0.2420  
+temp.6         -36.5939    65.4017  -0.560   0.5758  
+atemp.6         46.7707    65.2919   0.716   0.4738  
+hum.6           69.7737    39.3093   1.775   0.0759 .
+season.7        66.0587 33433.6596   0.002   0.9984  
+mnth.7         146.8047    67.6303   2.171   0.0300 *
+windspeed.7     -9.1982    15.2688  -0.602   0.5469  
+temp.7         -54.4960    64.5154  -0.845   0.3983  
+atemp.7         44.4984    62.6811   0.710   0.4778  
+hum.7           56.8627    31.4019   1.811   0.0702 .
+season.8        86.8541 35748.0629   0.002   0.9981  
+mnth.8         -33.0539    68.6702  -0.481   0.6303  
+windspeed.8    -21.2847    18.3492  -1.160   0.2461  
+temp.8         -42.2116    64.1552  -0.658   0.5106  
+atemp.8         53.4376    62.0793   0.861   0.3894  
+hum.8            2.0611    30.3268   0.068   0.9458  
+season.9      -233.2816 26642.7405  -0.009   0.9930  
+mnth.9        -148.2406    76.3532  -1.942   0.0522 .
+windspeed.9     -8.4423    16.1135  -0.524   0.6003  
+temp.9         121.3239    74.0259   1.639   0.1012  
+atemp.9       -152.5248    79.6059  -1.916   0.0554 .
+hum.9          -22.1299    32.5185  -0.681   0.4962  
+season.10     -133.0147 11786.7479  -0.011   0.9910  
+mnth.10        196.7575    79.9684   2.460   0.0139 *
+windspeed.10   -26.4547    15.5393  -1.702   0.0887 .
+temp.10         27.1195    78.1201   0.347   0.7285  
+atemp.10         4.1286    81.6637   0.051   0.9597  
+hum.10         -27.1713    37.3225  -0.728   0.4666  
+season.11      -21.7085    34.7171  -0.625   0.5318  
+mnth.11        -83.5746    56.7786  -1.472   0.1410  
+windspeed.11    -6.1595    18.6201  -0.331   0.7408  
+temp.11        -13.2601    66.6361  -0.199   0.8423  
+atemp.11        13.7591    65.9409   0.209   0.8347  
+hum.11          50.4319    22.2042   2.271   0.0231 *
+season.12     -238.3474 15163.4165  -0.016   0.9875  
+mnth.12         50.9959    31.4685   1.621   0.1051  
+windspeed.12    20.0476    14.4008   1.392   0.1639  
+temp.12          6.8100    40.3522   0.169   0.8660  
+atemp.12       -16.2340    41.8325  -0.388   0.6980  
+hum.12         -38.4258    20.3975  -1.884   0.0596 .
+season.13       21.1791 25052.4383   0.001   0.9993  
+mnth.13        -78.7237    42.5220  -1.851   0.0641 .
+windspeed.13     6.1395    11.3600   0.540   0.5889  
+temp.13         47.0177    39.6606   1.186   0.2358  
+atemp.13       -40.1978    40.3223  -0.997   0.3188  
+hum.13         -32.9241    16.8717  -1.951   0.0510 .
+season.14       -6.7755 24560.5978   0.000   0.9998  
+mnth.14         13.6797    42.8022   0.320   0.7493  
+windspeed.14    20.7097    14.3943   1.439   0.1502  
+temp.14         15.8094    38.9071   0.406   0.6845  
+atemp.14       -24.0079    39.0476  -0.615   0.5387  
+hum.14          -0.1722    16.1333  -0.011   0.9915  
+season.15      154.9785 15500.2986   0.010   0.9920  
+mnth.15         82.7419    45.5229   1.818   0.0691 .
+windspeed.15     8.6365    12.0034   0.720   0.4718  
+temp.15        -60.5176    45.3318  -1.335   0.1819  
+atemp.15        79.8135    50.0804   1.594   0.1110  
+hum.15          10.1772    17.2644   0.589   0.5555  
+season.16       58.6420  5893.4018   0.010   0.9921  
+mnth.16       -121.3022    47.8663  -2.534   0.0113 *
+windspeed.16    23.2750    11.7598   1.979   0.0478 *
+temp.16        -29.9521    49.9748  -0.599   0.5489  
+atemp.16        11.9584    53.9577   0.222   0.8246  
+hum.16          15.5957    19.4975   0.800   0.4238  
+season.17       18.6137    22.6479   0.822   0.4111  
+mnth.17         55.1235    35.5096   1.552   0.1206  
+windspeed.17     5.3407    15.1365   0.353   0.7242  
+temp.17          8.5266    40.6118   0.210   0.8337  
+atemp.17        -7.7839    41.7677  -0.186   0.8522  
+hum.17         -25.6545    12.4613  -2.059   0.0395 *
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 796.56  on 624  degrees of freedom
+Residual deviance: 646.31  on 516  degrees of freedom
+AIC: 864.31
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.3709  -0.9948   0.4860   0.8744   2.1004  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)   
+(Intercept)    -10.1447     9.3420  -1.086  0.27751   
+season         -17.4774  6746.4617  -0.003  0.99793   
+mnth           -30.2714    21.4779  -1.409  0.15871   
+windspeed      -12.7221     7.1190  -1.787  0.07393 . 
+temp           -27.1912    33.3735  -0.815  0.41521   
+atemp           31.4404    32.1359   0.978  0.32790   
+hum             32.9768    21.7063   1.519  0.12870   
+season.1        83.6867  9665.6827   0.009  0.99309   
+mnth.1          75.5283    29.3931   2.570  0.01018 * 
+windspeed.1      0.7200     6.1566   0.117  0.90690   
+temp.1         -29.7768    33.5724  -0.887  0.37511   
+atemp.1         26.0474    30.8613   0.844  0.39866   
+hum.1           42.7915    24.8624   1.721  0.08523 . 
+season.2        79.3498 12286.3863   0.006  0.99485   
+mnth.2         -18.8595    28.7977  -0.655  0.51254   
+windspeed.2     -6.7380     6.8098  -0.989  0.32244   
+temp.2         -13.9516    32.7928  -0.425  0.67051   
+atemp.2         16.3881    30.6982   0.534  0.59345   
+hum.2           -7.6970    23.8295  -0.323  0.74669   
+season.3       -59.5599 12525.7961  -0.005  0.99621   
+mnth.3         -66.2822    33.1626  -1.999  0.04564 * 
+windspeed.3      1.1810     6.4894   0.182  0.85559   
+temp.3          43.4180    35.7644   1.214  0.22475   
+atemp.3        -51.9906    35.8485  -1.450  0.14698   
+hum.3           -7.6117    16.8263  -0.452  0.65100   
+season.4       -94.0966  7338.3314  -0.013  0.98977   
+mnth.4          73.1972    34.1600   2.143  0.03213 * 
+windspeed.4     -5.8329     6.1085  -0.955  0.33964   
+temp.4          -7.6787    35.8516  -0.214  0.83041   
+atemp.4         27.6191    34.9335   0.791  0.42917   
+hum.4          -16.7493    22.3362  -0.750  0.45333   
+season.5         1.7699    12.2494   0.144  0.88511   
+mnth.5         -27.1644    22.7480  -1.194  0.23242   
+windspeed.5     -3.5861     6.8281  -0.525  0.59945   
+temp.5          -1.5211    34.4236  -0.044  0.96475   
+atemp.5         -3.0112    31.4710  -0.096  0.92377   
+hum.5           26.1026    12.0110   2.173  0.02976 * 
+season.6      -158.2305 21471.4761  -0.007  0.99412   
+mnth.6          72.4649    49.4000   1.467  0.14240   
+windspeed.6     34.0631    18.5095   1.840  0.06572 . 
+temp.6          27.8259    63.8468   0.436  0.66296   
+atemp.6        -41.3832    63.7553  -0.649  0.51628   
+hum.6          -60.6322    34.9360  -1.736  0.08265 . 
+season.7      -120.4283 35037.0177  -0.003  0.99726   
+mnth.7        -130.3025    66.8490  -1.949  0.05127 . 
+windspeed.7     -0.7577    15.3892  -0.049  0.96073   
+temp.7          72.7098    63.5418   1.144  0.25251   
+atemp.7        -64.4359    61.8097  -1.042  0.29719   
+hum.7          -74.6326    40.1892  -1.857  0.06331 . 
+season.8       -87.3543 37557.9217  -0.002  0.99814   
+mnth.8          15.1510    67.5544   0.224  0.82254   
+windspeed.8     22.9633    17.7852   1.291  0.19665   
+temp.8          20.1659    62.0222   0.325  0.74507   
+atemp.8        -31.9912    60.6427  -0.528  0.59782   
+hum.8           13.1434    38.0586   0.345  0.72983   
+season.9       226.6264 28075.3564   0.008  0.99356   
+mnth.9         157.3456    73.7299   2.134  0.03284 * 
+windspeed.9      2.5815    15.8420   0.163  0.87056   
+temp.9         -88.1347    71.4886  -1.233  0.21763   
+atemp.9        114.5343    75.7113   1.513  0.13034   
+hum.9           12.5433    28.0384   0.447  0.65461   
+season.10      138.1364 12008.2245   0.012  0.99082   
+mnth.10       -190.8649    75.5973  -2.525  0.01158 * 
+windspeed.10    22.2651    15.2191   1.463  0.14348   
+temp.10        -16.6548    76.8578  -0.217  0.82844   
+atemp.10       -25.4583    80.1654  -0.318  0.75081   
+hum.10          31.4359    36.1316   0.870  0.38428   
+season.11       11.8345    32.9941   0.359  0.71983   
+mnth.11         75.8655    53.5641   1.416  0.15667   
+windspeed.11     9.1839    18.4268   0.498  0.61820   
+temp.11         12.4407    67.2324   0.185  0.85320   
+atemp.11        -6.1122    66.7684  -0.092  0.92706   
+hum.11         -46.2526    21.1698  -2.185  0.02890 * 
+season.12      175.1485 15789.3892   0.011  0.99115   
+mnth.12        -40.2079    30.8050  -1.305  0.19181   
+windspeed.12   -28.2283    14.4738  -1.950  0.05114 . 
+temp.12         -0.6127    39.1507  -0.016  0.98751   
+atemp.12        11.2656    40.4972   0.278  0.78087   
+hum.12          33.2131    18.2756   1.817  0.06916 . 
+season.13       37.1002 26086.3779   0.001  0.99887   
+mnth.13         57.4597    41.4659   1.386  0.16584   
+windspeed.13     1.3778    11.5816   0.119  0.90530   
+temp.13        -50.9542    38.7904  -1.314  0.18899   
+atemp.13        45.7123    39.3972   1.160  0.24593   
+hum.13          41.6201    21.0361   1.979  0.04787 * 
+season.14        7.9610 25749.6584   0.000  0.99975   
+mnth.14         -4.0863    42.2333  -0.097  0.92292   
+windspeed.14   -20.8799    13.9536  -1.496  0.13455   
+temp.14         -7.2429    37.7501  -0.192  0.84785   
+atemp.14        16.0191    38.2011   0.419  0.67497   
+hum.14          -7.4984    19.7395  -0.380  0.70404   
+season.15     -150.7262 16367.6475  -0.009  0.99265   
+mnth.15        -88.1541    44.3727  -1.987  0.04696 * 
+windspeed.15    -4.0639    11.7626  -0.345  0.72972   
+temp.15         40.8554    44.0833   0.927  0.35404   
+atemp.15       -58.2268    48.0748  -1.211  0.22583   
+hum.15          -5.1700    15.1809  -0.341  0.73343   
+season.16      -62.3693  6004.1382  -0.010  0.99171   
+mnth.16        123.1405    46.1610   2.668  0.00764 **
+windspeed.16   -20.7297    11.4818  -1.805  0.07101 . 
+temp.16         20.5427    49.2211   0.417  0.67642   
+atemp.16         3.5889    53.1112   0.068  0.94613   
+hum.16         -17.3640    18.9612  -0.916  0.35979   
+season.17      -12.3348    21.7844  -0.566  0.57124   
+mnth.17        -53.4614    34.3708  -1.555  0.11984   
+windspeed.17    -6.4657    15.0288  -0.430  0.66704   
+temp.17         -3.0239    40.9236  -0.074  0.94110   
+atemp.17         0.3849    42.2103   0.009  0.99272   
+hum.17          22.2071    12.0082   1.849  0.06441 . 
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 820.16  on 624  degrees of freedom
+Residual deviance: 659.17  on 516  degrees of freedom
+AIC: 877.17
+
+Number of Fisher Scoring iterations: 15
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+ -8.49    0.00    0.00    0.00    8.49  
+
+Coefficients:
+               Estimate Std. Error    z value Pr(>|z|)    
+(Intercept)  -1.362e+16  1.702e+08  -80001202   <2e-16 ***
+season       -1.501e+16  3.677e+08  -40834091   <2e-16 ***
+mnth          2.289e+16  5.005e+08   45726745   <2e-16 ***
+windspeed     1.436e+16  1.754e+08   81833306   <2e-16 ***
+temp         -9.945e+15  9.156e+08  -10862258   <2e-16 ***
+atemp         1.116e+16  8.659e+08   12888357   <2e-16 ***
+hum           8.030e+15  3.202e+08   25074324   <2e-16 ***
+season.1      1.967e+16  5.158e+08   38131243   <2e-16 ***
+mnth.1       -1.522e+16  6.880e+08  -22118923   <2e-16 ***
+windspeed.1  -1.104e+16  1.791e+08  -61643123   <2e-16 ***
+temp.1        4.057e+16  9.550e+08   42480291   <2e-16 ***
+atemp.1      -5.637e+16  8.827e+08  -63859860   <2e-16 ***
+hum.1         7.877e+15  3.309e+08   23801998   <2e-16 ***
+season.2      1.488e+16  4.805e+08   30974511   <2e-16 ***
+mnth.2       -9.085e+15  7.608e+08  -11941119   <2e-16 ***
+windspeed.2   2.221e+16  1.978e+08  112286009   <2e-16 ***
+temp.2       -4.236e+16  9.538e+08  -44407128   <2e-16 ***
+atemp.2       5.335e+16  8.837e+08   60364983   <2e-16 ***
+hum.2         1.324e+16  3.349e+08   39525102   <2e-16 ***
+season.3     -1.614e+16  4.927e+08  -32753574   <2e-16 ***
+mnth.3        4.825e+16  7.807e+08   61799902   <2e-16 ***
+windspeed.3  -1.845e+16  1.832e+08 -100702391   <2e-16 ***
+temp.3        6.503e+15  9.743e+08    6674270   <2e-16 ***
+atemp.3      -2.647e+16  9.180e+08  -28837111   <2e-16 ***
+hum.3        -1.835e+16  3.288e+08  -55807003   <2e-16 ***
+season.4     -7.154e+15  4.899e+08  -14602899   <2e-16 ***
+mnth.4        8.038e+15  6.959e+08   11550590   <2e-16 ***
+windspeed.4  -1.350e+16  1.739e+08  -77621324   <2e-16 ***
+temp.4        3.947e+15  1.008e+09    3913533   <2e-16 ***
+atemp.4       2.622e+15  9.642e+08    2719626   <2e-16 ***
+hum.4         2.096e+16  3.357e+08   62436060   <2e-16 ***
+season.5     -7.148e+15  3.212e+08  -22251626   <2e-16 ***
+mnth.5       -5.210e+16  4.979e+08 -104651158   <2e-16 ***
+windspeed.5   1.590e+16  1.947e+08   81646052   <2e-16 ***
+temp.5        4.012e+16  9.793e+08   40969430   <2e-16 ***
+atemp.5      -4.205e+16  8.767e+08  -47962326   <2e-16 ***
+hum.5         1.075e+14  3.367e+08     319295   <2e-16 ***
+season.6      4.798e+16  1.023e+09   46896045   <2e-16 ***
+mnth.6       -2.568e+16  1.212e+09  -21198540   <2e-16 ***
+windspeed.6  -2.554e+16  4.345e+08  -58783086   <2e-16 ***
+temp.6        1.315e+16  1.708e+09    7700445   <2e-16 ***
+atemp.6      -3.101e+16  1.666e+09  -18613040   <2e-16 ***
+hum.6        -4.202e+15  5.688e+08   -7388301   <2e-16 ***
+season.7     -7.386e+16  1.468e+09  -50325983   <2e-16 ***
+mnth.7       -7.679e+16  1.671e+09  -45940795   <2e-16 ***
+windspeed.7   2.574e+16  4.412e+08   58341229   <2e-16 ***
+temp.7       -1.983e+16  1.775e+09  -11170701   <2e-16 ***
+atemp.7       7.051e+16  1.722e+09   40955335   <2e-16 ***
+hum.7        -1.485e+16  5.958e+08  -24917008   <2e-16 ***
+season.8     -3.813e+14  1.338e+09    -284989   <2e-16 ***
+mnth.8        8.051e+16  1.833e+09   43910192   <2e-16 ***
+windspeed.8  -4.283e+16  5.194e+08  -82445960   <2e-16 ***
+temp.8        4.670e+16  1.768e+09   26412396   <2e-16 ***
+atemp.8      -5.411e+16  1.712e+09  -31605925   <2e-16 ***
+hum.8        -1.614e+16  5.965e+08  -27047630   <2e-16 ***
+season.9      1.993e+16  1.226e+09   16262899   <2e-16 ***
+mnth.9       -1.314e+17  1.850e+09  -71065759   <2e-16 ***
+windspeed.9   5.095e+16  4.489e+08  113498856   <2e-16 ***
+temp.9       -5.543e+16  1.803e+09  -30744310   <2e-16 ***
+atemp.9       5.889e+16  1.776e+09   33169531   <2e-16 ***
+hum.9         3.748e+16  5.859e+08   63969533   <2e-16 ***
+season.10     1.048e+16  1.217e+09    8612032   <2e-16 ***
+mnth.10       2.695e+16  1.696e+09   15888364   <2e-16 ***
+windspeed.10  2.746e+16  4.280e+08   64170385   <2e-16 ***
+temp.10       2.309e+16  2.036e+09   11338906   <2e-16 ***
+atemp.10     -2.116e+16  2.084e+09  -10153267   <2e-16 ***
+hum.10       -3.410e+16  5.984e+08  -56977618   <2e-16 ***
+season.11     2.333e+16  8.430e+08   27668662   <2e-16 ***
+mnth.11       1.221e+17  1.260e+09   96922537   <2e-16 ***
+windspeed.11 -3.070e+16  5.152e+08  -59583723   <2e-16 ***
+temp.11      -5.080e+16  1.800e+09  -28230672   <2e-16 ***
+atemp.11      6.370e+16  1.698e+09   37522764   <2e-16 ***
+hum.11        4.683e+15  5.906e+08    7929969   <2e-16 ***
+season.12    -2.858e+16  6.759e+08  -42282671   <2e-16 ***
+mnth.12      -1.118e+15  7.844e+08   -1425583   <2e-16 ***
+windspeed.12  1.195e+16  3.240e+08   36885851   <2e-16 ***
+temp.12      -9.221e+14  1.012e+09    -911110   <2e-16 ***
+atemp.12      1.881e+16  1.014e+09   18554539   <2e-16 ***
+hum.12        5.282e+14  3.261e+08    1619665   <2e-16 ***
+season.13     4.991e+16  9.869e+08   50568752   <2e-16 ***
+mnth.13       9.162e+16  1.080e+09   84813368   <2e-16 ***
+windspeed.13 -1.889e+16  3.282e+08  -57557261   <2e-16 ***
+temp.13      -1.577e+16  1.062e+09  -14849647   <2e-16 ***
+atemp.13     -2.090e+16  1.073e+09  -19476383   <2e-16 ***
+hum.13        8.982e+15  3.422e+08   26244580   <2e-16 ***
+season.14    -1.189e+16  9.006e+08  -13202217   <2e-16 ***
+mnth.14      -7.015e+16  1.160e+09  -60477798   <2e-16 ***
+windspeed.14  2.343e+16  4.102e+08   57118585   <2e-16 ***
+temp.14      -1.728e+16  1.048e+09  -16488407   <2e-16 ***
+atemp.14      1.460e+16  1.052e+09   13871216   <2e-16 ***
+hum.14        4.690e+15  3.408e+08   13763413   <2e-16 ***
+season.15    -4.428e+15  7.832e+08   -5653841   <2e-16 ***
+mnth.15       8.723e+16  1.159e+09   75283900   <2e-16 ***
+windspeed.15 -3.967e+16  3.320e+08 -119477961   <2e-16 ***
+temp.15       3.958e+16  1.068e+09   37063809   <2e-16 ***
+atemp.15     -2.487e+16  1.087e+09  -22884703   <2e-16 ***
+hum.15       -2.255e+16  3.346e+08  -67399096   <2e-16 ***
+season.16    -8.417e+15  7.784e+08  -10812433   <2e-16 ***
+mnth.16      -3.732e+16  1.107e+09  -33715179   <2e-16 ***
+windspeed.16 -1.651e+16  3.193e+08  -51687744   <2e-16 ***
+temp.16      -2.297e+16  1.263e+09  -18185501   <2e-16 ***
+atemp.16      1.719e+16  1.340e+09   12827785   <2e-16 ***
+hum.16        1.534e+16  3.417e+08   44883129   <2e-16 ***
+season.17    -1.267e+16  5.532e+08  -22904529   <2e-16 ***
+mnth.17      -6.884e+16  8.420e+08  -81752231   <2e-16 ***
+windspeed.17  1.584e+16  4.116e+08   38492485   <2e-16 ***
+temp.17       1.604e+16  1.048e+09   15301059   <2e-16 ***
+atemp.17     -3.125e+16  1.035e+09  -30196400   <2e-16 ***
+hum.17       -5.914e+14  3.344e+08   -1768654   <2e-16 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance:  170.16  on 624  degrees of freedom
+Residual deviance: 1153.40  on 516  degrees of freedom
+AIC: 1371.4
+
+Number of Fisher Scoring iterations: 17
+
+[1] "----------------------------------------------"
+Linear model with 1 order and past 7 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.1770  -1.1480   0.6485   0.9291   1.7721  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  1.19603    1.14385   1.046   0.2957    
+season      -2.19411    1.77356  -1.237   0.2160    
+mnth         1.99298    2.97058   0.671   0.5023    
+windspeed    0.14129    0.70185   0.201   0.8405    
+temp        -7.52183    5.49580  -1.369   0.1711    
+atemp        8.73344    5.56062   1.571   0.1163    
+hum          0.29665    0.73333   0.405   0.6858    
+season.1     1.21038    2.14790   0.564   0.5731    
+mnth.1      -0.62467    3.75614  -0.166   0.8679    
+windspeed.1 -1.28362    0.75042  -1.711   0.0872 .  
+temp.1       3.24389    4.78649   0.678   0.4980    
+atemp.1     -3.19768    4.40861  -0.725   0.4683    
+hum.1       -1.14291    0.86625  -1.319   0.1870    
+season.2     1.20718    1.89640   0.637   0.5244    
+mnth.2       3.20868    5.54874   0.578   0.5631    
+windspeed.2  1.06449    0.74519   1.428   0.1532    
+temp.2      -1.35631    3.79992  -0.357   0.7211    
+atemp.2      0.29960    3.28600   0.091   0.9274    
+hum.2       -0.01394    0.88826  -0.016   0.9875    
+season.3    -0.99436    1.89055  -0.526   0.5989    
+mnth.3      -7.03752    5.55530  -1.267   0.2052    
+windspeed.3 -0.24295    0.74190  -0.327   0.7433    
+temp.3       0.09341    3.76657   0.025   0.9802    
+atemp.3      0.33857    3.25347   0.104   0.9171    
+hum.3       -0.34861    0.90262  -0.386   0.6993    
+season.4     4.80264    2.89855   1.657   0.0975 .  
+mnth.4       6.55895    5.67641   1.155   0.2479    
+windspeed.4  1.12307    0.77483   1.449   0.1472    
+temp.4       1.71529    6.79403   0.252   0.8007    
+atemp.4     -0.58902    6.59093  -0.089   0.9288    
+hum.4        1.33183    0.87903   1.515   0.1297    
+season.5    -5.61669    2.90196  -1.935   0.0529 .  
+mnth.5       2.10600    7.30691   0.288   0.7732    
+windspeed.5 -0.57080    0.74895  -0.762   0.4460    
+temp.5      -5.90759    5.44117  -1.086   0.2776    
+atemp.5      6.57627    5.12508   1.283   0.1994    
+hum.5        0.82782    0.87233   0.949   0.3426    
+season.6     1.17762    1.39589   0.844   0.3989    
+mnth.6      -5.81912    5.38990  -1.080   0.2803    
+windspeed.6  1.09380    0.68815   1.589   0.1120    
+temp.6       4.35261    5.71070   0.762   0.4459    
+atemp.6     -4.52535    5.62902  -0.804   0.4214    
+hum.6       -4.05394    0.81254  -4.989 6.06e-07 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 818.14  on 623  degrees of freedom
+Residual deviance: 736.13  on 581  degrees of freedom
+AIC: 822.13
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4948  -0.8939  -0.6664   1.2013   2.0529  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -1.03817    1.15236  -0.901 0.367640    
+season        2.16642    1.75132   1.237 0.216080    
+mnth         -0.90580    2.39880  -0.378 0.705724    
+windspeed    -0.27311    0.70955  -0.385 0.700312    
+temp          8.83738    5.81229   1.520 0.128394    
+atemp       -10.23780    5.88602  -1.739 0.081975 .  
+hum          -0.31831    0.73593  -0.433 0.665364    
+season.1     -3.31075    2.49445  -1.327 0.184426    
+mnth.1        0.18636    3.16291   0.059 0.953016    
+windspeed.1   1.51575    0.76314   1.986 0.047011 *  
+temp.1       -4.99978    5.86903  -0.852 0.394274    
+atemp.1       5.36791    5.57446   0.963 0.335574    
+hum.1         1.00282    0.87010   1.153 0.249102    
+season.2      0.80888    2.29583   0.352 0.724594    
+mnth.2       -5.46892    5.78556  -0.945 0.344521    
+windspeed.2  -1.17150    0.75002  -1.562 0.118298    
+temp.2        0.81289    3.96189   0.205 0.837434    
+atemp.2       0.00769    3.47001   0.002 0.998232    
+hum.2         0.03762    0.89016   0.042 0.966291    
+season.3      0.95675    1.90357   0.503 0.615239    
+mnth.3        8.44412    5.85832   1.441 0.149475    
+windspeed.3   0.47152    0.75239   0.627 0.530854    
+temp.3       -0.08617    3.78576  -0.023 0.981840    
+atemp.3      -0.54120    3.26616  -0.166 0.868394    
+hum.3         0.31419    0.90802   0.346 0.729328    
+season.4     -4.86085    2.92713  -1.661 0.096789 .  
+mnth.4       -7.93535    5.65059  -1.404 0.160218    
+windspeed.4  -1.29235    0.78824  -1.640 0.101102    
+temp.4       -0.30018    6.90817  -0.043 0.965340    
+atemp.4       0.36647    6.69359   0.055 0.956338    
+hum.4        -1.05890    0.88054  -1.203 0.229146    
+season.5      5.77607    2.90311   1.990 0.046634 *  
+mnth.5        0.48860    7.17662   0.068 0.945720    
+windspeed.5   0.41342    0.76126   0.543 0.587079    
+temp.5        6.45516    5.94285   1.086 0.277388    
+atemp.5      -7.69456    5.66279  -1.359 0.174212    
+hum.5        -0.42627    0.87083  -0.489 0.624491    
+season.6     -1.33946    1.35904  -0.986 0.324334    
+mnth.6        4.89021    5.20662   0.939 0.347613    
+windspeed.6  -1.04293    0.69576  -1.499 0.133877    
+temp.6       -5.99528    6.12098  -0.979 0.327351    
+atemp.6       6.06747    6.05658   1.002 0.316441    
+hum.6         3.02494    0.79674   3.797 0.000147 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 797.11  on 623  degrees of freedom
+Residual deviance: 730.66  on 581  degrees of freedom
+AIC: 816.66
+
+Number of Fisher Scoring iterations: 5
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3594  -0.1979  -0.0988  -0.0425   3.6317  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -9.4207     4.1821  -2.253 0.024281 *  
+season        3.6982    10.0720   0.367 0.713485    
+mnth        -24.0668    11.3749  -2.116 0.034363 *  
+windspeed     0.7402     2.4682   0.300 0.764261    
+temp         -9.7338    19.9236  -0.489 0.625157    
+atemp        10.9429    19.9669   0.548 0.583656    
+hum           0.0674     2.3666   0.028 0.977280    
+season.1      4.9410     9.5846   0.516 0.606191    
+mnth.1        5.4263    15.9607   0.340 0.733873    
+windspeed.1  -1.5479     2.4240  -0.639 0.523100    
+temp.1        0.4383     8.7226   0.050 0.959924    
+atemp.1      -5.3551     5.8626  -0.913 0.361011    
+hum.1         2.6545     2.9183   0.910 0.363023    
+season.2     -4.8527     4.9000  -0.990 0.322010    
+mnth.2       20.9260    15.1032   1.386 0.165888    
+windspeed.2   1.0947     2.4262   0.451 0.651840    
+temp.2       10.1854     9.0479   1.126 0.260283    
+atemp.2      -4.5216     6.6242  -0.683 0.494870    
+hum.2        -2.4760     2.9876  -0.829 0.407245    
+season.3      1.6502     8.7521   0.189 0.850446    
+mnth.3        2.3441    11.9346   0.196 0.844287    
+windspeed.3  -2.5222     2.4686  -1.022 0.306901    
+temp.3        1.9701    13.2222   0.149 0.881555    
+atemp.3      -0.8949    11.6710  -0.077 0.938882    
+hum.3         2.4730     3.0751   0.804 0.421295    
+season.4     -1.0077    12.4721  -0.081 0.935604    
+mnth.4        3.3739    10.7732   0.313 0.754148    
+windspeed.4   0.8785     2.4441   0.359 0.719269    
+temp.4       -6.7147    23.3326  -0.288 0.773513    
+atemp.4      -2.2954    22.5031  -0.102 0.918752    
+hum.4        -2.3880     2.9995  -0.796 0.425944    
+season.5     -0.9182    10.8481  -0.085 0.932550    
+mnth.5      -21.2739    14.7297  -1.444 0.148659    
+windspeed.5   1.5215     2.4510   0.621 0.534756    
+temp.5      -15.1011    23.9920  -0.629 0.529074    
+atemp.5      15.4840    23.8823   0.648 0.516761    
+hum.5        -6.1248     3.0992  -1.976 0.048124 *  
+season.6      1.3059     4.2432   0.308 0.758269    
+mnth.6        9.1244    13.5216   0.675 0.499804    
+windspeed.6  -1.9676     2.2203  -0.886 0.375524    
+temp.6       10.2774     8.8848   1.157 0.247377    
+atemp.6      -4.8433     7.6233  -0.635 0.525210    
+hum.6        12.7855     3.4637   3.691 0.000223 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 156.03  on 623  degrees of freedom
+Residual deviance: 109.33  on 581  degrees of freedom
+AIC: 195.33
+
+Number of Fisher Scoring iterations: 8
+
+[1] "----------------------------------------------"
+Linear model with 2 order and past 7 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4070  -1.0065   0.5157   0.8665   2.2630  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept)     1.7617     3.5487   0.496  0.61958   
+season          9.2244     7.2439   1.273  0.20288   
+mnth          -32.8560    15.6376  -2.101  0.03563 * 
+windspeed       0.8670     2.3806   0.364  0.71573   
+temp          -22.4777    17.7613  -1.266  0.20568   
+atemp          24.2621    17.2861   1.404  0.16045   
+hum            -6.5266     4.3829  -1.489  0.13646   
+season.1      -74.3846  1981.6003  -0.038  0.97006   
+mnth.1         16.5320    18.5647   0.891  0.37319   
+windspeed.1     1.7403     2.4060   0.723  0.46949   
+temp.1        -25.8872    17.5719  -1.473  0.14069   
+atemp.1        19.4185    16.2905   1.192  0.23325   
+hum.1           3.1310     4.2287   0.740  0.45905   
+season.2       57.1457  1981.5955   0.029  0.97699   
+mnth.2         48.5738    16.6968   2.909  0.00362 **
+windspeed.2    -0.5731     2.4711  -0.232  0.81660   
+temp.2         -3.2289    16.7133  -0.193  0.84681   
+atemp.2         7.4734    15.2009   0.492  0.62297   
+hum.2          -1.2151     4.5729  -0.266  0.79046   
+season.3       10.1012     8.5060   1.188  0.23501   
+mnth.3         -9.9412    16.9316  -0.587  0.55711   
+windspeed.3    -0.2617     2.5059  -0.104  0.91683   
+temp.3         -2.3176    16.6590  -0.139  0.88936   
+atemp.3         1.7479    15.5120   0.113  0.91028   
+hum.3          -1.7929     4.6874  -0.382  0.70210   
+season.4        8.8125    11.1049   0.794  0.42744   
+mnth.4        -23.4003    15.7735  -1.484  0.13794   
+windspeed.4     0.6574     2.5271   0.260  0.79475   
+temp.4         29.9508    19.4168   1.543  0.12295   
+atemp.4       -30.7459    18.1653  -1.693  0.09054 . 
+hum.4          -0.2506     4.3960  -0.057  0.95453   
+season.5      -20.1903    10.8232  -1.865  0.06212 . 
+mnth.5          4.8689    16.3166   0.298  0.76540   
+windspeed.5     0.3449     2.6842   0.128  0.89776   
+temp.5        -27.3460    19.8887  -1.375  0.16915   
+atemp.5        33.0095    18.1084   1.823  0.06832 . 
+hum.5          -0.7002     4.6706  -0.150  0.88083   
+season.6        7.8674     5.9682   1.318  0.18743   
+mnth.6         -1.1161    12.2231  -0.091  0.92725   
+windspeed.6    -1.5730     2.7181  -0.579  0.56279   
+temp.6          3.9375    19.9078   0.198  0.84321   
+atemp.6       -10.5628    18.5405  -0.570  0.56887   
+hum.6           4.8229     4.5311   1.064  0.28715   
+season.7      -12.0879     7.5284  -1.606  0.10835   
+mnth.7         35.0013    14.9525   2.341  0.01924 * 
+windspeed.7    -1.1193     2.7671  -0.405  0.68584   
+temp.7          4.8296    14.0834   0.343  0.73165   
+atemp.7        -5.0247    14.4303  -0.348  0.72769   
+hum.7           5.7140     3.3947   1.683  0.09233 . 
+season.8       76.3766  1981.6015   0.039  0.96925   
+mnth.8        -17.1250    17.6994  -0.968  0.33327   
+windspeed.8    -3.0236     2.7743  -1.090  0.27577   
+temp.8         26.4577    15.7438   1.681  0.09286 . 
+atemp.8       -21.1800    15.4990  -1.367  0.17177   
+hum.8          -4.0563     3.3209  -1.221  0.22192   
+season.9      -56.7491  1981.5950  -0.029  0.97715   
+mnth.9        -43.6388    14.9278  -2.923  0.00346 **
+windspeed.9     2.8263     2.9437   0.960  0.33699   
+temp.9          0.3219    14.9337   0.022  0.98280   
+atemp.9        -7.1340    14.4920  -0.492  0.62253   
+hum.9           1.3853     3.5587   0.389  0.69707   
+season.10     -10.7051     8.2141  -1.303  0.19249   
+mnth.10         0.3139    15.4956   0.020  0.98384   
+windspeed.10   -0.1636     2.8946  -0.057  0.95493   
+temp.10         3.9576    15.1298   0.262  0.79365   
+atemp.10       -1.7913    15.0684  -0.119  0.90537   
+hum.10          1.1903     3.6406   0.327  0.74372   
+season.11      -3.1079     9.4546  -0.329  0.74237   
+mnth.11        30.0696    15.0723   1.995  0.04604 * 
+windspeed.11   -0.1039     2.8606  -0.036  0.97103   
+temp.11       -29.0111    15.6544  -1.853  0.06385 . 
+atemp.11       32.2713    15.7779   2.045  0.04082 * 
+hum.11          1.5665     3.4343   0.456  0.64829   
+season.12      13.6088     9.1686   1.484  0.13774   
+mnth.12         0.3067    15.0499   0.020  0.98374   
+windspeed.12   -0.1569     3.2773  -0.048  0.96182   
+temp.12        17.4321    15.9961   1.090  0.27581   
+atemp.12      -22.8991    15.5232  -1.475  0.14017   
+hum.12          1.1586     3.6433   0.318  0.75049   
+season.13      -6.3580     5.7063  -1.114  0.26519   
+mnth.13        -6.9065    11.5153  -0.600  0.54866   
+windspeed.13    3.9451     3.3946   1.162  0.24516   
+temp.13         2.0713    15.5581   0.133  0.89409   
+atemp.13        4.2031    15.2878   0.275  0.78337   
+hum.13         -7.2095     3.4909  -2.065  0.03890 * 
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 818.14  on 623  degrees of freedom
+Residual deviance: 675.71  on 539  degrees of freedom
+AIC: 845.71
+
+Number of Fisher Scoring iterations: 13
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2056  -0.8716  -0.5568   1.0239   2.3893  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)    -2.4092     3.5767  -0.674   0.5006  
+season         -8.1576     6.9357  -1.176   0.2395  
+mnth           16.5436    11.9553   1.384   0.1664  
+windspeed      -1.8038     2.3760  -0.759   0.4478  
+temp           17.7194    17.6975   1.001   0.3167  
+atemp         -19.8240    17.2324  -1.150   0.2500  
+hum             6.2270     4.5686   1.363   0.1729  
+season.1       73.2108  1969.6977   0.037   0.9704  
+mnth.1        -11.1209    15.2736  -0.728   0.4665  
+windspeed.1    -3.6041     2.3945  -1.505   0.1323  
+temp.1         18.6073    18.2823   1.018   0.3088  
+atemp.1       -11.5569    17.0461  -0.678   0.4978  
+hum.1          -3.2490     4.2449  -0.765   0.4440  
+season.2      -56.7887  1969.6938  -0.029   0.9770  
+mnth.2        -36.3964    16.1539  -2.253   0.0243 *
+windspeed.2     1.6967     2.5006   0.679   0.4974  
+temp.2         -4.8662    16.9007  -0.288   0.7734  
+atemp.2        -1.3268    15.4381  -0.086   0.9315  
+hum.2           0.7660     4.5340   0.169   0.8658  
+season.3      -10.4776     8.6481  -1.212   0.2257  
+mnth.3         11.3388    16.8628   0.672   0.5013  
+windspeed.3    -0.1247     2.4970  -0.050   0.9602  
+temp.3         12.9200    16.9249   0.763   0.4452  
+atemp.3       -10.7863    15.7245  -0.686   0.4927  
+hum.3           1.8308     4.6946   0.390   0.6966  
+season.4       -9.1596    11.1264  -0.823   0.4104  
+mnth.4         19.3843    15.8915   1.220   0.2225  
+windspeed.4    -1.4279     2.5235  -0.566   0.5715  
+temp.4        -26.1780    19.4525  -1.346   0.1784  
+atemp.4        31.1012    18.3205   1.698   0.0896 .
+hum.4           2.2119     4.5083   0.491   0.6237  
+season.5       20.6455    10.7182   1.926   0.0541 .
+mnth.5         -7.7881    16.4058  -0.475   0.6350  
+windspeed.5     0.8850     2.7023   0.328   0.7433  
+temp.5         35.2576    20.6285   1.709   0.0874 .
+atemp.5       -38.5705    18.7085  -2.062   0.0392 *
+hum.5           0.7696     4.7848   0.161   0.8722  
+season.6       -7.8696     5.9823  -1.315   0.1883  
+mnth.6          5.0279    12.1699   0.413   0.6795  
+windspeed.6     0.6637     2.6254   0.253   0.8004  
+temp.6        -15.6941    20.1821  -0.778   0.4368  
+atemp.6        17.4591    18.7322   0.932   0.3513  
+hum.6          -3.0713     4.3602  -0.704   0.4812  
+season.7       11.4407     7.3242   1.562   0.1183  
+mnth.7        -17.0617    11.5111  -1.482   0.1383  
+windspeed.7     2.1772     2.7621   0.788   0.4305  
+temp.7         -0.2594    14.0648  -0.018   0.9853  
+atemp.7         0.5219    14.4553   0.036   0.9712  
+hum.7          -5.4210     3.5186  -1.541   0.1234  
+season.8      -78.9616  1969.7039  -0.040   0.9680  
+mnth.8         11.1956    14.6701   0.763   0.4454  
+windspeed.8     5.5579     2.7523   2.019   0.0435 *
+temp.8        -22.0293    15.7190  -1.401   0.1611  
+atemp.8        16.2983    15.5274   1.050   0.2939  
+hum.8           3.9519     3.3266   1.188   0.2348  
+season.9       59.6838  1969.6978   0.030   0.9758  
+mnth.9         29.5724    14.4943   2.040   0.0413 *
+windspeed.9    -3.9951     2.9966  -1.333   0.1825  
+temp.9          6.4138    15.0093   0.427   0.6691  
+atemp.9         1.8539    14.6003   0.127   0.8990  
+hum.9          -0.9648     3.5303  -0.273   0.7846  
+season.10      11.0135     8.3529   1.319   0.1873  
+mnth.10        -1.5732    15.4813  -0.102   0.9191  
+windspeed.10    0.6791     2.8932   0.235   0.8144  
+temp.10       -13.7540    15.3942  -0.893   0.3716  
+atemp.10       10.1686    15.2707   0.666   0.5055  
+hum.10         -1.1919     3.6447  -0.327   0.7436  
+season.11       3.4341     9.4932   0.362   0.7175  
+mnth.11       -26.7072    14.9519  -1.786   0.0741 .
+windspeed.11    0.8463     2.8709   0.295   0.7681  
+temp.11        29.5941    15.7595   1.878   0.0604 .
+atemp.11      -35.5954    16.0167  -2.222   0.0263 *
+hum.11         -2.8788     3.5151  -0.819   0.4128  
+season.12     -13.9303     9.0186  -1.545   0.1224  
+mnth.12         6.5866    14.9157   0.442   0.6588  
+windspeed.12   -1.8861     3.3146  -0.569   0.5693  
+temp.12       -23.9164    16.3991  -1.458   0.1447  
+atemp.12       26.8626    15.8022   1.700   0.0891 .
+hum.12         -0.8922     3.6990  -0.241   0.8094  
+season.13       6.3186     5.6684   1.115   0.2650  
+mnth.13         0.2207    11.4523   0.019   0.9846  
+windspeed.13   -2.5109     3.2498  -0.773   0.4397  
+temp.13         5.9299    15.6526   0.379   0.7048  
+atemp.13       -8.0102    15.3317  -0.522   0.6013  
+hum.13          4.9325     3.3433   1.475   0.1401  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 797.11  on 623  degrees of freedom
+Residual deviance: 679.16  on 539  degrees of freedom
+AIC: 849.16
+
+Number of Fisher Scoring iterations: 13
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-1.420e-04  -2.100e-08  -2.100e-08  -2.100e-08   1.872e-04  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)
+(Intercept)  -2.090e+03  1.291e+06  -0.002    0.999
+season       -3.030e+03  2.082e+06  -0.001    0.999
+mnth          2.628e+03  6.706e+06   0.000    1.000
+windspeed     8.283e+01  3.597e+05   0.000    1.000
+temp          1.992e+03  2.435e+06   0.001    0.999
+atemp        -1.630e+03  1.361e+06  -0.001    0.999
+hum           4.029e+02  2.379e+05   0.002    0.999
+season.1      1.616e+03  2.663e+06   0.001    1.000
+mnth.1        1.316e+03  6.371e+06   0.000    1.000
+windspeed.1   1.753e+03  6.163e+05   0.003    0.998
+temp.1        7.095e+03  4.154e+06   0.002    0.999
+atemp.1      -7.722e+03  3.425e+06  -0.002    0.998
+hum.1         5.795e+02  1.517e+06   0.000    1.000
+season.2      9.382e+02  1.510e+08   0.000    1.000
+mnth.2       -5.385e+03  3.119e+06  -0.002    0.999
+windspeed.2  -5.976e+02  2.914e+05  -0.002    0.998
+temp.2       -1.922e+02  2.496e+06   0.000    1.000
+atemp.2      -6.003e+02  2.138e+06   0.000    1.000
+hum.2         1.960e+03  6.962e+05   0.003    0.998
+season.3      3.164e+02  1.511e+08   0.000    1.000
+mnth.3       -8.282e+02  3.894e+06   0.000    1.000
+windspeed.3   1.210e+02  6.402e+05   0.000    1.000
+temp.3        1.582e+03  2.806e+06   0.001    1.000
+atemp.3       6.781e+02  3.136e+06   0.000    1.000
+hum.3         2.851e+02  1.225e+06   0.000    1.000
+season.4     -8.974e+02  2.152e+07   0.000    1.000
+mnth.4        3.230e+03  2.605e+06   0.001    0.999
+windspeed.4   1.568e+03  6.375e+05   0.002    0.998
+temp.4       -7.958e+03  5.625e+06  -0.001    0.999
+atemp.4       4.473e+03  5.748e+06   0.001    0.999
+hum.4        -1.768e+03  9.242e+05  -0.002    0.998
+season.5      1.049e+03  2.122e+07   0.000    1.000
+mnth.5       -3.327e+03  2.774e+06  -0.001    0.999
+windspeed.5  -6.174e+02  3.206e+05  -0.002    0.998
+temp.5       -1.185e+03  3.676e+06   0.000    1.000
+atemp.5       6.654e+02  2.570e+06   0.000    1.000
+hum.5        -8.973e+02  4.684e+05  -0.002    0.998
+season.6     -4.095e+02  1.936e+05  -0.002    0.998
+mnth.6        3.167e+03  2.331e+06   0.001    0.999
+windspeed.6   5.116e+02  7.089e+05   0.001    0.999
+temp.6        2.752e+03  1.988e+06   0.001    0.999
+atemp.6       3.068e+02  2.570e+06   0.000    1.000
+hum.6         3.316e+03  9.522e+05   0.003    0.997
+season.7      3.239e+03  2.881e+06   0.001    0.999
+mnth.7       -2.774e+03  4.754e+06  -0.001    1.000
+windspeed.7  -3.549e+02  5.493e+05  -0.001    0.999
+temp.7       -1.309e+03  1.312e+06  -0.001    0.999
+atemp.7       1.463e+03  8.666e+05   0.002    0.999
+hum.7        -3.412e+02  1.305e+05  -0.003    0.998
+season.8     -1.688e+03  3.304e+06  -0.001    1.000
+mnth.8       -1.740e+03  4.929e+06   0.000    1.000
+windspeed.8  -3.156e+03  9.945e+05  -0.003    0.997
+temp.8       -7.112e+03  3.886e+06  -0.002    0.999
+atemp.8       7.088e+03  3.396e+06   0.002    0.998
+hum.8        -3.747e+02  1.018e+06   0.000    1.000
+season.9     -8.532e+02  1.510e+08   0.000    1.000
+mnth.9        5.386e+03  2.170e+06   0.002    0.998
+windspeed.9   5.583e+02  2.127e+05   0.003    0.998
+temp.9        9.955e+02  2.468e+06   0.000    1.000
+atemp.9      -3.233e+02  2.150e+06   0.000    1.000
+hum.9        -1.399e+03  4.501e+05  -0.003    0.998
+season.10    -6.634e+02  1.510e+08   0.000    1.000
+mnth.10       2.789e+01  2.226e+06   0.000    1.000
+windspeed.10 -3.698e+02  5.817e+05  -0.001    0.999
+temp.10      -9.506e+02  1.749e+06  -0.001    1.000
+atemp.10     -8.225e+02  2.139e+06   0.000    1.000
+hum.10       -2.355e+02  8.676e+05   0.000    1.000
+season.11     1.215e+03  5.780e+07   0.000    1.000
+mnth.11      -1.421e+03  2.952e+06   0.000    1.000
+windspeed.11 -1.655e+03  9.773e+05  -0.002    0.999
+temp.11       3.867e+03  4.449e+06   0.001    0.999
+atemp.11     -8.580e+02  4.468e+06   0.000    1.000
+hum.11        1.402e+03  7.152e+05   0.002    0.998
+season.12    -1.331e+03  5.770e+07   0.000    1.000
+mnth.12       6.272e+02  2.120e+06   0.000    1.000
+windspeed.12  1.028e+03  3.291e+05   0.003    0.998
+temp.12       1.573e+03  2.757e+06   0.001    1.000
+atemp.12     -1.112e+03  2.176e+06  -0.001    1.000
+hum.12        2.469e+02  4.871e+05   0.001    1.000
+season.13     4.119e+02  2.040e+05   0.002    0.998
+mnth.13      -7.699e+02  1.827e+06   0.000    1.000
+windspeed.13 -1.025e+03  8.582e+05  -0.001    0.999
+temp.13      -1.856e+03  1.848e+06  -0.001    0.999
+atemp.13     -1.009e+03  2.631e+06   0.000    1.000
+hum.13       -1.773e+03  5.969e+05  -0.003    0.998
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1.5603e+02  on 623  degrees of freedom
+Residual deviance: 5.0796e-07  on 539  degrees of freedom
+AIC: 170
+
+Number of Fisher Scoring iterations: 25
+
+[1] "----------------------------------------------"
+Linear model with 3 order and past 7 days of data.
+
+Call:
+glm(formula = train_y_dumm[, 1] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.5878  -0.8774   0.4362   0.8288   2.1429  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)     12.7133    10.9982   1.156   0.2477  
+season         -84.0614  7404.1384  -0.011   0.9909  
+mnth           -20.5872    23.2141  -0.887   0.3752  
+windspeed        5.5855     6.5146   0.857   0.3912  
+temp           -28.9863    35.2398  -0.823   0.4108  
+atemp           43.2671    33.6315   1.287   0.1983  
+hum            -16.2486    13.9246  -1.167   0.2433  
+season.1        67.4171 15600.7888   0.004   0.9966  
+mnth.1         -21.1435    32.1261  -0.658   0.5104  
+windspeed.1     -7.7593     7.4215  -1.046   0.2958  
+temp.1         -57.8463    35.8519  -1.613   0.1066  
+atemp.1         43.2609    33.8136   1.279   0.2008  
+hum.1           23.4603    22.0597   1.063   0.2876  
+season.2        93.4755 15743.9991   0.006   0.9953  
+mnth.2          65.3747    33.3435   1.961   0.0499 *
+windspeed.2      8.9944     7.3119   1.230   0.2187  
+temp.2         -20.0996    37.2367  -0.540   0.5893  
+atemp.2         14.8766    33.5484   0.443   0.6574  
+hum.2           21.6948    14.5391   1.492   0.1357  
+season.3        88.1444 18533.5805   0.005   0.9962  
+mnth.3          15.8935    30.7615   0.517   0.6054  
+windspeed.3    -10.8066     6.9958  -1.545   0.1224  
+temp.3           2.4823    36.4524   0.068   0.9457  
+atemp.3          5.1385    35.2964   0.146   0.8843  
+hum.3          -46.6903    27.9337  -1.671   0.0946 .
+season.4       -73.4806 19425.6543  -0.004   0.9970  
+mnth.4         -66.3799    30.0534  -2.209   0.0272 *
+windspeed.4     -0.6783     6.2948  -0.108   0.9142  
+temp.4          70.6214    38.4344   1.837   0.0661 .
+atemp.4        -71.9561    38.1449  -1.886   0.0592 .
+hum.4           -9.7896    15.8722  -0.617   0.5374  
+season.5      -104.1254  9652.6037  -0.011   0.9914  
+mnth.5          68.4381    35.0202   1.954   0.0507 .
+windspeed.5     -8.5649     7.3396  -1.167   0.2432  
+temp.5         -48.0907    37.3369  -1.288   0.1977  
+atemp.5         61.1591    34.9983   1.747   0.0806 .
+hum.5          -31.2517    29.2451  -1.069   0.2852  
+season.6         8.4236    12.9578   0.650   0.5156  
+mnth.6         -40.5652    26.4296  -1.535   0.1248  
+windspeed.6    -10.2037     6.2287  -1.638   0.1014  
+temp.6         -14.3329    39.3936  -0.364   0.7160  
+atemp.6          2.3382    36.1120   0.065   0.9484  
+hum.6           18.9880    11.8786   1.599   0.1099  
+season.7       368.2965 29778.9417   0.012   0.9901  
+mnth.7          -4.3566    54.8734  -0.079   0.9367  
+windspeed.7    -13.8950    16.1205  -0.862   0.3887  
+temp.7          12.3846    69.1430   0.179   0.8578  
+atemp.7        -41.9964    69.4690  -0.605   0.5455  
+hum.7           23.7818    23.8291   0.998   0.3183  
+season.8      -542.0180 53934.5946  -0.010   0.9920  
+mnth.8          90.7213    74.4959   1.218   0.2233  
+windspeed.8     22.8118    19.1892   1.189   0.2345  
+temp.8          87.7217    68.3966   1.283   0.1997  
+atemp.8        -66.6765    67.8206  -0.983   0.3255  
+hum.8          -40.0679    35.8513  -1.118   0.2637  
+season.9      -139.3966 54507.9445  -0.003   0.9980  
+mnth.9         -84.2828    74.2454  -1.135   0.2563  
+windspeed.9    -23.7217    19.3925  -1.223   0.2212  
+temp.9          39.0788    68.1632   0.573   0.5664  
+atemp.9        -20.8424    64.6365  -0.322   0.7471  
+hum.9          -43.2802    25.0757  -1.726   0.0844 .
+season.10     -108.9883 52202.5674  -0.002   0.9983  
+mnth.10        -75.8923    71.0025  -1.069   0.2851  
+windspeed.10    30.6163    17.3151   1.768   0.0770 .
+temp.10         -1.2887    67.9055  -0.019   0.9849  
+atemp.10       -18.9283    68.5355  -0.276   0.7824  
+hum.10          73.3411    44.0115   1.666   0.0956 .
+season.11      278.1225 45007.0519   0.006   0.9951  
+mnth.11        161.8710    69.0203   2.345   0.0190 *
+windspeed.11     5.0742    15.3637   0.330   0.7412  
+temp.11       -118.6824    77.7546  -1.526   0.1269  
+atemp.11       131.3904    82.0395   1.602   0.1093  
+hum.11          19.1815    26.8136   0.715   0.4744  
+season.12      152.9459 15795.2060   0.010   0.9923  
+mnth.12       -195.5624    81.6484  -2.395   0.0166 *
+windspeed.12    24.7669    19.2392   1.287   0.1980  
+temp.12         63.1479    73.4219   0.860   0.3898  
+atemp.12       -88.3289    73.4545  -1.202   0.2292  
+hum.12          54.7250    46.5737   1.175   0.2400  
+season.13       -2.2773    35.0521  -0.065   0.9482  
+mnth.13        112.0869    64.6524   1.734   0.0830 .
+windspeed.13    26.4771    15.4803   1.710   0.0872 .
+temp.13         25.9280    75.5426   0.343   0.7314  
+atemp.13       -10.3342    74.4240  -0.139   0.8896  
+hum.13         -35.7210    21.5430  -1.658   0.0973 .
+season.14     -301.6692 22779.9115  -0.013   0.9894  
+mnth.14         28.2956    36.7779   0.769   0.4417  
+windspeed.14     9.5587    11.9643   0.799   0.4243  
+temp.14         -2.6301    43.1412  -0.061   0.9514  
+atemp.14        22.2788    45.0529   0.495   0.6210  
+hum.14         -10.1264    13.2384  -0.765   0.4443  
+season.15      490.3685 40237.7725   0.012   0.9903  
+mnth.15        -72.5581    48.0748  -1.509   0.1312  
+windspeed.15   -20.1621    14.9539  -1.348   0.1776  
+temp.15        -37.6498    42.1187  -0.894   0.3714  
+atemp.15        28.7283    43.5633   0.659   0.5096  
+hum.15          19.3263    18.9177   1.022   0.3070  
+season.16       46.2497 40422.0756   0.001   0.9991  
+mnth.16         25.1483    45.4362   0.553   0.5799  
+windspeed.16    21.7449    15.5019   1.403   0.1607  
+temp.16        -24.3227    40.1795  -0.605   0.5449  
+atemp.16         7.6466    39.7323   0.192   0.8474  
+hum.16          26.5231    13.9913   1.896   0.0580 .
+season.17       20.5256 34252.0564   0.001   0.9995  
+mnth.17         49.7748    44.4568   1.120   0.2629  
+windspeed.17   -24.8012    13.0040  -1.907   0.0565 .
+temp.17          0.2571    40.6915   0.006   0.9950  
+atemp.17        16.3060    42.2487   0.386   0.6995  
+hum.17         -37.2565    22.5531  -1.652   0.0985 .
+season.18     -184.8456 26491.2291  -0.007   0.9944  
+mnth.18        -88.0443    44.3467  -1.985   0.0471 *
+windspeed.18    -4.7384    11.3726  -0.417   0.6769  
+temp.18         58.6524    48.4375   1.211   0.2259  
+atemp.18       -69.9267    52.7357  -1.326   0.1848  
+hum.18          -9.6203    14.6669  -0.656   0.5119  
+season.19      -69.6703  7897.6245  -0.009   0.9930  
+mnth.19        135.5336    54.3571   2.493   0.0127 *
+windspeed.19   -20.0213    15.2993  -1.309   0.1907  
+temp.19        -26.2999    45.8939  -0.573   0.5666  
+atemp.19        41.3783    47.8108   0.865   0.3868  
+hum.19         -29.1634    24.0518  -1.213   0.2253  
+season.20       -4.4733    23.1122  -0.194   0.8465  
+mnth.20        -83.1206    43.9230  -1.892   0.0584 .
+windspeed.20   -17.3945    11.6333  -1.495   0.1349  
+temp.20        -10.0018    45.3329  -0.221   0.8254  
+atemp.20         3.7613    46.5800   0.081   0.9356  
+hum.20          16.3863    12.4976   1.311   0.1898  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 818.14  on 623  degrees of freedom
+Residual deviance: 619.59  on 497  degrees of freedom
+AIC: 873.59
+
+Number of Fisher Scoring iterations: 16
+
+
+Call:
+glm(formula = train_y_dumm[, 2] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0374  -0.8144  -0.4791   0.9202   2.5857  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)  
+(Intercept)    -16.2464    11.8877  -1.367   0.1717  
+season          86.4923  7336.5341   0.012   0.9906  
+mnth            20.8458    20.4686   1.018   0.3085  
+windspeed       -3.7069     6.4951  -0.571   0.5682  
+temp            24.9171    35.4393   0.703   0.4820  
+atemp          -37.7801    33.8408  -1.116   0.2642  
+hum             20.4599    19.8408   1.031   0.3024  
+season.1       -86.2011 15481.6729  -0.006   0.9956  
+mnth.1           9.6198    29.0349   0.331   0.7404  
+windspeed.1      0.5039     7.0211   0.072   0.9428  
+temp.1          52.3401    35.1056   1.491   0.1360  
+atemp.1        -38.8867    33.0686  -1.176   0.2396  
+hum.1          -26.6565    23.5375  -1.133   0.2574  
+season.2       -78.4711 15562.1107  -0.005   0.9960  
+mnth.2         -61.0253    32.2512  -1.892   0.0585 .
+windspeed.2     -1.7751     7.2971  -0.243   0.8078  
+temp.2           3.3332    36.8786   0.090   0.9280  
+atemp.2         -0.3570    33.4266  -0.011   0.9915  
+hum.2          -21.4518    13.5407  -1.584   0.1131  
+season.3       -88.8518 17916.2047  -0.005   0.9960  
+mnth.3          -5.9110    30.7219  -0.192   0.8474  
+windspeed.3      9.0433     7.0571   1.281   0.2000  
+temp.3          18.3679    37.5960   0.489   0.6252  
+atemp.3        -22.3731    35.3790  -0.632   0.5271  
+hum.3           43.6537    28.2231   1.547   0.1219  
+season.4        76.0792 18858.5292   0.004   0.9968  
+mnth.4          55.7747    29.5413   1.888   0.0590 .
+windspeed.4      1.3128     6.3486   0.207   0.8362  
+temp.4         -74.5925    38.8312  -1.921   0.0547 .
+atemp.4         81.9900    38.8866   2.108   0.0350 *
+hum.4           17.3401    21.7188   0.798   0.4246  
+season.5       103.0692  9538.1198   0.011   0.9914  
+mnth.5         -62.7730    33.8441  -1.855   0.0636 .
+windspeed.5     12.0904     7.4138   1.631   0.1029  
+temp.5          55.1635    37.9555   1.453   0.1461  
+atemp.5        -64.6973    34.4927  -1.876   0.0607 .
+hum.5           40.1596    30.9055   1.299   0.1938  
+season.6        -5.7898    13.6600  -0.424   0.6717  
+mnth.6          39.4181    25.3707   1.554   0.1203  
+windspeed.6      7.1655     6.2577   1.145   0.2522  
+temp.6          -0.4160    38.5396  -0.011   0.9914  
+atemp.6          6.7565    35.8806   0.188   0.8506  
+hum.6          -22.0738    12.3404  -1.789   0.0737 .
+season.7      -373.0321 29505.5148  -0.013   0.9899  
+mnth.7         -24.7083    47.0313  -0.525   0.5993  
+windspeed.7      6.8677    16.1926   0.424   0.6715  
+temp.7         -11.0126    69.5397  -0.158   0.8742  
+atemp.7         36.8900    69.9884   0.527   0.5981  
+hum.7          -30.7589    32.3322  -0.951   0.3414  
+season.8       618.4251 53500.2812   0.012   0.9908  
+mnth.8         -56.9409    68.2742  -0.834   0.4043  
+windspeed.8     -5.3901    17.9496  -0.300   0.7640  
+temp.8         -87.6043    68.9734  -1.270   0.2040  
+atemp.8         70.2417    68.8609   1.020   0.3077  
+hum.8           45.5370    38.0413   1.197   0.2313  
+season.9        73.0576 53785.2418   0.001   0.9989  
+mnth.9          93.2865    73.4686   1.270   0.2042  
+windspeed.9      5.1064    19.2854   0.265   0.7912  
+temp.9         -15.2582    68.1340  -0.224   0.8228  
+atemp.9         -0.7804    65.1341  -0.012   0.9904  
+hum.9           42.5467    23.6800   1.797   0.0724 .
+season.10      109.6140 50550.2406   0.002   0.9983  
+mnth.10         56.4821    71.3163   0.792   0.4284  
+windspeed.10   -26.7230    17.4689  -1.530   0.1261  
+temp.10        -31.2020    70.1791  -0.445   0.6566  
+atemp.10        46.0341    68.7406   0.670   0.5031  
+hum.10         -68.0940    44.4052  -1.533   0.1252  
+season.11     -286.7951 43563.5610  -0.007   0.9947  
+mnth.11       -139.1155    68.3159  -2.036   0.0417 *
+windspeed.11    -8.9850    15.6521  -0.574   0.5659  
+temp.11        143.6999    79.6920   1.803   0.0714 .
+atemp.11      -163.7022    84.4042  -1.940   0.0524 .
+hum.11         -28.4379    35.1409  -0.809   0.4184  
+season.12     -148.5333 15607.8704  -0.010   0.9924  
+mnth.12        175.7996    78.5191   2.239   0.0252 *
+windspeed.12   -33.0888    19.3574  -1.709   0.0874 .
+temp.12        -67.8054    74.8475  -0.906   0.3650  
+atemp.12        86.6304    73.4148   1.180   0.2380  
+hum.12         -68.2167    48.7273  -1.400   0.1615  
+season.13       -5.0763    36.3369  -0.140   0.8889  
+mnth.13       -104.1512    61.7641  -1.686   0.0917 .
+windspeed.13   -19.5318    15.5365  -1.257   0.2087  
+temp.13        -10.4498    75.0332  -0.139   0.8892  
+atemp.13         1.0060    75.2627   0.013   0.9893  
+hum.13          43.0413    21.9215   1.963   0.0496 *
+season.14      304.4722 22566.6294   0.013   0.9892  
+mnth.14          2.7913    29.4967   0.095   0.9246  
+windspeed.14    -3.0993    12.1060  -0.256   0.7979  
+temp.14          5.1500    43.3627   0.119   0.9055  
+atemp.14       -22.0328    45.3913  -0.485   0.6274  
+hum.14          14.0469    17.1203   0.820   0.4119  
+season.15     -565.5733 40368.6297  -0.014   0.9888  
+mnth.15         49.1015    43.5279   1.128   0.2593  
+windspeed.15     8.3618    13.8495   0.604   0.5460  
+temp.15         40.1940    43.1745   0.931   0.3519  
+atemp.15       -34.5681    45.1407  -0.766   0.4438  
+hum.15         -22.6237    19.9430  -1.134   0.2566  
+season.16       22.2623 40339.4192   0.001   0.9996  
+mnth.16        -41.2884    46.0897  -0.896   0.3703  
+windspeed.16    -7.4537    15.3763  -0.485   0.6279  
+temp.16         14.6068    40.4438   0.361   0.7180  
+atemp.16         1.8746    40.4163   0.046   0.9630  
+hum.16         -26.0207    13.3567  -1.948   0.0514 .
+season.17      -20.6344 33202.4087  -0.001   0.9995  
+mnth.17        -39.3356    44.8731  -0.877   0.3807  
+windspeed.17    22.5508    13.1576   1.714   0.0865 .
+temp.17         14.2298    42.0470   0.338   0.7350  
+atemp.17       -28.6966    42.5227  -0.675   0.4998  
+hum.17          34.5056    22.7329   1.518   0.1290  
+season.18      190.9571 25620.4226   0.007   0.9941  
+mnth.18         73.9952    43.9040   1.685   0.0919 .
+windspeed.18     8.6649    11.7058   0.740   0.4592  
+temp.18        -75.1295    49.7459  -1.510   0.1310  
+atemp.18        89.6831    54.3008   1.652   0.0986 .
+hum.18          13.1995    18.4702   0.715   0.4748  
+season.19       66.3770  7803.9571   0.009   0.9932  
+mnth.19       -114.4421    51.4989  -2.222   0.0263 *
+windspeed.19    25.1997    15.3414   1.643   0.1005  
+temp.19         25.5267    46.8691   0.545   0.5860  
+atemp.19       -37.6659    48.0340  -0.784   0.4330  
+hum.19          36.2119    24.9112   1.454   0.1460  
+season.20        9.2030    23.6219   0.390   0.6968  
+mnth.20         71.5826    41.2343   1.736   0.0826 .
+windspeed.20    13.2623    11.6718   1.136   0.2558  
+temp.20          5.5492    45.3473   0.122   0.9026  
+atemp.20        -0.5818    47.3366  -0.012   0.9902  
+hum.20         -22.3804    12.5075  -1.789   0.0736 .
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 797.11  on 623  degrees of freedom
+Residual deviance: 625.15  on 497  degrees of freedom
+AIC: 879.15
+
+Number of Fisher Scoring iterations: 16
+
+
+Call:
+glm(formula = train_y_dumm[, 3] ~ ., family = binomial, data = data.frame(converted_train_X))
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-5.026e-05  -2.100e-08  -2.100e-08  -2.100e-08   4.913e-05  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)
+(Intercept)   6.185e+01  1.698e+06   0.000    1.000
+season       -1.635e+03  5.146e+06   0.000    1.000
+mnth          9.973e+02  6.113e+06   0.000    1.000
+windspeed    -1.853e+02  1.198e+06   0.000    1.000
+temp          1.334e+03  6.490e+06   0.000    1.000
+atemp        -9.999e+02  8.353e+06   0.000    1.000
+hum           4.948e+01  1.344e+06   0.000    1.000
+season.1      7.311e+02  2.136e+08   0.000    1.000
+mnth.1        3.275e+03  6.304e+06   0.001    1.000
+windspeed.1   9.631e+02  2.158e+06   0.000    1.000
+temp.1       -1.723e+03  1.021e+07   0.000    1.000
+atemp.1       4.785e+02  7.545e+06   0.000    1.000
+hum.1        -2.362e+02  9.381e+05   0.000    1.000
+season.2      2.109e+02  3.721e+08   0.000    1.000
+mnth.2       -3.258e+03  2.057e+07   0.000    1.000
+windspeed.2  -7.042e+02  1.180e+06  -0.001    1.000
+temp.2       -4.058e+02  5.108e+06   0.000    1.000
+atemp.2       4.352e+02  4.520e+06   0.000    1.000
+hum.2        -1.648e+02  1.023e+06   0.000    1.000
+season.3      3.307e+02  3.048e+08   0.000    1.000
+mnth.3        1.949e+02  2.117e+07   0.000    1.000
+windspeed.3  -2.851e+01  1.056e+06   0.000    1.000
+temp.3        4.905e+02  1.156e+07   0.000    1.000
+atemp.3       2.863e+01  9.874e+06   0.000    1.000
+hum.3         1.620e+03  7.186e+06   0.000    1.000
+season.4      4.150e+01  3.048e+08   0.000    1.000
+mnth.4        8.159e+02  7.020e+06   0.000    1.000
+windspeed.4   4.190e+02  2.253e+06   0.000    1.000
+temp.4       -2.923e+03  8.677e+06   0.000    1.000
+atemp.4       1.793e+03  7.042e+06   0.000    1.000
+hum.4        -9.140e+02  1.311e+06  -0.001    0.999
+season.5      1.978e+01  3.048e+08   0.000    1.000
+mnth.5        1.786e+03  1.105e+07   0.000    1.000
+windspeed.5  -6.930e+02  1.281e+06  -0.001    1.000
+temp.5       -1.665e+03  1.330e+07   0.000    1.000
+atemp.5       1.541e+03  9.072e+06   0.000    1.000
+hum.5         6.078e+02  1.680e+06   0.000    1.000
+season.6     -3.960e+02  4.971e+06   0.000    1.000
+mnth.6       -2.923e+03  1.032e+07   0.000    1.000
+windspeed.6   3.790e+01  8.579e+05   0.000    1.000
+temp.6        3.304e+03  1.220e+07   0.000    1.000
+atemp.6      -3.133e+03  8.836e+06   0.000    1.000
+hum.6        -9.649e+02  1.285e+06  -0.001    0.999
+season.7      4.789e+03  1.568e+07   0.000    1.000
+mnth.7       -1.901e+03  9.966e+06   0.000    1.000
+windspeed.7   4.739e+02  3.503e+06   0.000    1.000
+temp.7       -2.505e+03  1.444e+07   0.000    1.000
+atemp.7       2.167e+03  1.763e+07   0.000    1.000
+hum.7         3.127e+02  3.429e+06   0.000    1.000
+season.8     -2.289e+03  8.543e+08   0.000    1.000
+mnth.8       -5.942e+03  9.994e+06  -0.001    1.000
+windspeed.8  -2.169e+03  6.251e+06   0.000    1.000
+temp.8        5.190e+03  1.862e+07   0.000    1.000
+atemp.8      -2.861e+03  1.424e+07   0.000    1.000
+hum.8         3.390e+02  2.230e+06   0.000    1.000
+season.9     -4.736e+02  1.170e+09   0.000    1.000
+mnth.9        3.904e+03  4.400e+07   0.000    1.000
+windspeed.9   1.608e+03  3.024e+06   0.001    1.000
+temp.9        1.341e+03  9.112e+06   0.000    1.000
+atemp.9      -2.019e+03  8.553e+06   0.000    1.000
+hum.9         3.284e+02  2.253e+06   0.000    1.000
+season.10    -7.970e+02  7.990e+08   0.000    1.000
+mnth.10       1.347e+03  4.521e+07   0.000    1.000
+windspeed.10  3.496e+01  2.481e+06   0.000    1.000
+temp.10      -1.776e+03  2.215e+07   0.000    1.000
+atemp.10      2.060e+03  1.952e+07   0.000    1.000
+hum.10       -2.681e+03  1.100e+07   0.000    1.000
+season.11    -7.515e+02  7.990e+08   0.000    1.000
+mnth.11      -2.385e+03  1.537e+07   0.000    1.000
+windspeed.11 -4.103e+02  6.571e+06   0.000    1.000
+temp.11       1.366e+03  1.724e+07   0.000    1.000
+atemp.11     -6.101e+02  1.449e+07   0.000    1.000
+hum.11        1.326e+03  2.664e+06   0.000    1.000
+season.12     5.636e+02  7.991e+08   0.000    1.000
+mnth.12      -4.252e+03  2.275e+07   0.000    1.000
+windspeed.12  1.939e+03  3.645e+06   0.001    1.000
+temp.12       1.380e+03  2.797e+07   0.000    1.000
+atemp.12     -1.519e+03  2.036e+07   0.000    1.000
+hum.12       -1.343e+03  4.120e+06   0.000    1.000
+season.13     1.102e+03  1.557e+07   0.000    1.000
+mnth.13       7.860e+03  1.999e+07   0.000    1.000
+windspeed.13 -2.007e+02  2.453e+06   0.000    1.000
+temp.13      -5.057e+03  2.167e+07   0.000    1.000
+atemp.13      5.812e+03  1.643e+07   0.000    1.000
+hum.13        1.844e+03  2.640e+06   0.001    0.999
+season.14    -3.136e+03  1.046e+07   0.000    1.000
+mnth.14       8.307e+02  5.025e+06   0.000    1.000
+windspeed.14 -3.581e+02  2.784e+06   0.000    1.000
+temp.14       1.350e+03  1.069e+07   0.000    1.000
+atemp.14     -1.310e+03  1.247e+07   0.000    1.000
+hum.14       -3.518e+02  2.329e+06   0.000    1.000
+season.15     1.612e+03  6.407e+08   0.000    1.000
+mnth.15       2.882e+03  5.177e+06   0.001    1.000
+windspeed.15  1.155e+03  5.276e+06   0.000    1.000
+temp.15      -4.115e+03  1.092e+07   0.000    1.000
+atemp.15      2.619e+03  9.186e+06   0.000    1.000
+hum.15       -1.195e+02  1.483e+06   0.000    1.000
+season.16     2.358e+02  8.270e+08   0.000    1.000
+mnth.16      -1.116e+03  2.587e+07   0.000    1.000
+windspeed.16 -1.028e+03  2.322e+06   0.000    1.000
+temp.16      -8.305e+02  5.374e+06   0.000    1.000
+atemp.16      1.614e+03  5.294e+06   0.000    1.000
+hum.16       -1.663e+02  1.487e+06   0.000    1.000
+season.17     3.997e+02  5.231e+08   0.000    1.000
+mnth.17      -1.237e+03  2.674e+07   0.000    1.000
+windspeed.17 -1.687e+02  2.149e+06   0.000    1.000
+temp.17       1.168e+03  1.321e+07   0.000    1.000
+atemp.17     -1.905e+03  1.169e+07   0.000    1.000
+hum.17        1.384e+03  5.432e+06   0.000    1.000
+season.18     6.134e+02  5.231e+08   0.000    1.000
+mnth.18       1.820e+03  1.252e+07   0.000    1.000
+windspeed.18 -8.812e+01  5.606e+06   0.000    1.000
+temp.18       4.503e+02  1.135e+07   0.000    1.000
+atemp.18     -3.752e+02  1.063e+07   0.000    1.000
+hum.18       -5.966e+02  1.689e+06   0.000    1.000
+season.19    -5.277e+02  5.232e+08   0.000    1.000
+mnth.19       1.965e+03  1.615e+07   0.000    1.000
+windspeed.19 -1.402e+03  3.146e+06   0.000    1.000
+temp.19      -1.758e+02  1.752e+07   0.000    1.000
+atemp.19      4.328e+02  1.379e+07   0.000    1.000
+hum.19        6.953e+02  2.759e+06   0.000    1.000
+season.20    -6.563e+02  1.030e+07   0.000    1.000
+mnth.20      -4.586e+03  1.152e+07   0.000    1.000
+windspeed.20  2.912e+01  2.050e+06   0.000    1.000
+temp.20       2.346e+03  1.252e+07   0.000    1.000
+atemp.20     -3.499e+03  1.089e+07   0.000    1.000
+hum.20       -9.093e+02  1.666e+06  -0.001    1.000
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1.5603e+02  on 623  degrees of freedom
+Residual deviance: 6.1238e-08  on 497  degrees of freedom
+AIC: 254
+
+Number of Fisher Scoring iterations: 25
+
+When order=3 k=1 the model has the best performance, where the accuracy of the model is 0.66
+The model has mean squared error equals to 0.6693164 on training set.
