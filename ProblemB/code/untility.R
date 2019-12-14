@@ -4,8 +4,8 @@ train_test_split <- function(dataset, num_train, shuffle=TRUE, random_state=0) {
     set.seed(random_state)
     indeces <- sample(1:nrow(dataset), size=num_train, replace=FALSE)
 
-    train_set <- dataset[indeces, ]
-    test_set <- dataset[-indeces, ]
+    test_set <- dataset[indeces, ]
+    train_set <- dataset[-indeces, ]
     list(train=train_set, test=test_set)
 }
 
@@ -42,6 +42,7 @@ binarize <- function(Y) {
 }
 
 generatePolynomialInput <- function(power, X) {
+    X <- apply(X, 2, unlist)
     processed_X <- X
     if (power == 1) {
         return (X)
