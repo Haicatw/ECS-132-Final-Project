@@ -76,7 +76,7 @@ normalize <- function(x) {
     return(norm_x)
 }
 
-eval_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict_name) {
+eval_glm_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict_name) {
     k_val_list <- 2:max_k
     train_acc_list <- c()
     test_acc_list <- c()
@@ -169,5 +169,5 @@ eval_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict
 max_k_val = 7
 max_power_val = 3
 
-eval_grid_search(c("season", "mnth", "windspeed", "temp", "atemp", "hum"), c("weathersit"), max_k_val, max_power_val, "weathersit")
+eval_glm_grid_search(c("season", "mnth", "windspeed", "temp", "atemp", "hum"), c("weathersit"), max_k_val, max_power_val, "weathersit")
 

@@ -62,7 +62,7 @@ normalize <- function(x) {
     return(norm_x)
 }
 
-eval_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict_name) {
+eval_lm_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict_name) {
     k_val_list <- 2:max_k
     train_mse_list <- c()
     test_mse_list <- c()
@@ -147,13 +147,13 @@ eval_grid_search <- function(feature_colnames, y_name, max_k, max_power, predict
 max_k_val = 7
 max_power_val = 3
 # Predict temp
-eval_grid_search(c("season", "mnth", "weathersit", "atemp", "hum", "windspeed"), c("temp"), max_k_val, max_power_val, "temp")
+eval_lm_grid_search(c("season", "mnth", "weathersit", "atemp", "hum", "windspeed"), c("temp"), max_k_val, max_power_val, "temp")
 
 # Predict atemp
-eval_grid_search(c("season", "mnth", "weathersit", "temp", "hum", "windspeed"), c("atemp"), max_k_val, max_power_val, "atemp")
+eval_lm_grid_search(c("season", "mnth", "weathersit", "temp", "hum", "windspeed"), c("atemp"), max_k_val, max_power_val, "atemp")
 
 # Predict hum
-eval_grid_search(c("season", "mnth", "weathersit", "temp", "atemp", "windspeed"), c("hum"), max_k_val, max_power_val, "hum")
+eval_lm_grid_search(c("season", "mnth", "weathersit", "temp", "atemp", "windspeed"), c("hum"), max_k_val, max_power_val, "hum")
 
 # Predict windspeed
-eval_grid_search(c("season", "mnth", "weathersit", "temp", "atemp", "hum"), c("windspeed"), max_k_val, max_power_val, "windspeed")
+eval_lm_grid_search(c("season", "mnth", "weathersit", "temp", "atemp", "hum"), c("windspeed"), max_k_val, max_power_val, "windspeed")
